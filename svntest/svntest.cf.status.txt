@@ -1,0 +1,9 @@
+TotalTimeTaken=11.202
+TotalFiles=16
+TotalFolders=4259
+TotalJavaFiles=14
+TotalJsFiles=2120
+TotalJsonFiles=77
+TotalCssFiles=571
+TotalXmlFiles=251
+TotalPropertiesFiles=62

@@ -1,0 +1,13 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+// Spring batch Project Creation 
+
+project --topLevelPackage svntest --projectName svntestScheduler
+
+quit
