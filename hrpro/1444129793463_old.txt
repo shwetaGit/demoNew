@@ -1,0 +1,13 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+// Project Creation 
+
+project --topLevelPackage hrpro --projectName hrpro
+
+quit
