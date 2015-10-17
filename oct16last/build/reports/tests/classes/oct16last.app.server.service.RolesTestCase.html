@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class oct16last.app.server.service.RolesTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class oct16last.app.server.service.RolesTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/oct16last.app.server.service.html">oct16last.app.server.service</a> &gt; RolesTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.549s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.189s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.092s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.258s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.582--ClientSession(1375393325)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0EDB7DE7-AB1F-42DA-AD2D-8C68729AF11F, ZdpdPHVOzNzIenVxx4oK9GoGaQ3swhWpDGcdpDTWQBpCczBhIO, 1, 1, SHEgT4lABlLnSvOwbBAtWQc5eXk54QBO6fZeUZDrYsfjJhokkR, eGUAxPDqRcuF2jVDwwvBLjzsfJozBXVFig3smtDoiU96P3Jd04, true, true, prH9gRgAFxJAtullsX3zaprfQPu30hI0nTm3N1zS4lniFUYS6f, B2CWbfEjtgDIL0xHfGU3LbKJnrK52UZIlUA82yVixrkeBLp8Wd, 0u9C9g8seTsn9dZJlnLEPEuxW577xGss8DurTb0oZjJat4tJjO, uGOLxeg1syA3eMhvHPZosONS27PwVcAeWArqF5uv5yfQ4aduNz, T9I, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.682--ClientSession(668068451)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Roles_T (roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB, 71CeX6sVXjYyez2saQKMiODBzl68tkiHFUqIrWhfmoZPAhJxSU, pKHS7M2mAeYTTwOxj76LgYntiXwhu8dr0hqpJPZXC7dGx2GF0N, lBBYD3eJ0dLP8grAONF4wMzBKQDrz8bxyJoCmDX05FLe4cBgoh, 2P7Oer8zxqHCSsaXjd60ukkvzCRkZDLjbQobLxAJiHIZpel6c2, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null]
+[EL Fine]: sql: 2015-10-17 09:34:42.684--ClientSession(668068451)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RoleMenuBridge_TP (roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [852EDF16-9760-4C04-BED5-434D5FBA4B41, true, true, true, 0EDB7DE7-AB1F-42DA-AD2D-8C68729AF11F, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null, 679225D6-078F-4836-93BD-CF8DAAC098BB]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.746--ClientSession(172656082)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind =&gt; [1, 679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.748--ClientSession(172656082)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+Setting logged in user info for UPDATE
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.752--ClientSession(196472933)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.754--ClientSession(196472933)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.757--ClientSession(196472933)--Connection(981028541)--Thread(Thread[Test worker,5,main])--UPDATE ast_Roles_T SET RoleDescription = ?, roleHelp = ?, RoleIcon = ?, RoleName = ?, updatedBy = ?, versionId = ? WHERE ((roleId = ?) AND (versionId = ?))
+	bind =&gt; [x7j4IsTK16buydbCt5Ay3g12Va6hVtoyNegguSdneFGDOkI3dZ, nR8zKYaACNraFOhDwZj5CVan03S40PMJKVV5F2uDCye19uwLcn, C2Y1CDbGjKN8KXQvcApLZP6WkFAXfCE50WmrF2QJlxLosGkIrY, HyaFYK5JarZIv1IBWLCrCb0JfxTvMH8MKxqBnqTo20qnqPfl71, AAAAA, 2, 679225D6-078F-4836-93BD-CF8DAAC098BB, 1]
+[EL Fine]: sql: 2015-10-17 09:34:42.759--ClientSession(196472933)--Connection(981028541)--Thread(Thread[Test worker,5,main])--UPDATE ast_RoleMenuBridge_TP SET updatedBy = ?, versionId = ? WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, 852EDF16-9760-4C04-BED5-434D5FBA4B41, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.837--ClientSession(1646316717)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind =&gt; [1, 679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.839--ClientSession(1646316717)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.845--ClientSession(61185833)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.846--ClientSession(61185833)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB]
+[EL Fine]: sql: 2015-10-17 09:34:42.849--ClientSession(61185833)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RoleMenuBridge_TP WHERE ((roleMenuMapId = ?) AND (versionId = ?))
+	bind =&gt; [852EDF16-9760-4C04-BED5-434D5FBA4B41, 2]
+[EL Fine]: sql: 2015-10-17 09:34:42.85--ClientSession(61185833)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Roles_T WHERE ((roleId = ?) AND (versionId = ?))
+	bind =&gt; [679225D6-078F-4836-93BD-CF8DAAC098BB, 2]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:42.934--ClientSession(378797979)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind =&gt; [0EDB7DE7-AB1F-42DA-AD2D-8C68729AF11F]
+[EL Fine]: sql: 2015-10-17 09:34:42.936--ClientSession(378797979)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind =&gt; [0EDB7DE7-AB1F-42DA-AD2D-8C68729AF11F, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Oct 17, 2015 9:34:53 AM</p>
+</div>
+</div>
+</body>
+</html>

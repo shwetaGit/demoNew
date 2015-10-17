@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class oct16last.app.server.service.UserAccessDomainTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class oct16last.app.server.service.UserAccessDomainTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/oct16last.app.server.service.html">oct16last.app.server.service</a> &gt; UserAccessDomainTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.436s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.227s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.150s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.048s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:26.37--ClientSession(1321406653)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB, fNHNOIDsvlC7G1E4VyojnFhSXYx5WVh2Nc6kHrIp3GyEaPPj04, d109bLJvnHnTLqAz2vfqLAFPBXmsI3BpGzAPFvJxA9KaMVwxo9, nnW8sDRaVMfydhuCdfkD7BPSpKwZ8R9ANqfFnH6gsHpiQ1TDB4, 4Xw4dmdH7iKYtIeiicwJpMOX5Fl29OQ6PPXXXMNJi4tUEdYZGg, 53590, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:26.522--ClientSession(1021006239)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, 92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:26.527--ClientSession(953207077)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB]
+[EL Fine]: sql: 2015-10-17 09:34:26.529--ClientSession(953207077)--Connection(981028541)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [hcEciznfOBOHHwddsL9XyddnHwFsOngmA0GPUVJf9t7XUhYIPr, jDaseYz5LSYx4IHxOI4XqgSsZoDH6g0jah1lEEeMAOyfaAu7Ux, Fc6zmhLKj9oZPOs2uiVxEsNKHI6Ld8Xzh7mwHv6n9Su2O1gVhc, 63hVr50sxncfAfgo2Y6XMYEcWldFxgExOCpgquOwwaFuzmT0Sc, 74349, AAAAA, 2, 92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:26.674--ClientSession(1815069153)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind =&gt; [1, 92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:26.681--ClientSession(2019758074)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB]
+[EL Fine]: sql: 2015-10-17 09:34:26.683--ClientSession(2019758074)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [92CFBAA5-8C8C-4D15-B7E2-F6B897D4C5AB, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Oct 17, 2015 9:34:53 AM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="oct16last.app.server.service.AllownullTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-10-17T09:34:38" hostname="eb01f3162087" time="0.307">
+  <properties/>
+  <testcase name="test1Save" classname="oct16last.app.server.service.AllownullTestCase" time="0.123"/>
+  <testcase name="test2Update" classname="oct16last.app.server.service.AllownullTestCase" time="0.113"/>
+  <testcase name="test3FindById" classname="oct16last.app.server.service.AllownullTestCase" time="0.009"/>
+  <testcase name="test4Delete" classname="oct16last.app.server.service.AllownullTestCase" time="0.062"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:38.347--ClientSession(864415320)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Allownull_M (pk1, a1, a2, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [336E2CA1-1A2F-4E00-A250-899B3475F48E, true, true, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:38.439--ClientSession(208582070)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk1, a1, a2, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Allownull_M WHERE ((activeStatus = ?) AND (pk1 = ?))
+	bind => [1, 336E2CA1-1A2F-4E00-A250-899B3475F48E]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:38.444--ClientSession(1080552804)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk1, a1, a2, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Allownull_M WHERE (pk1 = ?)
+	bind => [336E2CA1-1A2F-4E00-A250-899B3475F48E]
+[EL Fine]: sql: 2015-10-17 09:34:38.446--ClientSession(1080552804)--Connection(981028541)--Thread(Thread[Test worker,5,main])--UPDATE ast_Allownull_M SET updatedBy = ?, versionId = ? WHERE ((pk1 = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 336E2CA1-1A2F-4E00-A250-899B3475F48E, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:38.552--ClientSession(1118165528)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk1, a1, a2, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Allownull_M WHERE ((activeStatus = ?) AND (pk1 = ?))
+	bind => [1, 336E2CA1-1A2F-4E00-A250-899B3475F48E]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:38.558--ClientSession(2116207588)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk1, a1, a2, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Allownull_M WHERE (pk1 = ?)
+	bind => [336E2CA1-1A2F-4E00-A250-899B3475F48E]
+[EL Fine]: sql: 2015-10-17 09:34:38.56--ClientSession(2116207588)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Allownull_M WHERE ((pk1 = ?) AND (versionId = ?))
+	bind => [336E2CA1-1A2F-4E00-A250-899B3475F48E, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

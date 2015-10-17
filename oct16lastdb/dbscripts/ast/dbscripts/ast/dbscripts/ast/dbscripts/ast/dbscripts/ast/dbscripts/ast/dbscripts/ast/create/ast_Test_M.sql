@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS `ast_Test_M`;
+
+CREATE TABLE `ast_Test_M` ( `pk` VARCHAR(256) NOT NULL, `stringchk` VARCHAR(256) NULL DEFAULT 'helloffff', `cc` INT(10) NULL DEFAULT '1236565', `floatchk` FLOAT(14,4) NULL DEFAULT '162632', `doublechk` DOUBLE(10,2) NULL DEFAULT '415321.23', `createdBy` VARCHAR(64) NULL DEFAULT '-1', `createdDate` DATE NULL DEFAULT '1900-01-01', `updatedBy` VARCHAR(64) NULL DEFAULT '-1', `updatedDate` DATE NULL DEFAULT '1900-01-01', `versionId` INT(11) NULL DEFAULT '-1', `activeStatus` INT(1) NULL DEFAULT '1', `txnAccessCode` INT(11) NULL DEFAULT NULL, PRIMARY KEY (`pk`), UNIQUE KEY (`floatchk`));
+
