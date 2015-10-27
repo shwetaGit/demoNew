@@ -1,0 +1,31 @@
+Ext.define('Oct16last.oct16last.shared.oct16last.model.defaultdomain.AllownullModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "pk1",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "a1",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "a2",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

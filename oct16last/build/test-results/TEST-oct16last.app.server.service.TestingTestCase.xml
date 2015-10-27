@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="oct16last.app.server.service.TestingTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-10-17T09:34:26" hostname="eb01f3162087" time="0.326">
+  <properties/>
+  <testcase name="test1Save" classname="oct16last.app.server.service.TestingTestCase" time="0.099"/>
+  <testcase name="test2Update" classname="oct16last.app.server.service.TestingTestCase" time="0.092"/>
+  <testcase name="test3FindById" classname="oct16last.app.server.service.TestingTestCase" time="0.015"/>
+  <testcase name="test4Delete" classname="oct16last.app.server.service.TestingTestCase" time="0.119"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:27.021--ClientSession(586107342)--Connection(981028541)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Testing_M (pk, checktest, female, male, stringvalue, student, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [056F179A-D778-47D5-890C-B3E30536332E, OSh2raismle46hkP6unvvuD9AOL3MASbqdWK2AmOt0ltQ1RyHE, null, true, true, null, 1, AAAAA, 2015-10-17, null, 2015-10-17, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:27.081--ClientSession(984485257)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk, checktest, female, male, stringvalue, student, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Testing_M WHERE ((activeStatus = ?) AND (pk = ?))
+	bind => [1, 056F179A-D778-47D5-890C-B3E30536332E]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:27.085--ClientSession(1109067082)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk, checktest, female, male, stringvalue, student, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Testing_M WHERE (pk = ?)
+	bind => [056F179A-D778-47D5-890C-B3E30536332E]
+[EL Fine]: sql: 2015-10-17 09:34:27.088--ClientSession(1109067082)--Connection(981028541)--Thread(Thread[Test worker,5,main])--UPDATE ast_Testing_M SET checktest = ?, updatedBy = ?, versionId = ? WHERE ((pk = ?) AND (versionId = ?))
+	bind => [6vemzEi9F3tQ3Ty4lWz3iH4psrrTcCyccet30ycbXuKCRVIcnB, AAAAA, 2, 056F179A-D778-47D5-890C-B3E30536332E, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:27.179--ClientSession(1004692549)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk, checktest, female, male, stringvalue, student, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Testing_M WHERE ((activeStatus = ?) AND (pk = ?))
+	bind => [1, 056F179A-D778-47D5-890C-B3E30536332E]
+In around repository aspect
+[EL Fine]: sql: 2015-10-17 09:34:27.198--ClientSession(1824851938)--Connection(981028541)--Thread(Thread[Test worker,5,main])--SELECT pk, checktest, female, male, stringvalue, student, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Testing_M WHERE (pk = ?)
+	bind => [056F179A-D778-47D5-890C-B3E30536332E]
+[EL Fine]: sql: 2015-10-17 09:34:27.2--ClientSession(1824851938)--Connection(981028541)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Testing_M WHERE ((pk = ?) AND (versionId = ?))
+	bind => [056F179A-D778-47D5-890C-B3E30536332E, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+Ext.define('Oct16last.oct16last.shared.oct16last.model.defaultdomain.TestModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "pk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "stringchk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "cc",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "floatchk",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "doublechk",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

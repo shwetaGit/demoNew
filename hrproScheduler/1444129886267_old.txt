@@ -1,0 +1,25 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzorproject --topLevelPackage hrpro --isRuleEngine true --projectName hrproScheduler --sourceCodeLocation /home/isha/applifire/appConfigTemplate/appSourceCode/ --tomcatDeployLocation "" --tomcatAbsolutePath /Softwares/tomcat/webapps ---userName root --password root --schema jdbc:mysql://localhost:3306/information_schema --solrhome /home/isha/applifire/customers/ba9dced8-453e-49a3-b627-d497a1f91b17/user/659275db-99ab-474c-a8c6-0e3f3a23be22/DR4QCKL3THENERMDANX2UG/solr-4.9.0 --isSpringBatch true
+
+entityManagerFactoryBean add property --name packagesToScan --value hrpro.app,com.athena,com.spartan
+
+Persistent change persistentUnitName --name hrproScheduler
+
+Persistent add property --name eclipselink.dialect --value org.eclipse.persistence.platform.database.MySQLPlatform
+
+Persistent add property --name javax.persistence.jdbc.url --value jdbc:mysql://localhost:3306/hrpro
+
+Persistent add property --name javax.persistence.jdbc.user --value hrpro
+
+Persistent add property --name javax.persistence.jdbc.password --value hrpro
+
+Persistent add property --name javax.persistence.jdbc.driver --value com.mysql.jdbc.Driver
+
+quit

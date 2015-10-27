@@ -1,0 +1,43 @@
+Ext.define('Oct16last.oct16last.shared.oct16last.model.defaultdomain.TestingModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "pk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "checktest",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "stringvalue",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "male",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "female",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "student",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
