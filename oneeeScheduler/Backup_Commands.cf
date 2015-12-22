@@ -1,0 +1,33 @@
+
+
+
+ development mode --enabled true 
+
+
+
+// Spring batch Project Creation 
+
+project --topLevelPackage oneee --projectName oneeeScheduler
+quit
+
+
+ development mode --enabled true 
+
+
+
+buzzorproject --topLevelPackage oneee --isRuleEngine true --projectName oneeeScheduler --sourceCodeLocation /home/anagha/applifireRcm/appConfigTemplate/appSourceCode/ --tomcatDeployLocation "" --tomcatAbsolutePath /Softwares/demo_tomcat/webapps ---userName root --password root --schema jdbc:mysql://localhost:3306/information_schema --solrhome /home/anagha/applifireRcm/customers/ba9dced8-453e-49a3-b627-d497a1f91b17/user/18D01ABF-F632-496A-B379-FC50EDEAB8C0/8PUJ49H1FCPOY4MH1ENRW/solr-4.9.0 --isSpringBatch true
+
+entityManagerFactoryBean add property --name packagesToScan --value oneee.app,com.athena,com.spartan
+
+Persistent change persistentUnitName --name oneeeScheduler
+
+Persistent add property --name eclipselink.dialect --value org.eclipse.persistence.platform.database.MySQLPlatform
+
+Persistent add property --name javax.persistence.jdbc.url --value jdbc:mysql://localhost:3306/onee
+
+Persistent add property --name javax.persistence.jdbc.user --value onee
+
+Persistent add property --name javax.persistence.jdbc.password --value onee
+
+Persistent add property --name javax.persistence.jdbc.driver --value com.mysql.jdbc.Driver
+quit

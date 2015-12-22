@@ -1,0 +1,15 @@
+ 3 src/main/java/svntest/app/server/bean/BeanAdapter.java
+ 6 src/main/java/svntest/app/server/service/sessionmgt/SessionDataMgtService.java
+ 18 src/main/java/svntest/app/config/WebConfigExtended.java
+ 24 src/main/java/svntest/app/server/bean/ResponseBean.java
+ 32 src/main/java/svntest/app/server/businessservice/aspect/BusinessAspect.java
+ 33 src/main/java/svntest/app/shared/SystemInfo.java
+ 58 src/main/java/svntest/app/shared/EntityAudit.java
+ 62 src/main/java/svntest/app/config/StartSchedulerApp.java
+ 74 src/main/java/svntest/app/server/bean/MessageBean.java
+ 105 src/main/java/svntest/app/config/WebInitializer.java
+ 121 src/main/java/svntest/app/server/service/sessionmgt/SessionDataMgtServiceImpl.java
+ 139 src/main/java/svntest/app/server/bean/ProjectBean.java
+ 201 src/main/java/svntest/app/server/repository/aspect/RepositoryAspect.java
+ 424 src/main/java/svntest/app/server/service/aspect/ServiceAspect.java
+ 1300 total

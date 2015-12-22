@@ -1,0 +1,25 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzorproject --topLevelPackage svntest --isRuleEngine true --projectName svntestScheduler --sourceCodeLocation /home/puja/applifire/appConfigTemplate/appSourceCode/ --tomcatDeployLocation "" --tomcatAbsolutePath /home/puja/project/projectCheck/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps ---userName root --password root --schema jdbc:mysql://localhost:3306/information_schema --solrhome /home/puja/applifire/customers/ba9dced8-453e-49a3-b627-d497a1f91b17/user/18D01ABF-F632-496A-B379-FC50EDEAB8C0/SY627SUOGISA2ORMOSDMA/solr-4.9.0 --isSpringBatch true
+
+entityManagerFactoryBean add property --name packagesToScan --value svntest.app,com.athena,com.spartan
+
+Persistent change persistentUnitName --name svntestScheduler
+
+Persistent add property --name eclipselink.dialect --value org.eclipse.persistence.platform.database.MySQLPlatform
+
+Persistent add property --name javax.persistence.jdbc.url --value jdbc:mysql://localhost:3306/svntest
+
+Persistent add property --name javax.persistence.jdbc.user --value svntest
+
+Persistent add property --name javax.persistence.jdbc.password --value svntest
+
+Persistent add property --name javax.persistence.jdbc.driver --value com.mysql.jdbc.Driver
+
+quit

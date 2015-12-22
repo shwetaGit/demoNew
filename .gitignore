@@ -1,4 +1,8 @@
 *.war
+<<<<<<< HEAD
 *.txt
 *.cf
 *.log	
+=======
+*.txt	
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
