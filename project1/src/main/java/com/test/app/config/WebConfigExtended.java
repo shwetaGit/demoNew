@@ -1,0 +1,18 @@
+package com.test.app.config;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import com.athena.config.server.WebConfig;
+import org.springframework.context.annotation.Bean;
+
+/**
+ *
+ *
+ * @author Anant
+ *
+ */
+@Configuration
+@EnableTransactionManagement
+@ComponentScan(basePackages = { "com.athena", "com.spartan", "com.test.app" })
+public class WebConfigExtended extends WebConfig {
+}
