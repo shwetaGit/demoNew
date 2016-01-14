@@ -8,7 +8,7 @@ Ext.application({
 
     extend: 'Testpro.Application',
     
-    autoCreateViewport: 'Testpro.view.main.Main'
+/**AppPathDetails**/autoCreateViewport: (Ext.os.deviceType=='Desktop')?'Testpro.view.mainleftmenutree.MainPanel':'Testpro.view.mobileview.login.Login',
 	
     //-------------------------------------------------------------------------
     // Most customizations should be made to Testpro.Application. If you need to

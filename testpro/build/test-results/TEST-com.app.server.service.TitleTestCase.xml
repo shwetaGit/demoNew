@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.TitleTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T13:24:56" hostname="fd07891734ce" time="0.073">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.TitleTestCase" time="0.045"/>
+  <testcase name="test2Update" classname="com.app.server.service.TitleTestCase" time="0.013"/>
+  <testcase name="test3FindById" classname="com.app.server.service.TitleTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="com.app.server.service.TitleTestCase" time="0.009"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 13:24:56.805--ClientSession(38121061)--Connection(835491149)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [52D3E344-B497-4472-8260-30FF2B79D103, K5X1OHHkQ6UZJmNaJVEXt99qc8KyTSrEzj5fqhE9VoDaXNzXzn, 1, AAAAA, 2016-01-14 13:24:56.776, null, 2016-01-14 13:24:56.776, 1, null]
+[EL Fine]: sql: 2016-01-14 13:24:56.814--ClientSession(56144908)--Connection(835491149)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE ((activeStatus = ?) AND (titleId = ?))
+	bind => [1, 52D3E344-B497-4472-8260-30FF2B79D103]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 13:24:56.817--ClientSession(1247912290)--Connection(835491149)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [52D3E344-B497-4472-8260-30FF2B79D103]
+[EL Fine]: sql: 2016-01-14 13:24:56.819--ClientSession(1247912290)--Connection(835491149)--Thread(Thread[Test worker,5,main])--UPDATE ast_Title_M SET titles = ?, updatedBy = ?, versionId = ? WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [E9BcliXT0kdjZu02pYXNP1PwPwbntCEcrkvHT3cYByz9LfS4DF, AAAAA, 2, 52D3E344-B497-4472-8260-30FF2B79D103, 1]
+[EL Fine]: sql: 2016-01-14 13:24:56.827--ClientSession(1622168606)--Connection(835491149)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE ((activeStatus = ?) AND (titleId = ?))
+	bind => [1, 52D3E344-B497-4472-8260-30FF2B79D103]
+[EL Fine]: sql: 2016-01-14 13:24:56.832--ClientSession(295071793)--Connection(835491149)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind => [52D3E344-B497-4472-8260-30FF2B79D103]
+[EL Fine]: sql: 2016-01-14 13:24:56.833--ClientSession(295071793)--Connection(835491149)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Title_M WHERE ((titleId = ?) AND (versionId = ?))
+	bind => [52D3E344-B497-4472-8260-30FF2B79D103, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
