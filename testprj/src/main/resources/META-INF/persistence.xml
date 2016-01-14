@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+	<persistence-unit name="testprj" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jar-file>lib/spartan-healthmeter-1.0.jar</jar-file>
+		<jar-file>lib/spartan-shield-1.0.jar</jar-file>
+		<jar-file>lib/spartan-sprinkler-1.0.jar</jar-file>
+		<jar-file>lib/athena-query-1.0.jar</jar-file>
+		<jar-file>lib/athena-report-1.0.jar</jar-file>
+		<jar-file>lib/athena-cloud-1.0.jar</jar-file>
+		<jar-file>lib/athena-config-1.0.jar</jar-file>
+		<jar-file>lib/athena-core-1.0.jar</jar-file>
+		<jar-file>lib/athena-framework-1.0.jar</jar-file>
+		<jar-file>lib/athena-rule-engine-1.0.jar</jar-file>
+		<jar-file>lib/athena-search-engine-1.0.jar</jar-file>
+		<jar-file>lib/athena-data-endpoint-orchestration-1.0.jar</jar-file>
+		<properties>
+			<property name="eclipselink.session.customizer" value="com.athena.config.server.uuidGenerator.UUIDGenerator"/>
+			<property name="eclipselink.ddl-generation" value="none"/>
+			<property name="eclipselink.logging.level" value="FINEST"/>
+			<property name="eclipselink.weaving" value="false"/>
+			<property name="eclipselink.jdbc.allow-native-sql-queries" value="true"/>
+			<property name="eclipselink.deploy-on-startup" value="true"/>
+
+			<property name="eclipselink.connection-pool.default.initial" value="15"/>
+			<property name="eclipselink.connection-pool.default.min" value="6"/>
+			<property name="eclipselink.connection-pool.default.max" value="10"/>
+
+
+		<property name="eclipselink.dialect" value="org.eclipse.persistence.platform.database.MySQLPlatform"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost-MYSQL:3306/testprj"/>
+        <property name="javax.persistence.jdbc.user" value="testprj"/>
+        <property name="javax.persistence.jdbc.password" value="testprj"/>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+	<class>testprj.app.shared.location.Timezone</class>
+    <class>testprj.app.shared.location.Language</class>
+    <class>testprj.app.shared.location.Country</class>
+    <class>testprj.app.shared.location.Currency</class>
+    <class>testprj.app.shared.location.State</class>
+    <class>testprj.app.shared.location.Region</class>
+    <class>testprj.app.shared.location.District</class>
+    <class>testprj.app.shared.location.City</class>
+    <class>testprj.app.shared.location.Taluka</class>
+    <class>testprj.app.shared.location.Village</class>
+    <class>testprj.app.shared.location.AddressType</class>
+    <class>testprj.app.shared.location.Address</class>
+    <class>testprj.app.shared.location.AddressExtended</class>
+    <class>testprj.app.shared.contacts.ContactType</class>
+    <class>testprj.app.shared.contacts.CommunicationGroup</class>
+    <class>testprj.app.shared.contacts.CommunicationType</class>
+    <class>testprj.app.shared.contacts.Gender</class>
+    <class>testprj.app.shared.contacts.Title</class>
+    <class>testprj.app.shared.contacts.CoreContacts</class>
+    <class>testprj.app.shared.contacts.CommunicationData</class>
+    <class>testprj.app.shared.authentication.PasswordAlgo</class>
+    <class>testprj.app.shared.authentication.PasswordPolicy</class>
+    <class>testprj.app.shared.authentication.Question</class>
+    <class>testprj.app.shared.authentication.UserAccessLevel</class>
+    <class>testprj.app.shared.authentication.UserAccessDomain</class>
+    <class>testprj.app.shared.authentication.User</class>
+    <class>testprj.app.shared.authentication.Login</class>
+    <class>testprj.app.shared.authentication.LoginSession</class>
+    <class>testprj.app.shared.authentication.PassRecovery</class>
+    <class>testprj.app.shared.authentication.UserData</class>
+    <class>testprj.app.shared.authentication.SessionData</class>
+    <class>testprj.app.shared.authorization.Roles</class>
+    <class>testprj.app.shared.authorization.AppMenus</class>
+    <class>testprj.app.shared.authorization.RoleMenuBridge</class>
+    <class>testprj.app.shared.authorization.UserRoleBridge</class>
+    <class>testprj.app.shared.customers.AppCustomerType</class>
+    <class>testprj.app.shared.customers.AppCustomerCategory</class>
+    <class>testprj.app.shared.customers.AppCustomer</class>
+    <class>testprj.app.shared.sales.Channel</class>
+    <class>testprj.app.shared.sales.Category</class>
+    <class>testprj.app.shared.sales.Brand</class>
+    <class>testprj.app.shared.sales.Material</class>
+    <class>testprj.app.shared.sales.SalesRegion</class>
+    <class>testprj.app.shared.sales.Distributor</class>
+    <class>testprj.app.shared.sales.Retailer</class>
+    <class>testprj.app.shared.sales.SalesData</class>
+    <class>testprj.app.shared.sales.CurrentMonth</class>
+    <class>testprj.app.shared.sales.UserAccess</class>
+    <class>testprj.app.shared.defaultdomain.PersonalInfo</class>
+    </persistence-unit>
+
+</persistence>

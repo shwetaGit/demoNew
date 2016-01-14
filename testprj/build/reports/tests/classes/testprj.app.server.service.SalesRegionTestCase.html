@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testprj.app.server.service.SalesRegionTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testprj.app.server.service.SalesRegionTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testprj.app.server.service.html">testprj.app.server.service</a> &gt; SalesRegionTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.180s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.070s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 05:41:12.57--ClientSession(978546098)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [FCBB2B7F-4347-446B-8B9D-0151E9C3416F, zNLoBNRDGAlHhUJUy4tgiS5cGPU5cUdmnxYZuA0puE23WAaAEO, 1, AAAAA, 2016-01-14 05:41:12.549, null, 2016-01-14 05:41:12.549, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:12.607--ClientSession(168783032)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind =&gt; [1, FCBB2B7F-4347-446B-8B9D-0151E9C3416F]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 05:41:12.609--ClientSession(1843598432)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind =&gt; [FCBB2B7F-4347-446B-8B9D-0151E9C3416F]
+[EL Fine]: sql: 2016-01-14 05:41:12.611--ClientSession(1843598432)--Connection(434344004)--Thread(Thread[Test worker,5,main])--UPDATE ast_SalesRegion_M SET regionname = ?, updatedBy = ?, versionId = ? WHERE ((regioncode = ?) AND (versionId = ?))
+	bind =&gt; [m9ze0zHVvdcbSeB4conKReLLIxMb33pDpUcnWP2tKh7XTjZ2wk, AAAAA, 2, FCBB2B7F-4347-446B-8B9D-0151E9C3416F, 1]
+[EL Fine]: sql: 2016-01-14 05:41:12.648--ClientSession(602564516)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind =&gt; [1, FCBB2B7F-4347-446B-8B9D-0151E9C3416F]
+[EL Fine]: sql: 2016-01-14 05:41:12.653--ClientSession(1273393415)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind =&gt; [FCBB2B7F-4347-446B-8B9D-0151E9C3416F]
+[EL Fine]: sql: 2016-01-14 05:41:12.654--ClientSession(1273393415)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind =&gt; [FCBB2B7F-4347-446B-8B9D-0151E9C3416F, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 14, 2016 5:41:25 AM</p>
+</div>
+</div>
+</body>
+</html>

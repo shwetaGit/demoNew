@@ -1,0 +1,22 @@
+cd29c549-8847-49aa-8166-f30f5d114606#appfire#UpdateRule#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="defaultcontext.defaultdomain" xmlns="http://drools.org/drools-5.2">\
+    <import name="testprj.app.shared.defaultdomain.PersonalInfo"/>\
+    <rule name="UpdateDate">\
+        <rule-attribute name="no-loop" value="true"/>\
+        <lhs>\
+            <pattern identifier="personalinfo_0" object-type="testprj.app.shared.defaultdomain.PersonalInfo">\
+                <expr>( getPk() != null )</expr>\
+            </pattern>\
+        </lhs>\
+        <rhs>	\
+	personalinfo_0.setDateoforder(new java.sql.Date(java.util.Calendar.getInstance().getTime().getTime()));\
+	update(personalinfo_0);\
+</rhs>\
+    </rule>\
+    <query name="retrivepersonalinfo_0">\
+        <lhs>\
+            <pattern field-name="personalinfo_0" identifier="personalinfo_0" object-type="testprj.app.shared.defaultdomain.PersonalInfo"/>\
+        </lhs>\
+    </query>\
+</package>\
+#appfire#6BE6DB6D-9D38-4A34-8DE5-68F3A79FF98C#appfire#2016-01-14 10:06:59#appfire#6BE6DB6D-9D38-4A34-8DE5-68F3A79FF98C#appfire#2016-01-14 10:06:59#appfire#1#appfire#1#appfire#Q0NGP3LI6CWCOJQZOW2SGA#appfire#1

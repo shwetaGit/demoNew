@@ -1,0 +1,35 @@
+Ext.define('Testprj.testprj.shared.testprj.model.defaultdomain.PersonalInfoModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "fname",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "lname",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "dateoforder",
+          "type": "date",
+          "defaultValue": ""
+     }, {
+          "name": "primaryKey",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "pk",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

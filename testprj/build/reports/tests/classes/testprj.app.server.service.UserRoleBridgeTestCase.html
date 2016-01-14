@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testprj.app.server.service.UserRoleBridgeTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testprj.app.server.service.UserRoleBridgeTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testprj.app.server.service.html">testprj.app.server.service</a> &gt; UserRoleBridgeTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.906s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.307s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.283s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByroleId</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByuserId</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.300s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-14 05:41:16.751--ClientSession(376154156)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Roles_T (roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [15B60C19-61C0-4707-A196-F2F09FEF8429, JuWCzDF68TXpHi32IJJWHkHLw35TcAzusycNCL1ImhCNZ6aYJ5, 8wYA6UGnZEL7AFGXTF7SfLL9RVrLbcU98EBFQicfQSaRXy8GVu, jeMRjgQIHFlt3CEMW8ztikahyfnfCcyiDrdAiVGCMjWPzmqEVn, ucIJTVt4cCg9SyHt90lztzAfPLhYn1JjxU40d9FQjPZeN4r2xu, 1, AAAAA, 2016-01-14 05:41:16.748, null, 2016-01-14 05:41:16.748, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:16.816--ClientSession(453772586)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A806219D-074D-4096-938A-A91F4CD270F6, sXKtTYEDFAckY9anA4nVhanr3EShS0dfs1P3xdZTlZ5JXXAKRA, 5tKSEyAqIDtiJhvlIOt82jxHaIB4JTNXMYj6KOz40GZZlvtVnn, X6T1QuqyWDUrvjLhkRfn4IZyVfXOa197MTsF5n1dXuDOAaZfxM, 8xPh6dWTkpDjqor7J6guSxfoV9xf9sZkc5JPsDWucgjzf0j1Y6, 32574, 1, AAAAA, 2016-01-14 05:41:16.811, null, 2016-01-14 05:41:16.811, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:16.855--ClientSession(1582663236)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [DF9DB8B1-E472-46B4-8310-1B2D7513309F, NO1KliMaZ9IYSE4w0NQkEtjnf2pMbbfp07LayjE10YGMMXg6Kv, oqBUPllqPKBzoKx2dzYcyomRQBLAN1OsXpxChyrisbstm2BRje, AicPr41LQuREMB6n1QRl1agWo6bLV2QxkOD17NMJUkVPEWAZUt, yyozOpOYJ9075Vxc0ZDTIuKTqRV9qhalxHRxTVLBNtGEdJMQh8, 65518, 1, AAAAA, 2016-01-14 05:41:16.852, null, 2016-01-14 05:41:16.852, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:16.887--ClientSession(1299308045)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_User_T (userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [2B12C3E4-8B34-4AAB-BFB5-D784696C7613, 1, 1, 1, 1, 0, 1970-01-02 10:17:36.789, 0, pTLLZlz3D3Pf67sa55ztxPz40QycPgFEowdvqODrCICrboAh5j, 1970-01-02 10:17:36.789, 734, 7, A806219D-074D-4096-938A-A91F4CD270F6, DF9DB8B1-E472-46B4-8310-1B2D7513309F, 1, AAAAA, 2016-01-14 05:41:16.811, null, 2016-01-14 05:41:16.811, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 05:41:16.943--ClientSession(153128503)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserRoleBridge_T (roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1BD1BE88-1B53-4115-939B-D7D001FA26E0, 15B60C19-61C0-4707-A196-F2F09FEF8429, 2B12C3E4-8B34-4AAB-BFB5-D784696C7613, 1, AAAAA, 2016-01-14 05:41:16.919, null, 2016-01-14 05:41:16.919, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:17.052--ClientSession(1568367970)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE ((activeStatus = ?) AND (roleUserMapId = ?))
+	bind =&gt; [1, 1BD1BE88-1B53-4115-939B-D7D001FA26E0]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 05:41:17.056--ClientSession(59405538)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE (roleUserMapId = ?)
+	bind =&gt; [1BD1BE88-1B53-4115-939B-D7D001FA26E0]
+[EL Fine]: sql: 2016-01-14 05:41:17.058--ClientSession(59405538)--Connection(434344004)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserRoleBridge_T SET updatedBy = ?, versionId = ? WHERE ((roleUserMapId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, 1BD1BE88-1B53-4115-939B-D7D001FA26E0, 1]
+[EL Fine]: sql: 2016-01-14 05:41:17.333--ClientSession(23009509)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE ((activeStatus = ?) AND (roleUserMapId = ?))
+	bind =&gt; [1, 1BD1BE88-1B53-4115-939B-D7D001FA26E0]
+[EL Fine]: sql: 2016-01-14 05:41:17.338--ClientSession(782981120)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE ((activeStatus = ?) AND (roleId = ?))
+	bind =&gt; [1, 15B60C19-61C0-4707-A196-F2F09FEF8429]
+[EL Fine]: sql: 2016-01-14 05:41:17.343--ClientSession(1026239703)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE ((activeStatus = ?) AND (userId = ?))
+	bind =&gt; [1, 2B12C3E4-8B34-4AAB-BFB5-D784696C7613]
+[EL Fine]: sql: 2016-01-14 05:41:17.351--ClientSession(2142428913)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleUserMapId, roleId, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserRoleBridge_T WHERE (roleUserMapId = ?)
+	bind =&gt; [1BD1BE88-1B53-4115-939B-D7D001FA26E0]
+[EL Fine]: sql: 2016-01-14 05:41:17.353--ClientSession(2142428913)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserRoleBridge_T WHERE ((roleUserMapId = ?) AND (versionId = ?))
+	bind =&gt; [1BD1BE88-1B53-4115-939B-D7D001FA26E0, 2]
+[EL Fine]: sql: 2016-01-14 05:41:17.387--ClientSession(381103363)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind =&gt; [2B12C3E4-8B34-4AAB-BFB5-D784696C7613]
+[EL Fine]: sql: 2016-01-14 05:41:17.388--ClientSession(381103363)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind =&gt; [2B12C3E4-8B34-4AAB-BFB5-D784696C7613]
+[EL Fine]: sql: 2016-01-14 05:41:17.389--ClientSession(381103363)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind =&gt; [2B12C3E4-8B34-4AAB-BFB5-D784696C7613]
+[EL Fine]: sql: 2016-01-14 05:41:17.39--ClientSession(381103363)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_User_T WHERE ((userId = ?) AND (versionId = ?))
+	bind =&gt; [2B12C3E4-8B34-4AAB-BFB5-D784696C7613, 1]
+[EL Fine]: sql: 2016-01-14 05:41:17.432--ClientSession(1262770337)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [DF9DB8B1-E472-46B4-8310-1B2D7513309F]
+[EL Fine]: sql: 2016-01-14 05:41:17.434--ClientSession(1262770337)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [DF9DB8B1-E472-46B4-8310-1B2D7513309F, 1]
+[EL Fine]: sql: 2016-01-14 05:41:17.507--ClientSession(428569816)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [A806219D-074D-4096-938A-A91F4CD270F6]
+[EL Fine]: sql: 2016-01-14 05:41:17.509--ClientSession(428569816)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [A806219D-074D-4096-938A-A91F4CD270F6, 1]
+[EL Fine]: sql: 2016-01-14 05:41:17.557--ClientSession(9772827)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleId, RoleDescription, roleHelp, RoleIcon, RoleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Roles_T WHERE (roleId = ?)
+	bind =&gt; [15B60C19-61C0-4707-A196-F2F09FEF8429]
+[EL Fine]: sql: 2016-01-14 05:41:17.558--ClientSession(9772827)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT roleMenuMapId, isExecute, isRead, isWrite, menuId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, roleId FROM ast_RoleMenuBridge_TP WHERE (roleId = ?)
+	bind =&gt; [15B60C19-61C0-4707-A196-F2F09FEF8429]
+[EL Fine]: sql: 2016-01-14 05:41:17.56--ClientSession(9772827)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Roles_T WHERE ((roleId = ?) AND (versionId = ?))
+	bind =&gt; [15B60C19-61C0-4707-A196-F2F09FEF8429, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 14, 2016 5:41:25 AM</p>
+</div>
+</div>
+</body>
+</html>

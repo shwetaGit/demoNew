@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testprj.app.server.service.PersonalInfoTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-14T05:41:09" hostname="efc0db31f0e6" time="0.164">
+  <properties/>
+  <testcase name="test1Save" classname="testprj.app.server.service.PersonalInfoTestCase" time="0.072"/>
+  <testcase name="test2Update" classname="testprj.app.server.service.PersonalInfoTestCase" time="0.041"/>
+  <testcase name="test3FindById" classname="testprj.app.server.service.PersonalInfoTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="testprj.app.server.service.PersonalInfoTestCase" time="0.043"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-14 05:41:09.213--ClientSession(172935851)--Connection(434344004)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_PersonalInfo_M (dateoforder, fname, lname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1970-01-02, Ug9hbJIqZqbZvEr92CScK3zrKijlN7CFOLqxzGYF8dnMiNmlUg, CtUIyLyh0TPBnb9zWaLygvlkYdW30Mu2B2I1FNHIz8jWMaYVdM, 1, AAAAA, 2016-01-14 05:41:09.188, null, 2016-01-14 05:41:09.188, 1, null]
+[EL Fine]: sql: 2016-01-14 05:41:09.214--ClientSession(172935851)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2016-01-14 05:41:09.254--ClientSession(1825396623)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT pk, dateoforder, fname, lname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_PersonalInfo_M WHERE ((activeStatus = ?) AND (pk = ?))
+	bind => [1, 1]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-14 05:41:09.257--ClientSession(151042765)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT pk, dateoforder, fname, lname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_PersonalInfo_M WHERE (pk = ?)
+	bind => [1]
+[EL Fine]: sql: 2016-01-14 05:41:09.258--ClientSession(151042765)--Connection(434344004)--Thread(Thread[Test worker,5,main])--UPDATE ast_PersonalInfo_M SET dateoforder = ?, fname = ?, lname = ?, updatedBy = ?, versionId = ? WHERE ((pk = ?) AND (versionId = ?))
+	bind => [1970-01-02, 0f6Rp0bdySWz867B422iOcPZHFgRVrAbViYLGTzl3tgqs1ykVK, vPtDwQl099NPsvWznYT8JJ92EPp97xjxQEty0X65I3DoQElKKr, AAAAA, 2, 1, 1]
+[EL Fine]: sql: 2016-01-14 05:41:09.293--ClientSession(73645080)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT pk, dateoforder, fname, lname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_PersonalInfo_M WHERE ((activeStatus = ?) AND (pk = ?))
+	bind => [1, 1]
+[EL Fine]: sql: 2016-01-14 05:41:09.301--ClientSession(841111037)--Connection(434344004)--Thread(Thread[Test worker,5,main])--SELECT pk, dateoforder, fname, lname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_PersonalInfo_M WHERE (pk = ?)
+	bind => [1]
+[EL Fine]: sql: 2016-01-14 05:41:09.303--ClientSession(841111037)--Connection(434344004)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_PersonalInfo_M WHERE ((pk = ?) AND (versionId = ?))
+	bind => [1, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
