@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.LanguageTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.LanguageTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; LanguageTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.513s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.280s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.175s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.054s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-15 08:59:32.519--ClientSession(471687205)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [62CF05E3-4AEB-4070-844F-2954FF119AEF, 5V, YMT, kpK3, 3, 0Z9lEoEZSb6LrHjJbF1CEve1rgAc2lFEdXsm6WdPAYINlXaq3x, HfWGlpArX5tCrO9MzoccK1bM7xm5k7g8rBCaEWS8JtSQcYIKlU, G22LeuaKCKG22TUIk3TiYQWCUFbSfq0vg60HXSXj6sOdkTH9ma, 6Nc18xi5zeYnPefSHX76JJ7PiRRq8hjS, 1, AAAAA, 2016-01-15 08:59:32.512, null, 2016-01-15 08:59:32.512, 1, null]
+[EL Fine]: sql: 2016-01-15 08:59:32.792--ClientSession(2013278100)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind =&gt; [1, 62CF05E3-4AEB-4070-844F-2954FF119AEF]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-15 08:59:32.794--ClientSession(1338413061)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind =&gt; [62CF05E3-4AEB-4070-844F-2954FF119AEF]
+[EL Fine]: sql: 2016-01-15 08:59:32.796--ClientSession(1338413061)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, alpha4parentid = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, updatedBy = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
+	bind =&gt; [uW, FiW, Neg0, 10, zBxljlhINdo6KMQvCbb2LWXc1I450J6Q3xvYf1LsilF0ECHM8Z, xvjMUWg70onRqZ5OZSP7M7lHbBsrBfX7f6hcdMrkx11iyMRpKK, Fm8eTl7Q9BX0eeWqOcGpYPayp1gKzpG3fezLi5KmyJ6G0uWTqm, AVCq5kzKAjpOZh688iOn7qEuVBIoUzRX, AAAAA, 2, 62CF05E3-4AEB-4070-844F-2954FF119AEF, 1]
+[EL Fine]: sql: 2016-01-15 08:59:32.963--ClientSession(373676604)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind =&gt; [1, 62CF05E3-4AEB-4070-844F-2954FF119AEF]
+[EL Fine]: sql: 2016-01-15 08:59:32.967--ClientSession(1238997892)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind =&gt; [62CF05E3-4AEB-4070-844F-2954FF119AEF]
+[EL Fine]: sql: 2016-01-15 08:59:32.969--ClientSession(1238997892)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind =&gt; [62CF05E3-4AEB-4070-844F-2954FF119AEF, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 15, 2016 8:59:53 AM</p>
+</div>
+</div>
+</body>
+</html>

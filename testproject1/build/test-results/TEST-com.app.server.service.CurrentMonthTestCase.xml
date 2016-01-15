@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.CurrentMonthTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-15T08:59:51" hostname="9047a1ab76a9" time="0.189">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.CurrentMonthTestCase" time="0.072"/>
+  <testcase name="test2Update" classname="com.app.server.service.CurrentMonthTestCase" time="0.066"/>
+  <testcase name="test3FindById" classname="com.app.server.service.CurrentMonthTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="com.app.server.service.CurrentMonthTestCase" time="0.046"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-15 08:59:51.734--ClientSession(1901647138)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CurrentMonth_M (monthname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [zAUspFskasasgCznTR4lvmQ9MdhTgk437fsvCl6RASvmCUzP5w, 1, AAAAA, 2016-01-15 08:59:51.715, null, 2016-01-15 08:59:51.715, 1, null]
+[EL Fine]: sql: 2016-01-15 08:59:51.735--ClientSession(1901647138)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2016-01-15 08:59:51.782--ClientSession(1980953642)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT monthid, monthname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CurrentMonth_M WHERE ((activeStatus = ?) AND (monthid = ?))
+	bind => [1, 13]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-15 08:59:51.785--ClientSession(1393130714)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT monthid, monthname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CurrentMonth_M WHERE (monthid = ?)
+	bind => [13]
+[EL Fine]: sql: 2016-01-15 08:59:51.787--ClientSession(1393130714)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--UPDATE ast_CurrentMonth_M SET monthname = ?, updatedBy = ?, versionId = ? WHERE ((monthid = ?) AND (versionId = ?))
+	bind => [pLnGSW9qlDWjrTvVw3VfwVDQqiLNhP3KhJxTqnOKbilVugkWS7, AAAAA, 2, 13, 1]
+[EL Fine]: sql: 2016-01-15 08:59:51.845--ClientSession(633381767)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT monthid, monthname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CurrentMonth_M WHERE ((activeStatus = ?) AND (monthid = ?))
+	bind => [1, 13]
+[EL Fine]: sql: 2016-01-15 08:59:51.849--ClientSession(507700911)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--SELECT monthid, monthname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CurrentMonth_M WHERE (monthid = ?)
+	bind => [13]
+[EL Fine]: sql: 2016-01-15 08:59:51.85--ClientSession(507700911)--Connection(1885555667)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CurrentMonth_M WHERE ((monthid = ?) AND (versionId = ?))
+	bind => [13, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
