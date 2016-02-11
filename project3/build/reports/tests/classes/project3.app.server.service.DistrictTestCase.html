@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class project3.app.server.service.DistrictTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class project3.app.server.service.DistrictTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/project3.app.server.service.html">project3.app.server.service</a> &gt; DistrictTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.635s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.313s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.067s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBycountryId</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByregionId</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBystateId</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.232s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-18 09:41:24.533--ClientSession(1287570739)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [9F7C23E8-B777-42AD-95A4-C4CE9102C9CB, 1yNyHmNEZVxPOzaOseSXLt72yElkg9Cu, 2, 4, vHr, 9yN, qWsPfh7MAfoXDmIja7Feqr2vAbTAaTr1yaFUfOhxpUoV3rx6wg, YRlQ0ie4CP0NiAvbkKVjyBa5vdyE17VYGzwoA9g3TPkPeHTnhK, C8o, LIjp0PBlPkneU6Q8UqGFz30Mm7FEYSchec3zI87RXpGAhwhOOQ, fpihGatT4qMtDTYSZ0MxO3y8RmXmhwMj, 1, 1, AAAAA, 2016-01-18 09:41:24.531, null, 2016-01-18 09:41:24.531, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:24.586--ClientSession(564982872)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E80A798E-6F16-4EDE-AC39-D4072CEC23FE, 9F7C23E8-B777-42AD-95A4-C4CE9102C9CB, jAzQzW1TXwD452WgTL0Yp7pHSqNPTAmF0BiQucFRMLdSm0tGPi, 1, 5, 2, 5AngJaUPovJJ1fqYVsGH0qhNMwLqoH5G, 33iHvIYpMhGS5Ii1cHbZYC5OWbHxIsq9, U8GauOEQ51dp2sXCofrEQ0hKzFUSt7SVnDIE9ej0ReGoaoa9TU, UNNfC9kQzJ2T89GEzda1KLtRpnqnHiTK2hCvzRjwxLGlWf57ca, LUELnSWirFm0rF5QDpmLiYGtHsbZRKCAvAK9opv4ejGdBAhUYO, 1, AAAAA, 2016-01-18 09:41:24.581, null, 2016-01-18 09:41:24.581, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:24.68--ClientSession(663243258)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Region_M (regionId, countryId, regionCode1, regionCodeChar2, regionDescription, regionFlag, regionLatitude, regionLongitude, regionName, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F364A413-694E-4010-9D53-AB36C91B4AC9, 9F7C23E8-B777-42AD-95A4-C4CE9102C9CB, 2, jvO0vWEvbm1FHaT4C1byTuy7Nl2511NB, S6Nopr8KCEZMQ3KFC2FYuyDjZ5A2hU7SdLG5yHRWHG84IXZgSe, i6cuNY9Qv5FmexCN1FPKzTbBpLvltiyvCgEdL4fJ42QsPawqMe, 11, 11, oOzvitk3oHByZTVx14tVzjPuEB77laJJrpaWiEg8z2pzrOguff, E80A798E-6F16-4EDE-AC39-D4072CEC23FE, 1, AAAAA, 2016-01-18 09:41:24.581, null, 2016-01-18 09:41:24.581, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:24.777--ClientSession(824247935)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_District_M (districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0215D9C3-35C1-4AAF-B59D-6F232BC6B220, GtdYt3o2bdtU171eh0obCvbvvP7C66u3, 9F7C23E8-B777-42AD-95A4-C4CE9102C9CB, kxk13mnfS0g76fTYvS8eC76aEyvgJiNUFgHU0NfAfKs5oNZLvz, ssWXm3fxGTvpA3cFMSCK5KLQKyoba1rMjGyiGHgSoHmJ0ovNWQ, 2, 5, OvBZ6HjTN5TEyVOTHeIGttH6sokXg7ZL97GGQhtemPYKh5JZJ7, F364A413-694E-4010-9D53-AB36C91B4AC9, E80A798E-6F16-4EDE-AC39-D4072CEC23FE, 1, AAAAA, 2016-01-18 09:41:24.765, null, 2016-01-18 09:41:24.765, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:24.839--ClientSession(188514157)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (districtId = ?))
+	bind =&gt; [1, 0215D9C3-35C1-4AAF-B59D-6F232BC6B220]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 09:41:24.842--ClientSession(713337892)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE (districtId = ?)
+	bind =&gt; [0215D9C3-35C1-4AAF-B59D-6F232BC6B220]
+[EL Fine]: sql: 2016-01-18 09:41:24.845--ClientSession(713337892)--Connection(781524917)--Thread(Thread[Test worker,5,main])--UPDATE ast_District_M SET code2 = ?, districtDescription = ?, districtFlag = ?, districtLatitude = ?, districtLongitude = ?, Name = ?, updatedBy = ?, versionId = ? WHERE ((districtId = ?) AND (versionId = ?))
+	bind =&gt; [q7tHcwyO0fXYLeTpb9JK6t7LMHYZ23Ju, TIe03XVZ1lbIDFBYIjtP3CSyrqWcS4VKyZWb3iyFtjpiiJX2Qv, v1M6Ihw6PK5WbBB9oBGuLVCNIEcBovc9O25qOtRcq1bh4wDxL1, 6, 9, KSuxAC0KvLHexISNsBBZYULRVxZ0xzcfhFBZ2gbGSRxS0QfWRd, AAAAA, 2, 0215D9C3-35C1-4AAF-B59D-6F232BC6B220, 1]
+[EL Fine]: sql: 2016-01-18 09:41:24.904--ClientSession(1984453939)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (districtId = ?))
+	bind =&gt; [1, 0215D9C3-35C1-4AAF-B59D-6F232BC6B220]
+[EL Fine]: sql: 2016-01-18 09:41:24.912--ClientSession(1978088794)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind =&gt; [1, 9F7C23E8-B777-42AD-95A4-C4CE9102C9CB]
+[EL Fine]: sql: 2016-01-18 09:41:24.917--ClientSession(349683187)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (regionId = ?))
+	bind =&gt; [1, F364A413-694E-4010-9D53-AB36C91B4AC9]
+[EL Fine]: sql: 2016-01-18 09:41:24.922--ClientSession(1165518420)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind =&gt; [1, E80A798E-6F16-4EDE-AC39-D4072CEC23FE]
+[EL Fine]: sql: 2016-01-18 09:41:24.928--ClientSession(591926841)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT districtId, code2, countryId, districtDescription, districtFlag, districtLatitude, districtLongitude, Name, regionId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_District_M WHERE (districtId = ?)
+	bind =&gt; [0215D9C3-35C1-4AAF-B59D-6F232BC6B220]
+[EL Fine]: sql: 2016-01-18 09:41:24.929--ClientSession(591926841)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_District_M WHERE ((districtId = ?) AND (versionId = ?))
+	bind =&gt; [0215D9C3-35C1-4AAF-B59D-6F232BC6B220, 2]
+[EL Fine]: sql: 2016-01-18 09:41:24.985--ClientSession(605300441)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT regionId, countryId, regionCode1, regionCodeChar2, regionDescription, regionFlag, regionLatitude, regionLongitude, regionName, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Region_M WHERE (regionId = ?)
+	bind =&gt; [F364A413-694E-4010-9D53-AB36C91B4AC9]
+[EL Fine]: sql: 2016-01-18 09:41:24.988--ClientSession(605300441)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Region_M WHERE ((regionId = ?) AND (versionId = ?))
+	bind =&gt; [F364A413-694E-4010-9D53-AB36C91B4AC9, 1]
+[EL Fine]: sql: 2016-01-18 09:41:25.044--ClientSession(161819292)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind =&gt; [E80A798E-6F16-4EDE-AC39-D4072CEC23FE]
+[EL Fine]: sql: 2016-01-18 09:41:25.046--ClientSession(161819292)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind =&gt; [E80A798E-6F16-4EDE-AC39-D4072CEC23FE, 1]
+[EL Fine]: sql: 2016-01-18 09:41:25.103--ClientSession(553533506)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [9F7C23E8-B777-42AD-95A4-C4CE9102C9CB]
+[EL Fine]: sql: 2016-01-18 09:41:25.105--ClientSession(553533506)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [9F7C23E8-B777-42AD-95A4-C4CE9102C9CB, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 18, 2016 9:41:41 AM</p>
+</div>
+</div>
+</body>
+</html>

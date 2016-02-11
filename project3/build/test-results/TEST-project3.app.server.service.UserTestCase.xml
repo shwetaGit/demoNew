@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project3.app.server.service.UserTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T09:41:29" hostname="999a71990197" time="0.672">
+  <properties/>
+  <testcase name="test1Save" classname="project3.app.server.service.UserTestCase" time="0.356"/>
+  <testcase name="test2findByuserAccessDomainId" classname="project3.app.server.service.UserTestCase" time="0.007"/>
+  <testcase name="test2findByuserAccessLevelId" classname="project3.app.server.service.UserTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="project3.app.server.service.UserTestCase" time="0.302"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-18 09:41:29.871--ClientSession(1253122849)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [75EFB0BC-4146-4A1B-A756-14668F87E072, hiDxkf7a2SJkXZCUrweRVD6FBmgMHIhkeqS5wNrotyQMK953tF, QJFDEqOvs9Hq8cKgBWoQ6uWdAtKIgbysPgq04ckLfQxg8BtlNy, AdClmGQLlC1wVq7Ccnw0nsfRBFQuB0A0Y94qJZQ8cjzRO288Lj, MLEgnoysuHz9oWmQbJEsvjFCVt8c0keLlX0DH0kqfI2NU8A3st, 64247, 1, AAAAA, 2016-01-18 09:41:29.869, null, 2016-01-18 09:41:29.869, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:29.959--ClientSession(853486618)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [6505927D-D174-4F75-AD32-CEF979DCE3B2, bpqC9dl9cfWK0YOHCr90AGm3ZcErfFl0pyvLP2KDlUBF7qq43V, A9UY9cWx0pVpgTYWsp3JhwMnJjAGrvyn9j0NlVgSwIv6OVpvLq, O30Ri54yvLfgsr2lQ6KMKMUaJK2UgVXoxCJsCxJQ8wTFANvebr, ckZkqQUsOlsClamNhskxPkg8jHDXI6OBNmPSP8Ex6H1wNS339o, 65876, 1, AAAAA, 2016-01-18 09:41:29.955, null, 2016-01-18 09:41:29.955, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:30.017--ClientSession(79554790)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Question_M (questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [76091802-BE4D-475A-9085-6EFDFF9E013A, 7, YkKdWuau61fJpBC4Kq9xnOLtPctI5uYn7llAxfFx4FKQghtXAc, W, EOYYenJRMUxVZMlzGIoYcu0SgF5aML2BU6qsLBW4V8jJLbnFTW, 1, AAAAA, 2016-01-18 09:41:30.013, null, 2016-01-18 09:41:30.013, 1, null]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:30.137--ClientSession(1064149710)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_User_T (userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69, 0, 0, 0, 1, 1, 1970-01-02 10:17:36.789, 0, ZWFUHGWDGD7G6b2X7Ca6EBGH8tAb5QhVv8If8saYUVC1RPUQaG, 1970-01-02 10:17:36.789, 1705, 7, 75EFB0BC-4146-4A1B-A756-14668F87E072, 6505927D-D174-4F75-AD32-CEF979DCE3B2, 1, AAAAA, 2016-01-18 09:41:30.013, null, 2016-01-18 09:41:30.013, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:30.171--ClientSession(1064149710)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_PassRecovery_TP (passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A2FACD0D-AA61-4442-9041-465061BB5B39, yFVg6Z0ekol7rlrdXuJIYJVOOGf6Bn8K3153kgyW6RIouriKkO, 76091802-BE4D-475A-9085-6EFDFF9E013A, 1, AAAAA, 2016-01-18 09:41:30.013, null, 2016-01-18 09:41:30.013, 1, null, 2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.217--ClientSession(1203197909)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, 75EFB0BC-4146-4A1B-A756-14668F87E072]
+[EL Fine]: sql: 2016-01-18 09:41:30.219--ClientSession(1203197909)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.224--ClientSession(697818289)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind => [1, 6505927D-D174-4F75-AD32-CEF979DCE3B2]
+[EL Fine]: sql: 2016-01-18 09:41:30.225--ClientSession(697818289)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.23--ClientSession(91104236)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.231--ClientSession(91104236)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.231--ClientSession(91104236)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69]
+[EL Fine]: sql: 2016-01-18 09:41:30.234--ClientSession(91104236)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_PassRecovery_TP WHERE ((passRecoveryId = ?) AND (versionId = ?))
+	bind => [A2FACD0D-AA61-4442-9041-465061BB5B39, 1]
+[EL Fine]: sql: 2016-01-18 09:41:30.235--ClientSession(91104236)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_User_T WHERE ((userId = ?) AND (versionId = ?))
+	bind => [2B6122E7-582F-4480-8D84-C35EE7776F69, 1]
+[EL Fine]: sql: 2016-01-18 09:41:30.367--ClientSession(238995387)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE (questionId = ?)
+	bind => [76091802-BE4D-475A-9085-6EFDFF9E013A]
+[EL Fine]: sql: 2016-01-18 09:41:30.37--ClientSession(238995387)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Question_M WHERE ((questionId = ?) AND (versionId = ?))
+	bind => [76091802-BE4D-475A-9085-6EFDFF9E013A, 1]
+[EL Fine]: sql: 2016-01-18 09:41:30.418--ClientSession(1503479067)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [6505927D-D174-4F75-AD32-CEF979DCE3B2]
+[EL Fine]: sql: 2016-01-18 09:41:30.42--ClientSession(1503479067)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [6505927D-D174-4F75-AD32-CEF979DCE3B2, 1]
+[EL Fine]: sql: 2016-01-18 09:41:30.483--ClientSession(1030896546)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [75EFB0BC-4146-4A1B-A756-14668F87E072]
+[EL Fine]: sql: 2016-01-18 09:41:30.485--ClientSession(1030896546)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [75EFB0BC-4146-4A1B-A756-14668F87E072, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

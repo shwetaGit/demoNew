@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project3.app.server.service.AddressTestCase" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-01-18T09:41:40" hostname="999a71990197" time="0.864">
+  <properties/>
+  <testcase name="test1Save" classname="project3.app.server.service.AddressTestCase" time="0.364"/>
+  <testcase name="test2Update" classname="project3.app.server.service.AddressTestCase" time="0.066"/>
+  <testcase name="test3FindById" classname="project3.app.server.service.AddressTestCase" time="0.008"/>
+  <testcase name="test3findByaddressTypeId" classname="project3.app.server.service.AddressTestCase" time="0.004"/>
+  <testcase name="test3findBycityId" classname="project3.app.server.service.AddressTestCase" time="0.004"/>
+  <testcase name="test3findBycountryId" classname="project3.app.server.service.AddressTestCase" time="0.004"/>
+  <testcase name="test3findBystateId" classname="project3.app.server.service.AddressTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="project3.app.server.service.AddressTestCase" time="0.409"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-18 09:41:40.867--ClientSession(459692065)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [7567095D-D0D2-45C6-8124-57C645CA0EC8, vEN0zstJRwZW4b5IQic3K7U9Ioc5duDVRdeeTrcoRmcOT3unGx, WEpaXPHKxrHPinjjCY4fPAD7XGqPoturUHSUT1RKmbh3ryQszI, YRLTsT8phrtSFAcoxyUiONwxONidzYeasbLangLzTwvHjwMqSd, 1, AAAAA, 2016-01-18 09:41:40.865, null, 2016-01-18 09:41:40.865, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:40.942--ClientSession(1172762946)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [13567F24-89F7-49A2-BBEC-EABB7DCF03F3, rreuW7Phu73XgIWczoTBMkEHVWZ1OQOo, 8, 8, slA, 9QT, SbJ8rO32Ghwdv2pA440l5dPdQPawj8ePKldvMArs28h1iPPD8k, xt0OwsSxo0tJUWHDeKgj7o2tT00eFXhcewPEyO5fzDZoGi3cx1, DnW, FhckuaRuKxlDoYZWV4Kiwb0QLHEww6TiQFVtwiiVS55NPKpNUs, d19rz4biSP0nzTHrhBCzdYsiZJ2nZ7iw, 2, 1, AAAAA, 2016-01-18 09:41:40.938, null, 2016-01-18 09:41:40.938, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:41.022--ClientSession(249445020)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4C9A0B57-FDF0-4A98-B10F-B2035F8C2572, 13567F24-89F7-49A2-BBEC-EABB7DCF03F3, CXU0q44VHctnSvJWkeYrjLlXFlETZIT1IiUc67XfRqXKNWBap8, 8, 9, 2, tlAAtCDJfYg3KE1YZwtn5WASxSagU4zT, J7JzZyl8WwLxKUFX136X6H1Gx7Aikcvc, cHT03vMT4H94BI6yhVROxYuVpH6Spz8ApjagKEkyIfzQsCrmtc, QoO8VRCMTPuaGd0fPTRGpZCY5jyB6Tn4SESjkykcIK7K671pgQ, HGlIyAsBFHTZ5DUoaadDzoaNaQckdFPue5uaq5Z2OtAJHfwkld, 1, AAAAA, 2016-01-18 09:41:41.018, null, 2016-01-18 09:41:41.018, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:41.081--ClientSession(1159301525)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [64E4EDEB-5ACC-4C1E-B085-D6037D11D3F6, 3, j9IRBq4V0M1TA89mkgnU7Pb8uiXkjJl6, AmOXofXBuDF5nxqTC0WpO5puOcfYI5GknHe18kg41xbYaYyhMS, AuypBfyGcAeCz0qlfoAAZUXLqkOr4rAiyyeEota00FbOXoxgcm, 3, 8, nn9pASz7Ew0inT6fcmQtUA1wYSc7tClv8zIEYNm5hsiqocXGdb, 13567F24-89F7-49A2-BBEC-EABB7DCF03F3, 4C9A0B57-FDF0-4A98-B10F-B2035F8C2572, 1, AAAAA, 2016-01-18 09:41:40.938, null, 2016-01-18 09:41:40.938, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:41.164--ClientSession(1910129862)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F348E4C8-CF8B-4641-BD83-CE3523480B1D, hSDG1waSiLRhndgS9engPQJZDdMEnKkUNkWpd5TNSANAWBIezs, ogBBP2n0PRq1OZKEQl1i3AhGbeiPeGX9C5luO9WNPVt2ijouYk, h4urIkxKEnfof8Ouk9bCnHvMGcAouP0n2hxoKOJZ4geS7CtBaM, ZCEJgV89mvj, 7567095D-D0D2-45C6-8124-57C645CA0EC8, 64E4EDEB-5ACC-4C1E-B085-D6037D11D3F6, 13567F24-89F7-49A2-BBEC-EABB7DCF03F3, SG8sS1VnaZYtdr3grUjZbpcx3k7iNg2BjazpK2p6bJutzjpONY, XpxTaO5GTm24785ggj3YBX8QTVZnYtEKYx18FB1FupeKMlmUem, 4C9A0B57-FDF0-4A98-B10F-B2035F8C2572, 1, A94TRm, AAAAA, 2016-01-18 09:41:41.135, null, 2016-01-18 09:41:41.135, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:41.225--ClientSession(784152253)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind => [1, F348E4C8-CF8B-4641-BD83-CE3523480B1D]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 09:41:41.229--ClientSession(1222408244)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [F348E4C8-CF8B-4641-BD83-CE3523480B1D]
+[EL Fine]: sql: 2016-01-18 09:41:41.231--ClientSession(1222408244)--Connection(781524917)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET address1 = ?, address2 = ?, address3 = ?, addressLabel = ?, latitude = ?, longitude = ?, zipcode = ?, updatedBy = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [U3KoFILnFCeynVhG72czaHo0XdDtSGJEAFvQrlbGydWRipGdD2, dikX7azY5agZiPijVA5DmFhwrX32byDZzC3mzTpGQslWJRKw5D, tSPsr2RwTBeossn3sXvDjG0Vr6guNwUjJVp7qgofdZCe9F6bZP, TwRmQTJBgqe, 0EvmcsfOgxkYTOEhTFTbFRodWJXgySur5kbx0qhSM6SA2mQ5Qf, 9rsLLxkLHbTQNETVlrVN5MSyihn05FRwgFa4Z8SccQPupG1qLd, 4Hf4OG, AAAAA, 2, F348E4C8-CF8B-4641-BD83-CE3523480B1D, 1]
+[EL Fine]: sql: 2016-01-18 09:41:41.291--ClientSession(619234954)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind => [1, F348E4C8-CF8B-4641-BD83-CE3523480B1D]
+[EL Fine]: sql: 2016-01-18 09:41:41.296--ClientSession(744152558)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind => [1, 7567095D-D0D2-45C6-8124-57C645CA0EC8]
+[EL Fine]: sql: 2016-01-18 09:41:41.3--ClientSession(824981297)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (cityId = ?))
+	bind => [1, 64E4EDEB-5ACC-4C1E-B085-D6037D11D3F6]
+[EL Fine]: sql: 2016-01-18 09:41:41.304--ClientSession(1560646615)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, 13567F24-89F7-49A2-BBEC-EABB7DCF03F3]
+[EL Fine]: sql: 2016-01-18 09:41:41.309--ClientSession(2122947294)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind => [1, 4C9A0B57-FDF0-4A98-B10F-B2035F8C2572]
+[EL Fine]: sql: 2016-01-18 09:41:41.313--ClientSession(531186914)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [F348E4C8-CF8B-4641-BD83-CE3523480B1D]
+[EL Fine]: sql: 2016-01-18 09:41:41.314--ClientSession(531186914)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [F348E4C8-CF8B-4641-BD83-CE3523480B1D, 2]
+[EL Fine]: sql: 2016-01-18 09:41:41.364--ClientSession(1631770997)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [64E4EDEB-5ACC-4C1E-B085-D6037D11D3F6]
+[EL Fine]: sql: 2016-01-18 09:41:41.366--ClientSession(1631770997)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [64E4EDEB-5ACC-4C1E-B085-D6037D11D3F6, 1]
+[EL Fine]: sql: 2016-01-18 09:41:41.422--ClientSession(660242068)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [4C9A0B57-FDF0-4A98-B10F-B2035F8C2572]
+[EL Fine]: sql: 2016-01-18 09:41:41.424--ClientSession(660242068)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [4C9A0B57-FDF0-4A98-B10F-B2035F8C2572, 1]
+[EL Fine]: sql: 2016-01-18 09:41:41.478--ClientSession(296902164)--Connection(4563792)--Thread(Thread[Search Engine Delta Index Scheduler,5,main])--SELECT report_id, active_status, advance_config_json, app_creator_id, chart_json, created_by, created_date, data_json, project_id, project_version_id, query_id, report_name, search_json, updated_by, updated_date, version_id FROM art_report_ui
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","isSearch":"on","isUserAccessible":"on","hour":"1","minute":"30"}
+doIndex  searchJson>>>>>>>>>>>>>>>{"query_id":"51C4B371-739C-4A2B-8421-4B72A41017F8","report_id":"7FC1AE1F-E094-4101-8782-AFF2D4C0EFE6","isUserAccessible":"on"}
+[EL Fine]: sql: 2016-01-18 09:41:41.49--ClientSession(325660198)--Connection(4563792)--Thread(Thread[Search Engine Delta Index Scheduler,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE ((query_id = ?) AND (active_status = ?))
+	bind => [51C4B371-739C-4A2B-8421-4B72A41017F8, true]
+URL To Call:::http://localhost:8080/project3solr/dataimport
+[EL Fine]: sql: 2016-01-18 09:41:41.537--ClientSession(153862531)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [13567F24-89F7-49A2-BBEC-EABB7DCF03F3]
+[EL Fine]: sql: 2016-01-18 09:41:41.539--ClientSession(153862531)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [13567F24-89F7-49A2-BBEC-EABB7DCF03F3, 1]
+[EL Fine]: sql: 2016-01-18 09:41:41.639--ClientSession(190952998)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [7567095D-D0D2-45C6-8124-57C645CA0EC8]
+[EL Fine]: sql: 2016-01-18 09:41:41.641--ClientSession(190952998)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [7567095D-D0D2-45C6-8124-57C645CA0EC8, 1]
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","isSearch":"on","isUserAccessible":"on","hour":"1","minute":"30"}
+doIndex  searchJson>>>>>>>>>>>>>>>{"query_id":"51C4B371-739C-4A2B-8421-4B72A41017F8","report_id":"819E81C9-2D48-43BF-8E1C-19BE5C03DF9D","isUserAccessible":"on"}
+[EL Fine]: sql: 2016-01-18 09:41:41.662--ClientSession(159480388)--Connection(4563792)--Thread(Thread[Search Engine Delta Index Scheduler,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE ((query_id = ?) AND (active_status = ?))
+	bind => [51C4B371-739C-4A2B-8421-4B72A41017F8, true]
+URL To Call:::http://localhost:8080/project3solr/dataimport
+searchJson>>>>>>>>>>>>>>>{"hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"isUserAccessible":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"isUserAccessible":"on","hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"hour":"","minute":""}
+searchJson>>>>>>>>>>>>>>>{"enableCharts":"on","isSearch":"on","isUserAccessible":"on","hour":"1","minute":"30"}
+doIndex  searchJson>>>>>>>>>>>>>>>{"query_id":"51C4B371-739C-4A2B-8421-4B72A41017F8","report_id":"E6FD4E56-49C7-4CCA-A3DC-6BC0E18CCA46","isUserAccessible":"on"}
+[EL Fine]: sql: 2016-01-18 09:41:41.664--ClientSession(1580936365)--Connection(4563792)--Thread(Thread[Search Engine Delta Index Scheduler,5,main])--SELECT query_id, active_status, app_creator_id, created_by, created_date, hidden_name, jpql_query, name, project_id, project_version_id, query_json, query_type, sql_query, updated_by, updated_date, user_access, version_id FROM art_query WHERE ((query_id = ?) AND (active_status = ?))
+	bind => [51C4B371-739C-4A2B-8421-4B72A41017F8, true]
+URL To Call:::http://localhost:8080/project3solr/dataimport
+searchJson>>>>>>>>>>>>>>>{"hour":"","minute":""}
+]]></system-out>
+  <system-err><![CDATA[java.lang.Exception: No query found
+	at com.athena.search.bizservice.SearchEngineServiceImpl.buildURL(SearchEngineServiceImpl.java:502)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.sendPost(SearchEngineServiceImpl.java:553)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+java.lang.Exception: No query found
+	at com.athena.search.bizservice.SearchEngineServiceImpl.buildURL(SearchEngineServiceImpl.java:502)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.sendPost(SearchEngineServiceImpl.java:553)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+java.lang.Exception: No query found
+	at com.athena.search.bizservice.SearchEngineServiceImpl.buildURL(SearchEngineServiceImpl.java:502)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1092)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.sendPost(SearchEngineServiceImpl.java:553)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doIndex(SearchEngineServiceImpl.java:112)
+	at com.athena.search.bizservice.SearchEngineServiceImpl.doDeltaIndexing(SearchEngineServiceImpl.java:661)
+	at com.athena.search.bizservice.SearchEngineDeltaIndexScheduler.run(SearchEngineDeltaIndexScheduler.java:27)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+]]></system-err>
+</testsuite>

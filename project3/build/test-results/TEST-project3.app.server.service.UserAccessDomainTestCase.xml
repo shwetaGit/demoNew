@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project3.app.server.service.UserAccessDomainTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T09:41:26" hostname="999a71990197" time="0.291">
+  <properties/>
+  <testcase name="test1Save" classname="project3.app.server.service.UserAccessDomainTestCase" time="0.108"/>
+  <testcase name="test2Update" classname="project3.app.server.service.UserAccessDomainTestCase" time="0.091"/>
+  <testcase name="test3FindById" classname="project3.app.server.service.UserAccessDomainTestCase" time="0.008"/>
+  <testcase name="test4Delete" classname="project3.app.server.service.UserAccessDomainTestCase" time="0.083"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:26.452--ClientSession(2020516972)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E270CF08-7205-4F81-8528-64135832B93E, 6JMtmIBFbT1eU2XTrepIqbrbYQyVGC74DtVAYu8p1wW5DwOXow, fVdLZXo8OD61Vsfhv52zUcQZ6TmrRacPNcKm3R0iFR2asTlJ8C, RtIH01so9PIhJO3U3K1IIYmbdzlwNUZnrGrVIfD8gY4WZGoGLf, v1O9wzUQYnL8ZcOWxd74tO2W3vn9jJpp9jeuiJvhgTeNHFt6Lu, 39262, 1, AAAAA, 2016-01-18 09:41:26.429, null, 2016-01-18 09:41:26.429, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:26.533--ClientSession(1918217783)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, E270CF08-7205-4F81-8528-64135832B93E]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 09:41:26.535--ClientSession(108800648)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [E270CF08-7205-4F81-8528-64135832B93E]
+[EL Fine]: sql: 2016-01-18 09:41:26.536--ClientSession(108800648)--Connection(781524917)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [kqB83RrqXI9yvZCw6OjESdxd3IrJMGTZ9rnatyqaSEbjDzqlUZ, gOSM3eKNqqpkQKWxRCFNqHzB6FmjIp1JILfs41sGb1xdKuxPQm, EfTnyIliNaXK7Kb6jYC09ZNF9Teq4JuusCfnzQ6AUHF5HxCeZO, V8GLunJR4J3t94TSe8RGSz5oFzKQjn2i7xYnmUBTUQpsEBO8Gm, 94891, AAAAA, 2, E270CF08-7205-4F81-8528-64135832B93E, 1]
+[EL Fine]: sql: 2016-01-18 09:41:26.624--ClientSession(548626783)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, E270CF08-7205-4F81-8528-64135832B93E]
+[EL Fine]: sql: 2016-01-18 09:41:26.63--ClientSession(1335968168)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [E270CF08-7205-4F81-8528-64135832B93E]
+[EL Fine]: sql: 2016-01-18 09:41:26.631--ClientSession(1335968168)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [E270CF08-7205-4F81-8528-64135832B93E, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

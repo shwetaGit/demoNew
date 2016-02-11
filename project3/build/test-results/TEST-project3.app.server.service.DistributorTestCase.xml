@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project3.app.server.service.DistributorTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-18T09:41:33" hostname="999a71990197" time="0.906">
+  <properties/>
+  <testcase name="test1Save" classname="project3.app.server.service.DistributorTestCase" time="0.365"/>
+  <testcase name="test2Update" classname="project3.app.server.service.DistributorTestCase" time="0.108"/>
+  <testcase name="test3FindById" classname="project3.app.server.service.DistributorTestCase" time="0.008"/>
+  <testcase name="test3findByregioncode" classname="project3.app.server.service.DistributorTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="project3.app.server.service.DistributorTestCase" time="0.419"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-18 09:41:33.261--ClientSession(292695276)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3886E5C3-00FA-46EE-AA01-62C633F0C29A, Tvr8A23Vzm7PwnZVaMsBngh6MUgkCFOJbgOR72t3g7Eop5wWLv, 1, AAAAA, 2016-01-18 09:41:33.259, null, 2016-01-18 09:41:33.259, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:33.417--ClientSession(1584351570)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Distributor_M (distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [34E8B7CE-0D86-4FB2-B76C-FFFA1172B303, kY4RNTvTZmUd2s8707qfp3GMIgxJwVyaufPf24crXHzYzHtuwf, 12.34, 12.34, 3886E5C3-00FA-46EE-AA01-62C633F0C29A, 1, AAAAA, 2016-01-18 09:41:33.411, null, 2016-01-18 09:41:33.411, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:33.625--ClientSession(880003979)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (distributorcode = ?))
+	bind => [1, 34E8B7CE-0D86-4FB2-B76C-FFFA1172B303]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 09:41:33.628--ClientSession(1226129962)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE (distributorcode = ?)
+	bind => [34E8B7CE-0D86-4FB2-B76C-FFFA1172B303]
+[EL Fine]: sql: 2016-01-18 09:41:33.631--ClientSession(1226129962)--Connection(781524917)--Thread(Thread[Test worker,5,main])--UPDATE ast_Distributor_M SET distributorname = ?, updatedBy = ?, versionId = ? WHERE ((distributorcode = ?) AND (versionId = ?))
+	bind => [vneZ8EFw236db3gIPa42XE7BlgjKcPuYQd0PfbSiiICF7IoYOO, AAAAA, 2, 34E8B7CE-0D86-4FB2-B76C-FFFA1172B303, 1]
+[EL Fine]: sql: 2016-01-18 09:41:33.732--ClientSession(1987357667)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (distributorcode = ?))
+	bind => [1, 34E8B7CE-0D86-4FB2-B76C-FFFA1172B303]
+[EL Fine]: sql: 2016-01-18 09:41:33.737--ClientSession(1858518741)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind => [1, 3886E5C3-00FA-46EE-AA01-62C633F0C29A]
+[EL Fine]: sql: 2016-01-18 09:41:33.742--ClientSession(1406070217)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE (distributorcode = ?)
+	bind => [34E8B7CE-0D86-4FB2-B76C-FFFA1172B303]
+[EL Fine]: sql: 2016-01-18 09:41:33.743--ClientSession(1406070217)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Distributor_M WHERE ((distributorcode = ?) AND (versionId = ?))
+	bind => [34E8B7CE-0D86-4FB2-B76C-FFFA1172B303, 2]
+[EL Fine]: sql: 2016-01-18 09:41:33.817--ClientSession(2043321456)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind => [3886E5C3-00FA-46EE-AA01-62C633F0C29A]
+[EL Fine]: sql: 2016-01-18 09:41:33.818--ClientSession(2043321456)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind => [3886E5C3-00FA-46EE-AA01-62C633F0C29A, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

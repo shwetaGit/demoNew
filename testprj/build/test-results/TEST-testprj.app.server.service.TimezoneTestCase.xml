@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testprj.app.server.service.TimezoneTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T07:13:58" hostname="a7571ca6abc2" time="0.213">
+  <properties/>
+  <testcase name="test1Save" classname="testprj.app.server.service.TimezoneTestCase" time="0.088"/>
+  <testcase name="test2Update" classname="testprj.app.server.service.TimezoneTestCase" time="0.05"/>
+  <testcase name="test3FindById" classname="testprj.app.server.service.TimezoneTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="testprj.app.server.service.TimezoneTestCase" time="0.068"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 07:13:59.019--ClientSession(941879106)--Connection(322858583)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A4732E64-1406-44FA-896F-1B07D4948445, u7F8nPcUBHvhjGe5xRgL3xWNpIY8tklwjUtl796UmmV6rYngZ8, txnUO1oLoj8aNdFUdHislgn9EJ3gbZ1jVn4lnIrDg0r4dx4Gqg, 0kpE0ZUxbXNHkfYCECvsY52TqEOwrRc2AJk886wuF5sTOcj5H4, wvcCzsHcCR42P3qdi7vCwgm0Ke6H26VzaCgLEjj4irI0GZPDox, 5, 1, AAAAA, 2016-01-18 07:13:59.012, null, 2016-01-18 07:13:59.012, 1, null]
+[EL Fine]: sql: 2016-01-18 07:13:59.068--ClientSession(1602832554)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, A4732E64-1406-44FA-896F-1B07D4948445]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 07:13:59.071--ClientSession(1302433739)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [A4732E64-1406-44FA-896F-1B07D4948445]
+[EL Fine]: sql: 2016-01-18 07:13:59.073--ClientSession(1302433739)--Connection(322858583)--Thread(Thread[Test worker,5,main])--UPDATE ast_Timezone_M SET cities = ?, country = ?, gmtLabel = ?, timeZoneLabel = ?, utcdifference = ?, updatedBy = ?, versionId = ? WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [89OAG6CWWOyXahembVU6MANAiqgfJzp364LnZhqTRXhh7uqMrp, cM6Yz5PoXZmm5Aab8tHG4kM9egkIF0nOcDEyhKiu8DeK0cim7U, 9gxoMiCUoWEUWoZXu29DZ5DUhJDkrGDSZt4JCmi2PcCDm9Lnqo, XAcaaU082OmSiyvG3Da8n5HHOSc6IuJ5KXWuQvmj5CjR4P28qj, 3, AAAAA, 2, A4732E64-1406-44FA-896F-1B07D4948445, 1]
+[EL Fine]: sql: 2016-01-18 07:13:59.117--ClientSession(761365976)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE ((activeStatus = ?) AND (timeZoneId = ?))
+	bind => [1, A4732E64-1406-44FA-896F-1B07D4948445]
+[EL Fine]: sql: 2016-01-18 07:13:59.124--ClientSession(2027720069)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind => [A4732E64-1406-44FA-896F-1B07D4948445]
+[EL Fine]: sql: 2016-01-18 07:13:59.125--ClientSession(2027720069)--Connection(322858583)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Timezone_M WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind => [A4732E64-1406-44FA-896F-1B07D4948445, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
