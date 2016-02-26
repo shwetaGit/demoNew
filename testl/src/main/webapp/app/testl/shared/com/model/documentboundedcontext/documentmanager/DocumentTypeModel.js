@@ -1,0 +1,31 @@
+Ext.define('Testl.testl.shared.com.model.documentboundedcontext.documentmanager.DocumentTypeModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "docTypeCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "docTypeName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "docTypeDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
