@@ -1,0 +1,3 @@
+Copy files start
+projectPath : /home/applifire/workspace/customers/F7BC57DA-BA52-4E65-BBDE-193D73B3D540/user/FBB1FF45-0B94-4D3F-A056-5636EEB3B154/QSARIWH9Q0LL0J8YU3RAYW/testse/src/main/webapp/ and project name projectName:Testse
+Copy files end

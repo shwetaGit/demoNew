@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.ContactTypeTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.ContactTypeTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; ContactTypeTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.914s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.273s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.233s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.395s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-02-29 10:06:48.638--ClientSession(48835400)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ContactType_M (contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E36C47D5-2838-4330-844F-6AEADAD78FE4, BWBdl2TTGBMZUYSy6XlkaCdz2DHbXlj0eCY2pmBjmf4W9OBEvm, eb2ecFEv4uEkoEw5UvGXNwTFilzxXN4i9EON37QA94vVtoLBZ6, LdQAHOwIjjM94vYqEKdN6v3pPivLwPpuX62qRjkXUA5CNi7DwB, 1, AAAAA, 2016-02-29 10:06:48.578, null, 2016-02-29 10:06:48.578, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:06:48.845--ClientSession(1440694368)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind =&gt; [1, E36C47D5-2838-4330-844F-6AEADAD78FE4]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-29 10:06:48.853--ClientSession(295299171)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind =&gt; [E36C47D5-2838-4330-844F-6AEADAD78FE4]
+[EL Fine]: sql: 2016-02-29 10:06:48.855--ClientSession(295299171)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--UPDATE ast_ContactType_M SET contactType = ?, contactTypeDesc = ?, contactTypeIcon = ?, updatedBy = ?, versionId = ? WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind =&gt; [IJgv8xnLko0OdXr7wSeozayD0cTmzlIu4hjH82P1pUmaGNYqcI, 1tOjjQqwweXmQ3Hgq5gstR0i9UNudDCRWXwug5w9uN2k52IYsb, Nq4mow7h60594iJRJ2nxINrH51RMfgLIOhnIERkfaVIK5DVouT, AAAAA, 2, E36C47D5-2838-4330-844F-6AEADAD78FE4, 1]
+[EL Fine]: sql: 2016-02-29 10:06:49.08--ClientSession(1753089659)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind =&gt; [1, E36C47D5-2838-4330-844F-6AEADAD78FE4]
+[EL Fine]: sql: 2016-02-29 10:06:49.094--ClientSession(551782743)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind =&gt; [E36C47D5-2838-4330-844F-6AEADAD78FE4]
+[EL Fine]: sql: 2016-02-29 10:06:49.096--ClientSession(551782743)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_ContactType_M WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind =&gt; [E36C47D5-2838-4330-844F-6AEADAD78FE4, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Feb 29, 2016 10:07:13 AM</p>
+</div>
+</div>
+</body>
+</html>
