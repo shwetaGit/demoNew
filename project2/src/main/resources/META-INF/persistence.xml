@@ -55,6 +55,7 @@
     <class>project2.app.shared.aaaboundedcontext.authorization.RoleMenuBridge</class>
     <class>project2.app.shared.aaaboundedcontext.authorization.UserRoleBridge</class>
     <class>project2.app.shared.defaultcontext.defaultdomain.NEwEnity</class>
+    <class>project2.app.shared.defaultcontext.defaultdomain.SecondEn</class>
     </persistence-unit>
 
 </persistence>
