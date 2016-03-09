@@ -97,6 +97,7 @@ public class QuestionTestCase {
     public void test1Save() {
         try {
             Question question = new Question();
+<<<<<<< HEAD
             question.setLevelid(10);
             question.setQuestionIcon("W5Q8DYJ5yMet7dr6I626GexwfNYrcCKSX4g5jkKlU5ehHfjSLh");
             question.setQuestion("006t471giGlGvJDvHpXGPqYShdbnjDpecalamaQRNZ99RrOKMY");
@@ -123,6 +124,34 @@ public class QuestionTestCase {
             question.setVersionId(1);
             question.setQuestion("xhmbBybhRQYDRItjD4DZOKUMdXYAZjIil4bpDBMztmRRdMFSdM");
             question.setQuestionDetails("w");
+=======
+            question.setQuestionDetails("9");
+            question.setLevelid(11);
+            question.setQuestion("C7Y8aORlSkIiK94iXLnFR5jFSFxsrKGZiCtdTKg2mqnyKwLLhS");
+            question.setQuestionIcon("QXWZUucEvhIjxvdyCgGtPe00637gDbYxoxay48XWiXJr03AV24");
+            question.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            question.setEntityValidator(entityValidator);
+            question.isValid();
+            questionRepository.save(question);
+            map.put("QuestionPrimaryKey", question._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("QuestionPrimaryKey"));
+            Question question = questionRepository.findById((java.lang.String) map.get("QuestionPrimaryKey"));
+            question.setQuestionDetails("X");
+            question.setLevelid(7);
+            question.setQuestion("VqflghfikNgaK0noXE1D82f3K8pcMeyXpsvUgsNckZphM0w0Gt");
+            question.setQuestionIcon("8yMpuN2HqRl4j3I9u3o5I9hAMxlLZjaWBN2qY4T7MlnTzd0VVc");
+            question.setVersionId(1);
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             question.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             questionRepository.update(question);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

@@ -8,7 +8,11 @@ import java.util.List;
 import com.athena.framework.server.exception.biz.SpartanConstraintViolationException;
 import com.project1.app.shared.aaaboundedcontext.authentication.PassRecovery;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Repository for User Transaction table", complexity = Complexity.MEDIUM)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Repository for User Transaction table", complexity = Complexity.MEDIUM)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public interface UserRepository<T> extends SearchInterface, UserRepositoryInterface {
 
     public List<T> findAll() throws SpartanPersistenceException;

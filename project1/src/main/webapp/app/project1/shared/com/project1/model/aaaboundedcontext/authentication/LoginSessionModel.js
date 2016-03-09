@@ -21,11 +21,19 @@ Ext.define('Project1.project1.shared.com.project1.model.aaaboundedcontext.authen
           "type": "auto",
           "defaultValue": ""
      }, {
+<<<<<<< HEAD
           "name": "lastAccessTime",
           "type": "auto",
           "defaultValue": ""
      }, {
           "name": "logoutTime",
+=======
+          "name": "logoutTime",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "lastAccessTime",
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
           "type": "auto",
           "defaultValue": ""
      }, {

@@ -18,7 +18,11 @@ import java.util.Map;
 
 @Repository
 @Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Repository for Address Transaction table", complexity = Complexity.MEDIUM)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Repository for Address Transaction table", complexity = Complexity.MEDIUM)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public class AddressRepositoryImpl extends SearchInterfaceImpl implements AddressRepository<Address> {
 
     @Autowired

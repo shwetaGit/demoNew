@@ -1,0 +1,31 @@
+Ext.define('Project3.project3.shared.project3.model.contacts.CommunicationGroupModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "commGroupId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "commGroupName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "commGroupDescription",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

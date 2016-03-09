@@ -97,6 +97,7 @@ public class UserAccessDomainTestCase {
     public void test1Save() {
         try {
             UserAccessDomain useraccessdomain = new UserAccessDomain();
+<<<<<<< HEAD
             useraccessdomain.setUserAccessDomain(valueGenerator.getRandomInteger(99999, 0));
             useraccessdomain.setDomainIcon("TxtrTPZoxPOiCCorgBDzDfG5xB6MFcRHPWmLJrcd05RfBLXcpc");
             useraccessdomain.setDomainDescription("EaXrDWctvB0TMlSDFL8gJ3pOCeSv7Q3R9HbQheqx7RI12iWKDh");
@@ -125,6 +126,36 @@ public class UserAccessDomainTestCase {
             useraccessdomain.setDomainDescription("C8YbiDoighILGcFdiVZnzeSbTPSGQTcfNNuFav5LH3VfbJ57GC");
             useraccessdomain.setDomainHelp("7xSynwvSHqMCyQtkAyKHZ7BFUe9EnctvXRj3M4jJWhH08KGZDW");
             useraccessdomain.setDomainName("9rf3qMCxuMQelESO5XQu0skOMTFMBy2EVKTBg4F6A8eBj9jhHa");
+=======
+            useraccessdomain.setDomainDescription("WUYwrQjbns5JKVZ4xFCZ4CKcR9xypegmwnfs0489DWJr3mm4xB");
+            useraccessdomain.setDomainIcon("IpuNTn3S1XaJEZ7FUvjPoygGgmYMJz6BenczJsibAuwdqF1WVm");
+            useraccessdomain.setUserAccessDomain(valueGenerator.getRandomInteger(99999, 0));
+            useraccessdomain.setDomainHelp("jWE4KdyESpZlqYP8D5yhETvBecKYfZTytSOtkHk1X7s7csfUAs");
+            useraccessdomain.setDomainName("US3Kjx0AV3lgtFubkriX6ZjxYqxsFBrTpbvrc9Ywfj7ZY0JmPn");
+            useraccessdomain.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            useraccessdomain.setEntityValidator(entityValidator);
+            useraccessdomain.isValid();
+            useraccessdomainRepository.save(useraccessdomain);
+            map.put("UserAccessDomainPrimaryKey", useraccessdomain._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("UserAccessDomainPrimaryKey"));
+            UserAccessDomain useraccessdomain = useraccessdomainRepository.findById((java.lang.String) map.get("UserAccessDomainPrimaryKey"));
+            useraccessdomain.setDomainDescription("ytPsZnrzNpzeDtk7EGZpg8NCIwHe4PB3P4KAUBzrALCwQpQMrY");
+            useraccessdomain.setVersionId(1);
+            useraccessdomain.setDomainIcon("B48XtYKwrfSBTENHN8BRN70ryB3ulEWqLcJ3SZvHyDbgGyaAVN");
+            useraccessdomain.setUserAccessDomain(35208);
+            useraccessdomain.setDomainHelp("BtBGhPRmHfNvhwmFH5Ru6KpPOvNvlnDBSeLPMvqgIfaBv0pDoB");
+            useraccessdomain.setDomainName("iUweBOkS9u8EoW2Ybd2InVxnnsmAGY9w5tMTFoVdYjbP1NmrnO");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             useraccessdomain.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             useraccessdomainRepository.update(useraccessdomain);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

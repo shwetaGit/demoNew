@@ -97,6 +97,7 @@ public class PasswordAlgoTestCase {
     public void test1Save() {
         try {
             PasswordAlgo passwordalgo = new PasswordAlgo();
+<<<<<<< HEAD
             passwordalgo.setAlgoDescription("JAAU6FbSoeH2Cka9hOIphZcdfywT7OzUtwoKe7PNa8akJGyOid");
             passwordalgo.setAlgoName("n47kYGApvikfpP870nLw4NDzsMdu0tlFlJPCl7POAQq3GdrVZO");
             passwordalgo.setAlgoIcon("vt61HzpMp2dtBm56PZVAuvFBczndpAIFLtKa1e2AhrVugoegPi");
@@ -125,6 +126,36 @@ public class PasswordAlgoTestCase {
             passwordalgo.setAlgorithm(8);
             passwordalgo.setVersionId(1);
             passwordalgo.setAlgoHelp("IRKUAGxkTzY5qYo5h6W3utszxbdjIRqUAZyGQBWUTNiZUNleGJ");
+=======
+            passwordalgo.setAlgoName("5C3p8crA8OFWKLlVbfSCXAEqkL465Dx9ttlbDuEQ1qhov7ONRS");
+            passwordalgo.setAlgorithm(1);
+            passwordalgo.setAlgoIcon("LFot40rU7dbdIKlhBAzLgdJfPh3gSekFcbYNJgXMjoZWoJ8BjH");
+            passwordalgo.setAlgoDescription("QRJ5asXKYcGOG5TJ72bLllnkBWBZVu1V2elRZNUFDkS949vlDZ");
+            passwordalgo.setAlgoHelp("obgQajXnjsTEhl13dWbCXUdbQp2G7yJp7nde5uosJNJ4VxjjXI");
+            passwordalgo.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            passwordalgo.setEntityValidator(entityValidator);
+            passwordalgo.isValid();
+            passwordalgoRepository.save(passwordalgo);
+            map.put("PasswordAlgoPrimaryKey", passwordalgo._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("PasswordAlgoPrimaryKey"));
+            PasswordAlgo passwordalgo = passwordalgoRepository.findById((java.lang.String) map.get("PasswordAlgoPrimaryKey"));
+            passwordalgo.setAlgoName("LqFeoNNOD4ETxi8tuYkm8DD0nC2MzELvsQZNPChuKfUfkIJ3E0");
+            passwordalgo.setVersionId(1);
+            passwordalgo.setAlgorithm(11);
+            passwordalgo.setAlgoIcon("hYh5lQCZx8vN9TTdZIu5KZLnQDHqTtsEbNYwf7bH6cHg3IVr1l");
+            passwordalgo.setAlgoDescription("CL137U1gz6SRZ7Z7wYA9lVeoalDSu2QzPKchqULVreuxow6Inq");
+            passwordalgo.setAlgoHelp("y2zsZDpN9H9J7oucX90oHutFBTC1qhAex7PyqgamkkVzpzS63s");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             passwordalgo.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             passwordalgoRepository.update(passwordalgo);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

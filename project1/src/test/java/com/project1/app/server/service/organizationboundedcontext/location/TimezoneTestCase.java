@@ -97,6 +97,7 @@ public class TimezoneTestCase {
     public void test1Save() {
         try {
             Timezone timezone = new Timezone();
+<<<<<<< HEAD
             timezone.setCountry("OY6U9TwwEL3rNCww7oDXG7FP8EnhGai4pwRFcttPJWWqixAUr7");
             timezone.setCities("T6H4LQE1C9a4PZpYlw5dy9wSRNvOQCDAI72e0Ywy0dAnLIvHYB");
             timezone.setTimeZoneLabel("4mmSkGcqOP3jGpiAJvaa9wmSpKY58XON8QEZMW0BQzXDaQNE7w");
@@ -125,6 +126,36 @@ public class TimezoneTestCase {
             timezone.setVersionId(1);
             timezone.setUtcdifference(3);
             timezone.setGmtLabel("ubAAsRomkVOvOv6l1JBlcPIoWGdMXMHI5MsYfpkp5MLeOCsKek");
+=======
+            timezone.setUtcdifference(7);
+            timezone.setGmtLabel("r3Xcu06p4XzKz80vJlPwXts5aBjd6hzy7l6dW3KeMVIB88QuKW");
+            timezone.setTimeZoneLabel("2CsWHnJ4CXwRq20dEiWkVA4yNL9vL7KHjnZh7SDsmd53NJ10cc");
+            timezone.setCities("Pn1MCkfgNjE2pMBXCgl2RWdf0YpQOfwNGEgiIQqHdVvnreWMiB");
+            timezone.setCountry("P8Tnr2CGwGsk4e2FlSAKmS6RszxmLpXRFQe7d1vkAD5YWO8ghs");
+            timezone.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            timezone.setEntityValidator(entityValidator);
+            timezone.isValid();
+            timezoneRepository.save(timezone);
+            map.put("TimezonePrimaryKey", timezone._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("TimezonePrimaryKey"));
+            Timezone timezone = timezoneRepository.findById((java.lang.String) map.get("TimezonePrimaryKey"));
+            timezone.setUtcdifference(2);
+            timezone.setGmtLabel("xO4ezWS7VPsba0wGo1GwUAS5rzHDOKeIx2jyfSNesKPXXeGDM2");
+            timezone.setTimeZoneLabel("iUiyxwQujGWRmNbkkYPljG0sJgXrbjWf7woI7WYF8iDNkfStNF");
+            timezone.setVersionId(1);
+            timezone.setCities("Y8O0zAPAZPqSkbS1JjydP0EmDNUp2BaagxCjfYOmgi6pc1GNmV");
+            timezone.setCountry("hHVq0YMHaxrJIyaK4za32btyfggEzEUMCHIn60diXZL8Qret7m");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             timezone.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             timezoneRepository.update(timezone);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

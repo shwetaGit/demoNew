@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testone.app.server.service.ContactTypeTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T06:26:36" hostname="a3ffefafd425" time="0.258">
+  <properties/>
+  <testcase name="test1Save" classname="testone.app.server.service.ContactTypeTestCase" time="0.128"/>
+  <testcase name="test2Update" classname="testone.app.server.service.ContactTypeTestCase" time="0.051"/>
+  <testcase name="test3FindById" classname="testone.app.server.service.ContactTypeTestCase" time="0.011"/>
+  <testcase name="test4Delete" classname="testone.app.server.service.ContactTypeTestCase" time="0.066"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 06:26:36.52--ClientSession(350232732)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ContactType_M (contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F, 8XLi5SgIK7h8TBBE7VVeDCsse2yJEl35SdKZ0DbnzZwbesc0Jy, AK1YdLXUt7HALeHOE3i920ScktK63C1b0o1slraRSEx6t0OBx9, G4cygBfjR6OU09uAhKImZsvsczkSytl7cLS1aZJ5yGbX8EufhW, 1, AAAAA, 2016-01-18 06:26:36.48, null, 2016-01-18 06:26:36.48, 1, null]
+[EL Fine]: sql: 2016-01-18 06:26:36.606--ClientSession(1692592696)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind => [1, E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 06:26:36.611--ClientSession(2131551468)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind => [E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F]
+[EL Fine]: sql: 2016-01-18 06:26:36.613--ClientSession(2131551468)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--UPDATE ast_ContactType_M SET contactType = ?, contactTypeDesc = ?, contactTypeIcon = ?, updatedBy = ?, versionId = ? WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind => [N4qfERtORcQz6riDfvINZl2Ft60Rm6selIOVHQJTLbpUQw7SZb, Xw6gYmIFZWgE6lLLG2SdUtx6pvFardD4ZX2PQxqfR4BzfN2jJ7, kdCD07EJ7JgoEGnvwUSDPet1p8R7emeidU996a7rxoouFgAb0f, AAAAA, 2, E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F, 1]
+[EL Fine]: sql: 2016-01-18 06:26:36.657--ClientSession(474103249)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE ((activeStatus = ?) AND (contactTypeId = ?))
+	bind => [1, E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F]
+[EL Fine]: sql: 2016-01-18 06:26:36.668--ClientSession(855304118)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT contactTypeId, contactType, contactTypeDesc, contactTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ContactType_M WHERE (contactTypeId = ?)
+	bind => [E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F]
+[EL Fine]: sql: 2016-01-18 06:26:36.671--ClientSession(855304118)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_ContactType_M WHERE ((contactTypeId = ?) AND (versionId = ?))
+	bind => [E5A3AE7F-4CA9-44AE-8B8A-104C1116AF5F, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

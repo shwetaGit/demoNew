@@ -100,6 +100,7 @@ public class RolesTestCase {
     public void test1Save() {
         try {
             Roles roles = new Roles();
+<<<<<<< HEAD
             roles.setRoleIcon("yjzZEY0rSPhavlBLf8PfvKKiAeW3hBs7xq5VCbvfieJfKCr0IH");
             roles.setRoleHelp("5X5DgymbIJhUxj7cA7J9WocS1FGXGE290Ri3h2uKCpJqpPhcHT");
             roles.setRoleDescription("c7Fn77PTjDYxO7dDvWfjHmenaUkWkyDVbu8FVaJqZU1LgeKvvq");
@@ -154,6 +155,62 @@ public class RolesTestCase {
             roles.setVersionId(1);
             roles.setRoleDescription("ddGufOmz1q6zmtxVAESthpNPl4DMSmdmrjQTBaD8LCsjrbP8IG");
             roles.setRoleName("CP3RuSWeEvS8y1BVunS1qSoskQ5IJ4jMf5z01ZYuTM9KswvMsi");
+=======
+            roles.setRoleDescription("tRnXWMBfPyhV0gafT4HSUFmk6x66bMzQNakIZFvaVFC7NkL8Tw");
+            roles.setRoleHelp("KeWbUZUoa8ZIlJ373S1zEk7whcF5rEJlAeKGODIGdq2q3UjAje");
+            roles.setRoleIcon("NQD0dz2wLrzpUo8JpK9zDrq0QGqk5n9kvDqfAEi1jIAWJaqFtO");
+            roles.setRoleName("E291bTMxUgIINoD6ax6cdr0fMrSGOLbbxBHlqbus3TijjhtRec");
+            java.util.List<RoleMenuBridge> listOfRoleMenuBridge = new java.util.ArrayList<RoleMenuBridge>();
+            RoleMenuBridge rolemenubridge = new RoleMenuBridge();
+            AppMenus appmenus = new AppMenus();
+            appmenus.setAppType(2);
+            appmenus.setMenuLabel("ZEDV7H44WhhR0jVAbsawhTi2VeshrMAtPDHVOL2WV8BRdOlGwA");
+            appmenus.setMenuIcon("3KghCtflBIyxXu4k1qiBp4rPHVjdEBg13J4OPvw2aq4UMxNC1j");
+            appmenus.setAutoSave(true);
+            appmenus.setRefObjectId("eDOljmPW5NyCS2P3OwyKr4oEaB23ajEwZC7cvNt2SJ4ivLnQCJ");
+            appmenus.setAppId("AH650jPE3EdX2q091ggCz0ylt4jFzmx1XYclZL8f2HuNHtoihC");
+            appmenus.setMenuCommands("LrNGwnFlqK1io0sGE9n073aCniMtaKyz1gE4JMTqlKAeWBED90");
+            appmenus.setMenuHead(true);
+            appmenus.setMenuAction("SoT0d8rNJw2XaEvY8f0viekkMLkZwneY6Dkxal2LwkV5WwhPSZ");
+            appmenus.setMenuDisplay(true);
+            appmenus.setUiType("sju");
+            appmenus.setMenuTreeId("1xLtBMijtjNeIyRMUHbruMaLEUDQd7mmgkxWWjK1l9vEmFSe25");
+            appmenus.setMenuAccessRights(5);
+            AppMenus AppMenusTest = appmenusRepository.save(appmenus);
+            map.put("AppMenusPrimaryKey", appmenus._getPrimarykey());
+            rolemenubridge.setRoles(roles);
+            rolemenubridge.setMenuId((java.lang.String) AppMenusTest._getPrimarykey());
+            rolemenubridge.setIsWrite(true);
+            rolemenubridge.setIsExecute(true);
+            rolemenubridge.setIsRead(true);
+            listOfRoleMenuBridge.add(rolemenubridge);
+            roles.addAllRoleMenuBridge(listOfRoleMenuBridge);
+            roles.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            roles.setEntityValidator(entityValidator);
+            roles.isValid();
+            rolesRepository.save(roles);
+            map.put("RolesPrimaryKey", roles._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Autowired
+    private AppMenusRepository<AppMenus> appmenusRepository;
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("RolesPrimaryKey"));
+            Roles roles = rolesRepository.findById((java.lang.String) map.get("RolesPrimaryKey"));
+            roles.setRoleDescription("npSZQBI6XwpmcvtjUJnF983OFgdWuYajvhVLffrfsrnQNhd8Be");
+            roles.setRoleHelp("KKLnCkwLw7cIjF8m0k4mhdK31zw5qfEUVkqVbYmzNAV7YCDwRM");
+            roles.setRoleIcon("iGN5B8CwRk9vDnGxBDlaFeHGZSisMsACY4HVhgYFaTuOJVuAcm");
+            roles.setVersionId(1);
+            roles.setRoleName("PRqQAYvIwujNDDujSm1Cu1ZQSaFRcHYsZASoVGKorlyZnRuHKf");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             roles.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             rolesRepository.update(roles);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

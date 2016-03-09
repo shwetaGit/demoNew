@@ -111,6 +111,7 @@ Ext.define('Project1.project1.web.com.project1.view.organizationboundedcontext.c
                          "displayName": "Id",
                          "margin": "5 5 5 5",
                          "fieldLabel": "Id<font color='red'> *<\/font>",
+<<<<<<< HEAD
                          "fieldId": "9690633A-9412-4BEF-B095-DEDA1F718357",
                          "minLength": "0",
                          "maxLength": "64",
@@ -400,6 +401,297 @@ Ext.define('Project1.project1.web.com.project1.view.organizationboundedcontext.c
                          "itemId": "resetFormButton",
                          "parentId": 625,
                          "customId": 761,
+=======
+                         "fieldId": "5C93BC30-E3F3-4BF2-ACE3-B7B22D91E058",
+                         "minLength": "0",
+                         "maxLength": "64",
+                         "hidden": true,
+                         "value": "",
+                         "bindable": "genderId"
+                    }, {
+                         "name": "gender",
+                         "itemId": "gender",
+                         "xtype": "textfield",
+                         "customWidgetType": "vdTextfield",
+                         "displayName": "Gender",
+                         "margin": "5 5 5 5",
+                         "fieldLabel": "Gender<font color='red'> *<\/font>",
+                         "allowBlank": false,
+                         "fieldId": "CA864074-D7B6-47D6-8014-41B7A5723F1C",
+                         "minLength": "0",
+                         "maxLength": "256",
+                         "errorMessage": "Please enter gender",
+                         "bindable": "gender",
+                         "columnWidth": 0.5
+                    }, {
+                         "name": "versionId",
+                         "itemId": "versionId",
+                         "xtype": "numberfield",
+                         "customWidgetType": "vdNumberfield",
+                         "displayName": "versionId",
+                         "margin": "5 5 5 5",
+                         "value": "-1",
+                         "fieldLabel": "versionId",
+                         "fieldId": "75E50D47-0F03-4314-918E-9F36570125E6",
+                         "bindable": "versionId",
+                         "hidden": true
+                    }],
+                    "layout": "column",
+                    "defaults": {
+                         "columnWidth": 0.5,
+                         "labelAlign": "left",
+                         "labelWidth": 200
+                    },
+                    "autoScroll": true,
+                    "dockedItems": [{
+                         "xtype ": "toolbar",
+                         "customWidgetType": "vdBBar",
+                         "dock": "bottom",
+                         "ui": "footer",
+                         "isDockedItem": true,
+                         "parentId": 1,
+                         "customId": 94,
+                         "items": [{
+                              "xtype": "tbfill",
+                              "customWidgetType": "vdTbFill",
+                              "parentId": 94,
+                              "customId": 711
+                         }, {
+                              "customWidgetType": "vdButton",
+                              "xtype": "button",
+                              "name": "saveFormButton",
+                              "margin": "0 5 0 5",
+                              "text": "Save",
+                              "hiddenName": "button",
+                              "canHaveParent": false,
+                              "itemId": "saveFormButton",
+                              "parentId": 94,
+                              "customId": 712,
+                              "listeners": {
+                                   "click": "saveForm"
+                              }
+                         }, {
+                              "customWidgetType": "vdButton",
+                              "xtype": "button",
+                              "name": "resetFormButton",
+                              "margin": "0 5 0 5",
+                              "text": "Reset",
+                              "hiddenName": "button",
+                              "canHaveParent": false,
+                              "itemId": "resetFormButton",
+                              "parentId": 94,
+                              "customId": 713,
+                              "listeners": {
+                                   "click": "resetForm"
+                              }
+                         }],
+                         "defaults": {}
+                    }],
+                    "listeners": {
+                         "scope": "controller"
+                    },
+                    "tools": [{
+                         "type": "help",
+                         "tooltip": "Console",
+                         "handler": "onConsoleClick"
+                    }, {
+                         "type": "refresh",
+                         "tooltip": "Refresh Tab",
+                         "handler": "init"
+                    }],
+                    "extend": "Ext.form.Panel",
+                    "region": "center"
+               }, {
+                    "xtype": "gridpanel",
+                    "customWidgetType": "vdGrid",
+                    "displayName": "Gender",
+                    "title": "Details Grid",
+                    "name": "GenderGrid",
+                    "itemId": "GenderGrid",
+                    "restURL": "/Gender",
+                    "store": [],
+                    "bodyPadding": 10,
+                    "columns": [{
+                         "header": "Id",
+                         "dataIndex": "genderId",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "primaryDisplay",
+                         "dataIndex": "primaryDisplay",
+                         "hidden": true
+                    }, {
+                         "header": "primaryKey",
+                         "dataIndex": "primaryKey",
+                         "hidden": true
+                    }, {
+                         "header": "Gender",
+                         "dataIndex": "gender",
+                         "flex": 1
+                    }, {
+                         "header": "createdBy",
+                         "dataIndex": "createdBy",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "createdDate",
+                         "dataIndex": "createdDate",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "updatedBy",
+                         "dataIndex": "updatedBy",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "updatedDate",
+                         "dataIndex": "updatedDate",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "versionId",
+                         "dataIndex": "versionId",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "activeStatus",
+                         "dataIndex": "activeStatus",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "header": "txnAccessCode",
+                         "dataIndex": "txnAccessCode",
+                         "hidden": true,
+                         "flex": 1
+                    }, {
+                         "xtype": "actioncolumn",
+                         "customWidgetType": "vdActionColumn",
+                         "width": 30,
+                         "sortable": false,
+                         "menuDisable": true,
+                         "items": [{
+                              "icon": "images/delete.gif",
+                              "tooltip": "Delete Record",
+                              "handler": "onDeleteActionColumnClickMainGrid"
+                         }]
+                    }],
+                    "listeners": {
+                         "itemclick": "onGridItemClick"
+                    },
+                    "tools": [{
+                         "type": "refresh",
+                         "tooltip": "Refresh Grid Data",
+                         "handler": "onGridRefreshClick"
+                    }],
+                    "collapsible": true,
+                    "titleCollapse": true,
+                    "collapseMode": "header",
+                    "region": "south",
+                    "height": "40%"
+               }]
+          }]
+     }, {
+          "title": "Add New",
+          "itemId": "addNewForm",
+          "layout": "border",
+          "customWidgetType": "vdBorderLayout",
+          "autoScroll": false,
+          "items": [{
+               "customWidgetType": "vdFormpanel",
+               "xtype": "form",
+               "displayName": "Gender",
+               "title": "Gender",
+               "name": "Gender",
+               "itemId": "GenderForm",
+               "bodyPadding": 10,
+               "items": [{
+                    "name": "genderId",
+                    "itemId": "genderId",
+                    "xtype": "textfield",
+                    "customWidgetType": "vdTextfield",
+                    "displayName": "Id",
+                    "margin": "5 5 5 5",
+                    "fieldLabel": "Id<font color='red'> *<\/font>",
+                    "fieldId": "5C93BC30-E3F3-4BF2-ACE3-B7B22D91E058",
+                    "minLength": "0",
+                    "maxLength": "64",
+                    "hidden": true,
+                    "value": "",
+                    "bindable": "genderId"
+               }, {
+                    "name": "gender",
+                    "itemId": "gender",
+                    "xtype": "textfield",
+                    "customWidgetType": "vdTextfield",
+                    "displayName": "Gender",
+                    "margin": "5 5 5 5",
+                    "fieldLabel": "Gender<font color='red'> *<\/font>",
+                    "allowBlank": false,
+                    "fieldId": "CA864074-D7B6-47D6-8014-41B7A5723F1C",
+                    "minLength": "0",
+                    "maxLength": "256",
+                    "errorMessage": "Please enter gender",
+                    "bindable": "gender",
+                    "columnWidth": 0.5
+               }, {
+                    "name": "versionId",
+                    "itemId": "versionId",
+                    "xtype": "numberfield",
+                    "customWidgetType": "vdNumberfield",
+                    "displayName": "versionId",
+                    "margin": "5 5 5 5",
+                    "value": "-1",
+                    "fieldLabel": "versionId",
+                    "fieldId": "75E50D47-0F03-4314-918E-9F36570125E6",
+                    "bindable": "versionId",
+                    "hidden": true
+               }],
+               "layout": "column",
+               "defaults": {
+                    "columnWidth": 0.5,
+                    "labelAlign": "left",
+                    "labelWidth": 200
+               },
+               "autoScroll": true,
+               "dockedItems": [{
+                    "xtype ": "toolbar",
+                    "customWidgetType": "vdBBar",
+                    "dock": "bottom",
+                    "ui": "footer",
+                    "isDockedItem": true,
+                    "parentId": 1,
+                    "customId": 94,
+                    "items": [{
+                         "xtype": "tbfill",
+                         "customWidgetType": "vdTbFill",
+                         "parentId": 94,
+                         "customId": 711
+                    }, {
+                         "customWidgetType": "vdButton",
+                         "xtype": "button",
+                         "name": "saveFormButton",
+                         "margin": "0 5 0 5",
+                         "text": "Save",
+                         "hiddenName": "button",
+                         "canHaveParent": false,
+                         "itemId": "saveFormButton",
+                         "parentId": 94,
+                         "customId": 712,
+                         "listeners": {
+                              "click": "saveForm"
+                         }
+                    }, {
+                         "customWidgetType": "vdButton",
+                         "xtype": "button",
+                         "name": "resetFormButton",
+                         "margin": "0 5 0 5",
+                         "text": "Reset",
+                         "hiddenName": "button",
+                         "canHaveParent": false,
+                         "itemId": "resetFormButton",
+                         "parentId": 94,
+                         "customId": 713,
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
                          "listeners": {
                               "click": "resetForm"
                          }

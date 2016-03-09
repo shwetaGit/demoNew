@@ -33,7 +33,11 @@ import javax.persistence.NamedQueries;
 @Table(name = "ast_PasswordPolicy_M")
 @Entity
 @Cache(type = CacheType.CACHE, isolation = CacheIsolationType.ISOLATED)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "PasswordPolicy", complexity = Complexity.LOW)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "PasswordPolicy", complexity = Complexity.LOW)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 @NamedQueries({ @javax.persistence.NamedQuery(name = "PasswordPolicy.DefaultFinders", query = "select e from PasswordPolicy e where e.systemInfo.activeStatus=1 and e.policyName LIKE :policyName"), @javax.persistence.NamedQuery(name = "PasswordPolicy.findById", query = "select e from PasswordPolicy e where e.systemInfo.activeStatus=1 and e.policyId =:policyId") })
 public class PasswordPolicy implements Serializable, CommonEntityInterface, PasswordPolicyInterface, Comparator<PasswordPolicy> {
 

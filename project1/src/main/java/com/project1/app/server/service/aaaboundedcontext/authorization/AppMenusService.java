@@ -10,7 +10,11 @@ import java.util.List;
 import java.util.Map;
 import com.athena.framework.server.bean.FindByBean;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for AppMenus Master table Entity", complexity = Complexity.LOW)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Service for AppMenus Master table Entity", complexity = Complexity.LOW)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public abstract class AppMenusService {
 
     public HttpEntity<ResponseBean> findAll() throws Exception, SpartanPersistenceException {

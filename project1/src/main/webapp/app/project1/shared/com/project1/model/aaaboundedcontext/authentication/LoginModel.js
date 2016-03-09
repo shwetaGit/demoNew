@@ -29,11 +29,19 @@ Ext.define('Project1.project1.shared.com.project1.model.aaaboundedcontext.authen
           "type": "int",
           "defaultValue": ""
      }, {
+<<<<<<< HEAD
           "name": "User",
           "reference": "UserModel"
      }, {
           "name": "CoreContacts",
           "reference": "CoreContactsModel"
+=======
+          "name": "CoreContacts",
+          "reference": "CoreContactsModel"
+     }, {
+          "name": "User",
+          "reference": "UserModel"
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
      }, {
           "name": "entityAudit",
           "reference": "EntityAudit"

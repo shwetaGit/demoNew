@@ -97,6 +97,7 @@ public class AppMenusTestCase {
     public void test1Save() {
         try {
             AppMenus appmenus = new AppMenus();
+<<<<<<< HEAD
             appmenus.setUiType("z6s");
             appmenus.setMenuTreeId("2oM5BcJNJgCObF7rNJhVGFJnlQszGde47NMGZkxdIbhZ3OGZUn");
             appmenus.setAppId("nlT8ljQh4WOyMAy5qQQFPWJRF7mdgQpZzojBdxsyQKId7cxzpn");
@@ -138,6 +139,49 @@ public class AppMenusTestCase {
             appmenus.setAppType(2);
             appmenus.setMenuAction("MwIXBOVf9Dg9PGFI9r2kDCb1i4DGmwr08rCob6YgwBTDVN1NQu");
             appmenus.setMenuIcon("uY3YdoiLWg2msu903GGsnJuV1TrjBIcKnzK0TgKqQY8IIC9WH1");
+=======
+            appmenus.setAppType(2);
+            appmenus.setMenuLabel("0odyjOjEjjaV0bKxJTYsI0pnkEZmPBxjOQx8evIC5Tgtia4qvO");
+            appmenus.setMenuIcon("37RlvJO1CqF8gDvbWqJYWnwVKdJf4kmJ0DI6puGpzEFZCvW7Go");
+            appmenus.setAutoSave(true);
+            appmenus.setRefObjectId("QsEfSYa8pKTR3kRiUPyMEMmHg4akiGWJpXZvPk3tNJvd3HCfN9");
+            appmenus.setAppId("Y570bLGaXK7PBnOJAElFoHULDKU9f8GhoiEj20gakJnkUNOAio");
+            appmenus.setMenuCommands("OCptA134YdaIULG0R962aqmU89mexysUszhwlYZX4AlpdIxlu6");
+            appmenus.setMenuHead(true);
+            appmenus.setMenuAction("i0R9lDNDdilZHbvgzHqoi2HW0obXrQ5249D3PxXK3MibBBLqXU");
+            appmenus.setMenuDisplay(true);
+            appmenus.setUiType("KCr");
+            appmenus.setMenuTreeId("FU3n6R4RHDWBFcvNVQ0KD5G9o4ZgI9954cDyrAwydTedaocbLS");
+            appmenus.setMenuAccessRights(3);
+            appmenus.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            appmenus.setEntityValidator(entityValidator);
+            appmenus.isValid();
+            appmenusRepository.save(appmenus);
+            map.put("AppMenusPrimaryKey", appmenus._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("AppMenusPrimaryKey"));
+            AppMenus appmenus = appmenusRepository.findById((java.lang.String) map.get("AppMenusPrimaryKey"));
+            appmenus.setAppType(2);
+            appmenus.setMenuLabel("PhQHy7filIIqlbXiosycEJUNhGdS3uP1oWEVI4Rbjh5pfqkyRh");
+            appmenus.setMenuIcon("O4QNFlLCWmXmMWLawrWOOCzVVbuzE8HiIgjzdEcwceAW2mytkF");
+            appmenus.setRefObjectId("EM7TTITTqj3xMmLKoe866U6cWELRQMDgv5jemGfTClHYGDoWdG");
+            appmenus.setAppId("Mfjne90LTUJzKlceU6wZ3V7SOYBmW2h9kDHxBg66ivbEMBJh1X");
+            appmenus.setMenuCommands("HlD2R70oJKt276hC0CWqOM6MtlOMN6uTcuMXxmZfjbmEC9XGNB");
+            appmenus.setVersionId(1);
+            appmenus.setMenuAction("OlSW3q56Oc5IsWloQyk42BXDGiF49BZA6FTlut933uwcMiAnSo");
+            appmenus.setUiType("Z17");
+            appmenus.setMenuTreeId("4dMPEMEatGmXJ0E9M0qM9y7jz1jUqXo2bckwlZz4eKDA86eYgU");
+            appmenus.setMenuAccessRights(1);
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             appmenus.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             appmenusRepository.update(appmenus);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

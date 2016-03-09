@@ -304,5 +304,9 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
+<<<<<<< HEAD
     "id": "e79f449a-d374-4bdc-9744-078308fe4002"
+=======
+    "id": "21989d41-6bb3-463d-8b06-9c4967c5b0e8"
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 }

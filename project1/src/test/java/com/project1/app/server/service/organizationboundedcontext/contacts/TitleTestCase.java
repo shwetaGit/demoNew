@@ -97,6 +97,7 @@ public class TitleTestCase {
     public void test1Save() {
         try {
             Title title = new Title();
+<<<<<<< HEAD
             title.setTitles("MiMsnePjItfzX6U2zgLwgz5NqaRoMkyS0yfRAlatrAcGjXL0Cw");
             title.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
             title.setEntityValidator(entityValidator);
@@ -117,6 +118,28 @@ public class TitleTestCase {
             Title title = titleRepository.findById((java.lang.String) map.get("TitlePrimaryKey"));
             title.setTitles("yncOFvMFp3nvTZynxyL3FN3QYvTN9gYyJ74DUGbvEWmYUqiUBJ");
             title.setVersionId(1);
+=======
+            title.setTitles("Aq690Q0dBZ2gNu9GCQw53rYOzDF8WngTgtOVOYVnPDhzbD32DD");
+            title.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            title.setEntityValidator(entityValidator);
+            title.isValid();
+            titleRepository.save(title);
+            map.put("TitlePrimaryKey", title._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("TitlePrimaryKey"));
+            Title title = titleRepository.findById((java.lang.String) map.get("TitlePrimaryKey"));
+            title.setVersionId(1);
+            title.setTitles("a0HqT82jt88i7VACKXiKPS2J84coBPZpEl6OoRwDS9RyxRSSNm");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             title.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             titleRepository.update(title);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

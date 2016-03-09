@@ -9,7 +9,11 @@ import com.project1.app.shared.aaaboundedcontext.authorization.UserRoleBridge;
 import java.util.List;
 import com.athena.framework.server.bean.FindByBean;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for UserRoleBridge Transaction table", complexity = Complexity.MEDIUM)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Service for UserRoleBridge Transaction table", complexity = Complexity.MEDIUM)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public abstract class UserRoleBridgeService {
 
     public HttpEntity<ResponseBean> findAll() throws Exception, SpartanPersistenceException {

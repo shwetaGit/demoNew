@@ -1,0 +1,3 @@
+package testone.app.server.bean;public class BeanAdapter extends Object {
+
+}

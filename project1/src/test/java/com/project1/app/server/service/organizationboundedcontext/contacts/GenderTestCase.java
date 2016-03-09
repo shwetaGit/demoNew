@@ -97,6 +97,7 @@ public class GenderTestCase {
     public void test1Save() {
         try {
             Gender gender = new Gender();
+<<<<<<< HEAD
             gender.setGender("DgywTiqv8eSnvQLrHz5xa2orB519sAQRaXjGoRzNZy6uhfOY6D");
             gender.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
             gender.setEntityValidator(entityValidator);
@@ -117,6 +118,28 @@ public class GenderTestCase {
             Gender gender = genderRepository.findById((java.lang.String) map.get("GenderPrimaryKey"));
             gender.setVersionId(1);
             gender.setGender("AhG6Fb1bcxzzLNQPSDqZtMtSJe8nvPBMz43P0StA2bH2xqQUpp");
+=======
+            gender.setGender("tztQImWHp7anpPfshPVVNAIsazPVj6FsCCYNE9O9Mbs79t4Mg0");
+            gender.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            gender.setEntityValidator(entityValidator);
+            gender.isValid();
+            genderRepository.save(gender);
+            map.put("GenderPrimaryKey", gender._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("GenderPrimaryKey"));
+            Gender gender = genderRepository.findById((java.lang.String) map.get("GenderPrimaryKey"));
+            gender.setVersionId(1);
+            gender.setGender("txn7j2r92zOsHox8uyHYod4Wo944WD0TTTPcdIacsuX2tTnVbm");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             gender.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             genderRepository.update(gender);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

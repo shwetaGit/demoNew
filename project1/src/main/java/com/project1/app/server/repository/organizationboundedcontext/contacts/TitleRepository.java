@@ -6,7 +6,11 @@ import com.athena.framework.server.exception.repository.SpartanPersistenceExcept
 import java.util.List;
 import com.athena.framework.server.exception.biz.SpartanConstraintViolationException;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Repository for Title Master table Entity", complexity = Complexity.LOW)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Repository for Title Master table Entity", complexity = Complexity.LOW)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public interface TitleRepository<T> extends SearchInterface {
 
     public List<T> findAll() throws SpartanPersistenceException;

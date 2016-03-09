@@ -97,6 +97,7 @@ public class CountryTestCase {
     public void test1Save() {
         try {
             Country country = new Country();
+<<<<<<< HEAD
             country.setCurrencyCode("Eh6");
             country.setCountryCode2("ZgX");
             country.setCountryName("XKLWWjzMrbx99ccmba4w1wvEDb7u2Cokq51eiKRoTCECyAB90T");
@@ -137,6 +138,48 @@ public class CountryTestCase {
             country.setCapitalLongitude(8);
             country.setCountryCode1("kAT");
             country.setCapital("BqB4wRxMIS6d2woXmZYmmgDofDdxLW7r");
+=======
+            country.setCurrencyCode("cB2");
+            country.setCurrencySymbol("JodRsheuwmYlXMPSXpoasHPA9AmRJqRA");
+            country.setCapital("fXdAYPOWsvmy0g3u5ejk0Z5xTfJxF20k");
+            country.setCurrencyName("uO6dljhT4nXXihU4gAB8QNWo0YamvSDM17GT7zRNcXb8odG651");
+            country.setCountryName("RfJVKVB0DpGQmAz8SxvdeybiiSiup2s2lFzLKc2JFgNfTG5eba");
+            country.setCountryFlag("liMgtJcyMtHsS34VEeYNnCHE5MghDYVZFwQZrUVOVtgRYHPr6h");
+            country.setCapitalLongitude(6);
+            country.setCapitalLatitude(6);
+            country.setCountryCode1("gkH");
+            country.setIsoNumeric(6);
+            country.setCountryCode2("Qdz");
+            country.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            country.setEntityValidator(entityValidator);
+            country.isValid();
+            countryRepository.save(country);
+            map.put("CountryPrimaryKey", country._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("CountryPrimaryKey"));
+            Country country = countryRepository.findById((java.lang.String) map.get("CountryPrimaryKey"));
+            country.setCurrencyCode("MR6");
+            country.setCurrencySymbol("AWc3vXLpHWL3w5AME0DUJYqfZc3wkLUO");
+            country.setCapital("RlX6YWKkQgeejIav53pV0G9zOJnfA8xp");
+            country.setCurrencyName("xv8NS9s9FYtSQ62ylPAwBfp6hr78WR3FknN1IWXELxgRQ9MiGE");
+            country.setVersionId(1);
+            country.setCountryName("sHdukOpaSWOq7OMhkAwhp1yWoP3RNAI0T6R8AZ2JwGgk30oAUC");
+            country.setCountryFlag("ZedPD83yO0KJJnT5Io4GbnhQALvO0dgoNlUzeSYSBf6xgy86Bu");
+            country.setCapitalLongitude(5);
+            country.setCapitalLatitude(6);
+            country.setCountryCode1("pGq");
+            country.setIsoNumeric(2);
+            country.setCountryCode2("PMZ");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             country.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             countryRepository.update(country);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

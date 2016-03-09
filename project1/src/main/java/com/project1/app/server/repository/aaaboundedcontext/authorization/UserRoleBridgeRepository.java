@@ -6,7 +6,11 @@ import com.athena.framework.server.exception.repository.SpartanPersistenceExcept
 import java.util.List;
 import com.athena.framework.server.exception.biz.SpartanConstraintViolationException;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Repository for UserRoleBridge Transaction table", complexity = Complexity.MEDIUM)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Repository for UserRoleBridge Transaction table", complexity = Complexity.MEDIUM)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public interface UserRoleBridgeRepository<T> extends SearchInterface {
 
     public List<T> findAll() throws SpartanPersistenceException;

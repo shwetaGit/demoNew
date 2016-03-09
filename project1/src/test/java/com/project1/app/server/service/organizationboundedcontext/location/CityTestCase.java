@@ -101,6 +101,7 @@ public class CityTestCase {
     public void test1Save() {
         try {
             Country country = new Country();
+<<<<<<< HEAD
             country.setCurrencyCode("991");
             country.setCountryCode2("GHh");
             country.setCountryName("TEjTRAjKE1kM1B81sbaQiC1EpuEfdYynQZjGYULl2f8kFv8Nzf");
@@ -176,6 +177,78 @@ public class CityTestCase {
             city.setCityCode(1);
             city.setCityFlag("Td3alPM8A3obknukJwBFlt6x5vGy5Vf1Fp7IWr2hYA0txMrAnX");
             city.setVersionId(1);
+=======
+            country.setCurrencyCode("JyC");
+            country.setCurrencySymbol("sTahPqUOYZrWcqLYnTVNSTH4I898tYXJ");
+            country.setCapital("S33EYNB9Wibiph56Rl1pcEhtWpLUnFQI");
+            country.setCurrencyName("nn2I5JNBoS9DZDZKgsLV1Kzteg2LuIUEuG0OsKy1o1Rgsl7M6P");
+            country.setCountryName("wOt0qXHaOWNaR3Lw8CH1JFlBZHh95YzciZpj1bBLQvVyEpIBmt");
+            country.setCountryFlag("z1qDVav2TIYcyRxS6P2dWE1sccJ5jNtiJypnL0O4uJh2fCaQwA");
+            country.setCapitalLongitude(3);
+            country.setCapitalLatitude(8);
+            country.setCountryCode1("SWI");
+            country.setIsoNumeric(9);
+            country.setCountryCode2("Bjf");
+            Country CountryTest = countryRepository.save(country);
+            map.put("CountryPrimaryKey", country._getPrimarykey());
+            State state = new State();
+            state.setStateCapitalLatitude(7);
+            state.setStateDescription("zQPtYKSlBo9CaBdfS2Bkzd0RozwqfreNJi5DgCOWv3tZCsuNFr");
+            state.setStateCodeChar3("CKhadNW9kefEXBK5VvPKQ05xh8IADyJH");
+            state.setStateCapitalLatitude(7);
+            state.setStateDescription("fLmvvG2qWLeBuk3gQmPUmQi57MgVRzkdAHYHTNHoyEg6eKplAu");
+            state.setStateCodeChar3("s3JE1Hys8IDmOyVh5AwPckwRz6m4uMxP");
+            state.setCountryId((java.lang.String) CountryTest._getPrimarykey()); /* ******Adding refrenced table data */
+            state.setStateCode(2);
+            state.setStateCapitalLongitude(10);
+            state.setStateFlag("mc8Pp8StwX71KsA1TNsfvQgMtYvwxdIpArLIL3e2iCjjXzSHGW");
+            state.setStateCodeChar2("fhhEBcCYPcmiJwgRYR2ZyNKGoXrwSQG2");
+            state.setStateCapital("qRDZ6F6XUloo3z3jyulxcKEShk8zWQoOl7SswVrWJMBPti1yuB");
+            state.setStateName("xDSn2myV7gmPOeFc6pYpZUvQ8kea27hsHccoER1g0f1AbD1QRt");
+            State StateTest = stateRepository.save(state);
+            map.put("StatePrimaryKey", state._getPrimarykey());
+            City city = new City();
+            city.setCountryId((java.lang.String) CountryTest._getPrimarykey()); /* ******Adding refrenced table data */
+            city.setCityLatitude(11);
+            city.setCityDescription("KnfQnUJwTn1JVSKrKYNbCqRq9LfX6eDKkIkOTdAzUpJYn78EQw");
+            city.setCityLongitude(4);
+            city.setCityCodeChar2("TXpGjnIpekn8NOv6xIT9aI5K30mD4eBa");
+            city.setStateId((java.lang.String) StateTest._getPrimarykey());
+            city.setCityCode(2);
+            city.setCityName("4NkgCmIcnlNvXE5KTZFgC1z8bjX6vFwe4tHbS2KQvZ43YgObUU");
+            city.setCityFlag("fEPvdnwYXEo2VeFytFKyBHcHODPxyFUk3OuZoIgaJINqesDg83");
+            city.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            city.setEntityValidator(entityValidator);
+            city.isValid();
+            cityRepository.save(city);
+            map.put("CityPrimaryKey", city._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Autowired
+    private CountryRepository<Country> countryRepository;
+
+    @Autowired
+    private StateRepository<State> stateRepository;
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("CityPrimaryKey"));
+            City city = cityRepository.findById((java.lang.String) map.get("CityPrimaryKey"));
+            city.setCityLatitude(11);
+            city.setCityDescription("BnyTmp8ObIUTZBJr2Sj0hzPce6bowfvqjrKFhT239F49WRE9MZ");
+            city.setCityLongitude(4);
+            city.setVersionId(1);
+            city.setCityCodeChar2("kXllDlPNWH9WSnZkSl9ZWTxOjKAHIlny");
+            city.setCityCode(1);
+            city.setCityName("tTxz2sD1KUUjl18sX6YPS5X1O9kZi2tS3rfvxsL5zLnomSOCxw");
+            city.setCityFlag("osypVSiFXFtXaSWyhzfUT13Yc2cVfVrycPekKJVNUahNWWkeTD");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             city.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             cityRepository.update(city);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

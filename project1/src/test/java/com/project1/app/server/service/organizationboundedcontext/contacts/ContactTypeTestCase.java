@@ -97,6 +97,7 @@ public class ContactTypeTestCase {
     public void test1Save() {
         try {
             ContactType contacttype = new ContactType();
+<<<<<<< HEAD
             contacttype.setContactType("hqrxUxR6qwkY43k5HM3oeWONx9LbxdJX6vGsxEc2XcrrONMPGZ");
             contacttype.setContactTypeDesc("Ed6BxKotRj30hPiaVyi0uyivguvEGaUWyFzTt03oPZlzO92oGF");
             contacttype.setContactTypeIcon("9wxj7xVgjvdb3BRRVlVej4GzAlhj0N68KNgnaviYg8y0QLz7RE");
@@ -121,6 +122,32 @@ public class ContactTypeTestCase {
             contacttype.setContactTypeDesc("CBnggge4ky7VUr7t1MtBYhOxNOsw8g0HLCde8dvwqr9HEWGQ3D");
             contacttype.setVersionId(1);
             contacttype.setContactTypeIcon("b2RkmL9VhjjMiUpiCACGV5OBOSxPKG7aLdWuhh8DBhawDhFWcX");
+=======
+            contacttype.setContactTypeIcon("Z90tmIaC5aBRatJRflUUBkfrOiqbp2JggPZS4wXaEBP6EZpNfl");
+            contacttype.setContactTypeDesc("B1XSqerCr5g5cGOGOoYSfFgEddEaE7nPzyOgvnku5VZlYH1flm");
+            contacttype.setContactType("vNtLWknAhWgx73R9l614aU78xjj11k5LW0TyMgOPTcr5lyc9vd");
+            contacttype.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            contacttype.setEntityValidator(entityValidator);
+            contacttype.isValid();
+            contacttypeRepository.save(contacttype);
+            map.put("ContactTypePrimaryKey", contacttype._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("ContactTypePrimaryKey"));
+            ContactType contacttype = contacttypeRepository.findById((java.lang.String) map.get("ContactTypePrimaryKey"));
+            contacttype.setVersionId(1);
+            contacttype.setContactTypeIcon("oSnxHbX8eSOQqTF291WY3xTKG55osNK7KBRsKda2HLCvypXiBC");
+            contacttype.setContactTypeDesc("uQ9ZaDFRO4GcnDvHpf9Cad3NyAk8ohxOysJTQAwSHxdcV81rtq");
+            contacttype.setContactType("90baXoiHqwvOL3vC3k8Q9kXLEtl13U9tX1wsmGME1nxk3Vcaef");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             contacttype.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             contacttypeRepository.update(contacttype);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

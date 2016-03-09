@@ -54,7 +54,10 @@
     <class>com.project1.app.shared.aaaboundedcontext.authorization.AppMenus</class>
     <class>com.project1.app.shared.aaaboundedcontext.authorization.RoleMenuBridge</class>
     <class>com.project1.app.shared.aaaboundedcontext.authorization.UserRoleBridge</class>
+<<<<<<< HEAD
     <class>com.project1.app.shared.defaultcontext.defaultdomain.NEwEntity</class>
+=======
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
     </persistence-unit>
 
 </persistence>

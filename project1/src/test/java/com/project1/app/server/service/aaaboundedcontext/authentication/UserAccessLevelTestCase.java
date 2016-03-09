@@ -97,6 +97,7 @@ public class UserAccessLevelTestCase {
     public void test1Save() {
         try {
             UserAccessLevel useraccesslevel = new UserAccessLevel();
+<<<<<<< HEAD
             useraccesslevel.setUserAccessLevel(valueGenerator.getRandomInteger(99999, 0));
             useraccesslevel.setLevelHelp("1EW4BRnm6EbHjKwjtNfcpaodlI1ADVsvJlOKFsKuapuLX8KrYZ");
             useraccesslevel.setLevelDescription("X8GY5RekskyWAZxUD5CLA5ZP10NTLNXn9rTW83iUD58yAb2cUf");
@@ -125,6 +126,36 @@ public class UserAccessLevelTestCase {
             useraccesslevel.setLevelDescription("sfQDN1ttjZtxL3Dd9DeXoAf7DLvRh6IuqGxW1UWkjF2uXHG8Wt");
             useraccesslevel.setLevelIcon("hki97jE781Nk41N0cOQJ0VIut3xAhftoeNQAXrMzFjFp1N59lh");
             useraccesslevel.setLevelName("FdyknwTZQKWSyOg3V67DX3qAl44Bv9mC3S1rJx24l0MYrUCCpj");
+=======
+            useraccesslevel.setLevelDescription("6cFp4gZCxfVGWD1Rvw6Rhnjryx76HxugJxFNLcAMbj3v6Fhc9L");
+            useraccesslevel.setLevelHelp("a4Vpb9mjpAg7tpuYcwP3hIZBUIvoZG9GMaKf68BlBhvxgRF5D4");
+            useraccesslevel.setUserAccessLevel(valueGenerator.getRandomInteger(99999, 0));
+            useraccesslevel.setLevelName("VeS4WeoOLpvqDgAkIG5lRgxltAZ1UNMd7QMOeucwpykajj4a2y");
+            useraccesslevel.setLevelIcon("Q19yASsn5mdS3YKoRGnLfghwGu2enkk41Rjr8iUOccwhke5Z1B");
+            useraccesslevel.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            useraccesslevel.setEntityValidator(entityValidator);
+            useraccesslevel.isValid();
+            useraccesslevelRepository.save(useraccesslevel);
+            map.put("UserAccessLevelPrimaryKey", useraccesslevel._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("UserAccessLevelPrimaryKey"));
+            UserAccessLevel useraccesslevel = useraccesslevelRepository.findById((java.lang.String) map.get("UserAccessLevelPrimaryKey"));
+            useraccesslevel.setLevelDescription("iD1t7vB8wnFzpBCIsBLSIg0BwrHCz1sgPKmSXD5MzC3umOffgA");
+            useraccesslevel.setLevelHelp("M7rXPsjyZay5iTik9ZMzY451QaxLrrXoIKRUxPelQaUfu3DbK0");
+            useraccesslevel.setUserAccessLevel(11760);
+            useraccesslevel.setLevelName("3N4O8Z0jH2y3uV93LcsSDP7xZkUoA1ioRbpuxMMppOB7hR3oc0");
+            useraccesslevel.setVersionId(1);
+            useraccesslevel.setLevelIcon("V8wgxWYvCKSOyWYUa2BZsFaodkYW2HkOeAqAhWRkCgII80Rt76");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             useraccesslevel.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             useraccesslevelRepository.update(useraccesslevel);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

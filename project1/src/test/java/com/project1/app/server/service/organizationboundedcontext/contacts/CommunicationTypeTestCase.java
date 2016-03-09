@@ -99,6 +99,7 @@ public class CommunicationTypeTestCase {
     public void test1Save() {
         try {
             CommunicationGroup communicationgroup = new CommunicationGroup();
+<<<<<<< HEAD
             communicationgroup.setCommGroupName("Bs4RoOhS5PEw8alkuAPKKsljyHoBgPlXPAiOQ8vKq0qADfdyHL");
             communicationgroup.setCommGroupDescription("QiPBvneKaKTht4TdyVHQzQOS1vM7QMdOBXpFZngNlNOsc9L4nq");
             CommunicationGroup CommunicationGroupTest = communicationgroupRepository.save(communicationgroup);
@@ -158,6 +159,67 @@ public class CommunicationTypeTestCase {
             if (listofcommGroupId.size() == 0) {
                 org.junit.Assert.fail("Query did not return any records.");
             }
+=======
+            communicationgroup.setCommGroupName("AceG3L7IuclNLneBL1SlJrPhg8weMlTLXqoQAFrZA7ZPpcQvzN");
+            communicationgroup.setCommGroupDescription("NcT25uG89Vy8EkqepeKUGXBJp677pMQMDCQtjhJqwkq1vKxe4O");
+            CommunicationGroup CommunicationGroupTest = communicationgroupRepository.save(communicationgroup);
+            map.put("CommunicationGroupPrimaryKey", communicationgroup._getPrimarykey());
+            CommunicationType communicationtype = new CommunicationType();
+            communicationtype.setCommGroupId((java.lang.String) CommunicationGroupTest._getPrimarykey());
+            communicationtype.setCommTypeDescription("JXpEtvTxaXs8ETaKaWqrwbkNimb6T9HvTED8lSa4reuTvPJc2W");
+            communicationtype.setCommTypeName("i9W3UuswNQ9RSUFIQhc7DvWRMM6dFZnhbt3GiwTv6iIjZP8b3X");
+            communicationtype.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            communicationtype.setEntityValidator(entityValidator);
+            communicationtype.isValid();
+            communicationtypeRepository.save(communicationtype);
+            map.put("CommunicationTypePrimaryKey", communicationtype._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Autowired
+    private CommunicationGroupRepository<CommunicationGroup> communicationgroupRepository;
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("CommunicationTypePrimaryKey"));
+            CommunicationType communicationtype = communicationtypeRepository.findById((java.lang.String) map.get("CommunicationTypePrimaryKey"));
+            communicationtype.setCommTypeDescription("EjQ1DVpytkEUyBB0OLXpTOOV4J8Ykr3B0bQTrkoiWHSFNK4jdo");
+            communicationtype.setCommTypeName("JHUJgcltz4ESjw1JnNYrcEEDmGg2zinjAVoyfS3OwI1k6MtQqz");
+            communicationtype.setVersionId(1);
+            communicationtype.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
+            communicationtypeRepository.update(communicationtype);
+        } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test3findBycommGroupId() {
+        try {
+            java.util.List<CommunicationType> listofcommGroupId = communicationtypeRepository.findByCommGroupId((java.lang.String) map.get("CommunicationGroupPrimaryKey"));
+            if (listofcommGroupId.size() == 0) {
+                org.junit.Assert.fail("Query did not return any records.");
+            }
+        } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test3FindById() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("CommunicationTypePrimaryKey"));
+            communicationtypeRepository.findById((java.lang.String) map.get("CommunicationTypePrimaryKey"));
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {
             org.junit.Assert.fail(e.getMessage());
         } catch (Exception e) {

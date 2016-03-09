@@ -24,7 +24,11 @@ import com.athena.framework.server.bean.FindByBean;
 
 @RestController
 @Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for Question Master table Entity", complexity = Complexity.LOW)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Service for Question Master table Entity", complexity = Complexity.LOW)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 @RequestMapping("/Question")
 public class QuestionServiceImpl extends QuestionService {
 

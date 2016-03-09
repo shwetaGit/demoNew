@@ -97,6 +97,7 @@ public class PasswordPolicyTestCase {
     public void test1Save() {
         try {
             PasswordPolicy passwordpolicy = new PasswordPolicy();
+<<<<<<< HEAD
             passwordpolicy.setMinPwdLength(5);
             passwordpolicy.setMinSmallLetters(3);
             passwordpolicy.setMinNumericValues(2);
@@ -133,6 +134,44 @@ public class PasswordPolicyTestCase {
             passwordpolicy.setPolicyDescription("G91FpQyzZ4pWDtThVxPELIZ4Jdu8FUhd3Sclh3efsjpkBPdrRV");
             passwordpolicy.setMaxPwdLength(6);
             passwordpolicy.setMinSpecialLetters(3);
+=======
+            passwordpolicy.setPolicyDescription("wK88UOa477KgjjaIaU8o67Nujsx9ymmyjJmxm3MsQxtR8C5IPA");
+            passwordpolicy.setMaxPwdLength(18);
+            passwordpolicy.setMinPwdLength(8);
+            passwordpolicy.setMinNumericValues(9);
+            passwordpolicy.setMinSpecialLetters(4);
+            passwordpolicy.setPolicyName("6gfiVhK4ZBvo2yxGwAh6I0Q699SnYtFOLNp3hs4AJCXZGujL7V");
+            passwordpolicy.setAllowedSpecialLetters("1Q8qy1nebqg2VxnGxrE2yreLxKVJUEZT9fJfjr6Lm39xH6meth");
+            passwordpolicy.setMinSmallLetters(3);
+            passwordpolicy.setMinCapitalLetters(7);
+            passwordpolicy.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            passwordpolicy.setEntityValidator(entityValidator);
+            passwordpolicy.isValid();
+            passwordpolicyRepository.save(passwordpolicy);
+            map.put("PasswordPolicyPrimaryKey", passwordpolicy._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("PasswordPolicyPrimaryKey"));
+            PasswordPolicy passwordpolicy = passwordpolicyRepository.findById((java.lang.String) map.get("PasswordPolicyPrimaryKey"));
+            passwordpolicy.setPolicyDescription("Tltr8fhF4kBwdkrIcPjHjUcp9weknwUjXKGRF3FGap5SeNqjJf");
+            passwordpolicy.setMaxPwdLength(8);
+            passwordpolicy.setMinPwdLength(2);
+            passwordpolicy.setMinNumericValues(5);
+            passwordpolicy.setMinSpecialLetters(9);
+            passwordpolicy.setVersionId(1);
+            passwordpolicy.setPolicyName("xCsgxTJ5oJR1b7btMCxK9n04BauQFSCC624rn1Z4xPXOwIvW5I");
+            passwordpolicy.setAllowedSpecialLetters("xK1bnHzv0erQkAdxUIxvlXHAIT5GH5C7k86bmU8eleNOcMzDOO");
+            passwordpolicy.setMinSmallLetters(3);
+            passwordpolicy.setMinCapitalLetters(2);
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             passwordpolicy.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             passwordpolicyRepository.update(passwordpolicy);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

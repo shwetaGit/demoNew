@@ -1,0 +1,8 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2016-02-26 09:17:11
+ development mode --enabled true 
+project --topLevelPackage com --projectName testpro
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2016-02-26 09:17:13
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2016-02-26 09:17:13
+// script --file testpro.cf
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2016-02-26 09:17:13

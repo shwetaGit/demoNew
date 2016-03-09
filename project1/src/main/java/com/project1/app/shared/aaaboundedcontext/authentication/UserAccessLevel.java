@@ -32,7 +32,11 @@ import javax.persistence.NamedQueries;
 @Table(name = "ast_UserAccessLevel_M")
 @Entity
 @Cache(type = CacheType.CACHE, isolation = CacheIsolationType.ISOLATED)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "UserAccessLevel", complexity = Complexity.LOW)
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "UserAccessLevel", complexity = Complexity.LOW)
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 @NamedQueries({ @javax.persistence.NamedQuery(name = "UserAccessLevel.findById", query = "select e from UserAccessLevel e where e.systemInfo.activeStatus=1 and e.userAccessLevelId =:userAccessLevelId") })
 public class UserAccessLevel implements Serializable, CommonEntityInterface, Comparator<UserAccessLevel> {
 

@@ -97,6 +97,7 @@ public class AddressTypeTestCase {
     public void test1Save() {
         try {
             AddressType addresstype = new AddressType();
+<<<<<<< HEAD
             addresstype.setAddressTypeDesc("cRLQI8PMS0edcliKKymnSNfeeorr5KglKewpwRpdaVNA855jh7");
             addresstype.setAddressTypeIcon("POa3fnnEb65Im0QH8HuDX7E49XTWoUmFLoVsu29YaGzfJFbMOq");
             addresstype.setAddressType("ioddSXfWTby9NzbJGHRCMm76nFfhS1vHp7k7uvOGBtKBDmpuQL");
@@ -121,6 +122,32 @@ public class AddressTypeTestCase {
             addresstype.setVersionId(1);
             addresstype.setAddressTypeIcon("drgONahIaEwnyqx9BpY5bas3pBRue5BY0B0iXnkuE6vElvanE8");
             addresstype.setAddressType("00eEK89AUwiW1ZtH9HMILiiByyAbmS4nHFNoi8RCSrP8eg8B14");
+=======
+            addresstype.setAddressTypeDesc("vz8ovMXHtVq4TpAeOJpWvPwAiu8vGAimRm0x9b6hwHEbsTET2B");
+            addresstype.setAddressTypeIcon("9I7gWhoLVOHY71ttxampxM5aZNO8BcUVBt0y1IzseNCFKZV1nb");
+            addresstype.setAddressType("SgZRyOmVQKjvRvhzIJXNThXhwf8y0f0EU0twjEcR2Pwtu4rJXl");
+            addresstype.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            addresstype.setEntityValidator(entityValidator);
+            addresstype.isValid();
+            addresstypeRepository.save(addresstype);
+            map.put("AddressTypePrimaryKey", addresstype._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("AddressTypePrimaryKey"));
+            AddressType addresstype = addresstypeRepository.findById((java.lang.String) map.get("AddressTypePrimaryKey"));
+            addresstype.setAddressTypeDesc("PM8K0vtfz5pr2z6fsfNMFg4q1jDLHgcxnsq5tps4bR2gZXBgjT");
+            addresstype.setVersionId(1);
+            addresstype.setAddressTypeIcon("ysrpdN5KdjmD2hbddfEWzCnCwuLtUZHE5g9URm7IinT603G7Y8");
+            addresstype.setAddressType("t3zHZuzp8OIOuuokQsUOejHLRM0l1a6nxQnAWBDd5yUNPCRd68");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             addresstype.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             addresstypeRepository.update(addresstype);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

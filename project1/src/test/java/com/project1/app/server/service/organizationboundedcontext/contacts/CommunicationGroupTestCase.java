@@ -97,6 +97,7 @@ public class CommunicationGroupTestCase {
     public void test1Save() {
         try {
             CommunicationGroup communicationgroup = new CommunicationGroup();
+<<<<<<< HEAD
             communicationgroup.setCommGroupName("AGFwhnkF7NH6SaTG9aTvAYFeliZvwbLWDPsNKl4sZnmpdQDtMQ");
             communicationgroup.setCommGroupDescription("q7GvVbRZlLnoThq48tz1LlV6eMRr93FTKv8s9oulGs2CfGzwLd");
             communicationgroup.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
@@ -119,6 +120,30 @@ public class CommunicationGroupTestCase {
             communicationgroup.setCommGroupName("PfhChSfnJAWGAXrvLFkRvABjufs1KFEnCx25XK1jGnpy1R5Wyn");
             communicationgroup.setVersionId(1);
             communicationgroup.setCommGroupDescription("Zp3Owyn8vWE9ysRkqpLll5o5y02LDBM4KGCQvomHLkeLeBXoUS");
+=======
+            communicationgroup.setCommGroupName("lEuVwGGX3BHijKKTvQA3V9Jk6xGvjefEeJ06OOxNqBbl4KDKke");
+            communicationgroup.setCommGroupDescription("4mV4PKkKWsoozRTuZXzrIARkLm1SEVBnmIBFYv3zpGP4R1NU3S");
+            communicationgroup.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            communicationgroup.setEntityValidator(entityValidator);
+            communicationgroup.isValid();
+            communicationgroupRepository.save(communicationgroup);
+            map.put("CommunicationGroupPrimaryKey", communicationgroup._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("CommunicationGroupPrimaryKey"));
+            CommunicationGroup communicationgroup = communicationgroupRepository.findById((java.lang.String) map.get("CommunicationGroupPrimaryKey"));
+            communicationgroup.setCommGroupName("PJS1cZ7jRGCybbO5bmyeB32dElrlbOWPPO4qUdXEsZmc7REhh5");
+            communicationgroup.setVersionId(1);
+            communicationgroup.setCommGroupDescription("cOMMUAGS2FLlcKJ8lP6l3oNoqsarfzcWNdgjdvw3fIyaN1v1rg");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             communicationgroup.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             communicationgroupRepository.update(communicationgroup);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

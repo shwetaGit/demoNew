@@ -97,6 +97,7 @@ public class LanguageTestCase {
     public void test1Save() {
         try {
             Language language = new Language();
+<<<<<<< HEAD
             language.setAlpha4("Ecq1");
             language.setAlpha4parentid(7);
             language.setAlpha3("fdR");
@@ -131,6 +132,42 @@ public class LanguageTestCase {
             language.setVersionId(1);
             language.setLanguageDescription("NQdEHoT6bFR20IDn6nHIEcE0itNRBSvHcFdaywP0W3m7TWKyl2");
             language.setLanguageIcon("pk8LaefVPUBF6pt94kUuXmg4K45CG9dDAbGa4ZjFehXOlAGYCl");
+=======
+            language.setLanguage("yonFNM7R0GmgMoC5wO7sylykqRBQBIwSgd289uJdIq6SbfJ1X1");
+            language.setAlpha3("VBM");
+            language.setAlpha4("mfoU");
+            language.setLanguageType("ilEhjWHalcFYIna2L5yEcXUmaT7FxANF");
+            language.setLanguageIcon("uSFJcTgpBMK5VxCKAC4AZfvnaWUpRmpn1JuNktdReaDfUawCz7");
+            language.setLanguageDescription("viBTJlFo7FEt2chvc3PX1kDmYVNFoCZemzHOwMAMJVRSlti2Fk");
+            language.setAlpha4parentid(3);
+            language.setAlpha2("1j");
+            language.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);
+            language.setEntityValidator(entityValidator);
+            language.isValid();
+            languageRepository.save(language);
+            map.put("LanguagePrimaryKey", language._getPrimarykey());
+        } catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {
+            org.junit.Assert.fail(e.getMessage());
+        } catch (java.lang.Exception e) {
+            org.junit.Assert.fail(e.getMessage());
+        }
+    }
+
+    @Test
+    public void test2Update() {
+        try {
+            org.junit.Assert.assertNotNull(map.get("LanguagePrimaryKey"));
+            Language language = languageRepository.findById((java.lang.String) map.get("LanguagePrimaryKey"));
+            language.setLanguage("0L71zpv6k4Cvm1E7FBLuLzL91TH0o5lHagdqSIOLrwwaU7Xq7q");
+            language.setAlpha3("7iJ");
+            language.setAlpha4("w3YK");
+            language.setLanguageType("wiKiRiWsQvhxytL3VZLoNyDSKr5Uxiww");
+            language.setLanguageIcon("R9vfti7eG4si8qGabyZJcE8tsZWZPE8psLPGAK0mIx6VcyJ05V");
+            language.setLanguageDescription("3ym92toE2AfyChkFLaV0BiUPOKzie3ofwdA9AxOrlydaklFZ8s");
+            language.setVersionId(1);
+            language.setAlpha4parentid(11);
+            language.setAlpha2("mO");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
             language.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);
             languageRepository.update(language);
         } catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {

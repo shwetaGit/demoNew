@@ -37,8 +37,13 @@ import javax.persistence.NamedQueries;
 @Table(name = "ast_SessionData_T")
 @Entity
 @Cache(type = CacheType.CACHE)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "SessionData", complexity = Complexity.LOW)
 @NamedQueries({ @javax.persistence.NamedQuery(name = "deleteAllSessionData", query = "delete from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId"), @javax.persistence.NamedQuery(name = "SessionData.findByAppSessionId", query = "select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId"), @javax.persistence.NamedQuery(name = "findBySessionKey", query = "select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId and e.sessionKey =:sessionKey") })
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "SessionData", complexity = Complexity.LOW)
+@NamedQueries({ @javax.persistence.NamedQuery(name = "SessionData.findByAppSessionId", query = "select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId"), @javax.persistence.NamedQuery(name = "findBySessionKey", query = "select e from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId and e.sessionKey =:sessionKey"), @javax.persistence.NamedQuery(name = "deleteAllSessionData", query = "delete from SessionData e where e.systemInfo.activeStatus=1 and e.appSessionId=:appSessionId") })
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
 public class SessionData implements Serializable, CommonEntityInterface, SessionDataInterface, Comparator<SessionData> {
 
     @Column(name = "customerId")

@@ -25,6 +25,7 @@ import com.athena.framework.server.bean.FindByBean;
 
 @RestController
 @Scope(value = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for State Master table Entity", complexity = Complexity.LOW)
 @RequestMapping("/State")
 public class StateServiceImpl extends StateService {
@@ -149,6 +150,132 @@ public class StateServiceImpl extends StateService {
         fieldMetaData.put("stateCode", "integer");
         fieldMetaData.put("stateCodeChar2", "String");
         fieldMetaData.put("countryId", "String");
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Service for State Master table Entity", complexity = Complexity.LOW)
+@RequestMapping("/State")
+public class StateServiceImpl extends StateService {
+
+    @Autowired
+    private RuntimeLogInfoHelper runtimeLogInfoHelper;
+
+    @Autowired
+    private Sprinkler sprinkler;
+
+    @Autowired
+    private StateRepository<State> staterepo;
+
+    @RequestMapping(value = "/findAll", consumes = "application/json", method = RequestMethod.GET)
+    @Override
+    public HttpEntity<ResponseBean> findAll() throws SpartanPersistenceException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.OK;
+        java.util.List<com.project1.app.shared.organizationboundedcontext.location.State> lststate = staterepo.findAll();
+        responseBean.add("success", true);
+        responseBean.add("message", "Successfully retrived ");
+        responseBean.add("data", lststate);
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(consumes = "application/json", method = RequestMethod.POST)
+    @Override
+    public HttpEntity<ResponseBean> save(@RequestBody State entity) throws SpartanPersistenceException, SpartanTransactionException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.CREATED;
+        try {
+            staterepo.save(entity);
+            responseBean.add("success", true);
+            responseBean.add("message", "Successfully Created");
+            responseBean.add("data", entity);
+            httpStatus = org.springframework.http.HttpStatus.CREATED;
+        } catch (org.springframework.transaction.TransactionException e) {
+            throw new com.athena.framework.server.exception.repository.SpartanTransactionException("can not save", e.getRootCause());
+        }
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(consumes = "application/json", headers = { "isArray" }, method = RequestMethod.POST)
+    @Override
+    public HttpEntity<ResponseBean> save(@RequestBody List<State> entity, @RequestHeader("isArray") boolean request) throws SpartanPersistenceException, SpartanTransactionException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.CREATED;
+        try {
+            staterepo.save(entity);
+            responseBean.add("success", true);
+            responseBean.add("message", "Successfully Created");
+            httpStatus = org.springframework.http.HttpStatus.CREATED;
+        } catch (org.springframework.transaction.TransactionException e) {
+            throw new com.athena.framework.server.exception.repository.SpartanTransactionException("can not save", e.getRootCause());
+        }
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(value = "/{cid}", consumes = "application/json", method = RequestMethod.DELETE)
+    @Override
+    public HttpEntity<ResponseBean> delete(@PathVariable("cid") String entity) throws SpartanPersistenceException, SpartanTransactionException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.OK;
+        try {
+            staterepo.delete(entity);
+            httpStatus = org.springframework.http.HttpStatus.OK;
+            responseBean.add("success", true);
+            responseBean.add("message", "Successfully deleted ");
+        } catch (org.springframework.transaction.TransactionException e) {
+            throw new com.athena.framework.server.exception.repository.SpartanTransactionException("can not delete", e.getRootCause());
+        }
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(consumes = "application/json", method = RequestMethod.PUT)
+    @Override
+    public HttpEntity<ResponseBean> update(@RequestBody State entity) throws SpartanPersistenceException, SpartanTransactionException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.OK;
+        try {
+            staterepo.update(entity);
+            responseBean.add("success", true);
+            responseBean.add("message", "Successfully updated ");
+            responseBean.add("data", entity._getPrimarykey().toString());
+        } catch (org.springframework.transaction.TransactionException e) {
+            throw new com.athena.framework.server.exception.repository.SpartanTransactionException("can not update", e.getRootCause());
+        }
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(consumes = "application/json", headers = { "isArray" }, method = RequestMethod.PUT)
+    @Override
+    public HttpEntity<ResponseBean> update(@RequestBody List<State> entity, @RequestHeader("isArray") boolean request) throws SpartanPersistenceException, SpartanTransactionException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.OK;
+        try {
+            staterepo.update(entity);
+            responseBean.add("success", true);
+            responseBean.add("message", "Successfully updated entities");
+            httpStatus = org.springframework.http.HttpStatus.OK;
+        } catch (org.springframework.transaction.TransactionException e) {
+            throw new com.athena.framework.server.exception.repository.SpartanTransactionException("can not update", e.getRootCause());
+        }
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    @RequestMapping(value = "/search", consumes = "application/json", method = RequestMethod.POST)
+    @Override
+    public HttpEntity<ResponseBean> search(@RequestBody Map<String, Object> fieldData) throws SpartanPersistenceException, Exception {
+        ResponseBean responseBean = new ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.OK;
+        List<java.lang.Object> lststate = staterepo.search("State.DefaultFinders", fieldData, getFieldMetaData());
+        responseBean.add("success", true);
+        responseBean.add("message", "Successfully retrived ");
+        responseBean.add("data", lststate);
+        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, httpStatus);
+    }
+
+    private Map<String, String> getFieldMetaData() {
+        java.util.Map<java.lang.String, java.lang.String> fieldMetaData = new java.util.HashMap<java.lang.String, java.lang.String>();
+        fieldMetaData.put("stateCodeChar3", "String");
+        fieldMetaData.put("countryId", "String");
+        fieldMetaData.put("stateCode", "integer");
+        fieldMetaData.put("stateCodeChar2", "String");
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
         fieldMetaData.put("stateName", "String");
         return fieldMetaData;
     }

@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import com.athena.framework.server.bean.FindByBean;
 
+<<<<<<< HEAD
 @SourceCodeAuthorClass(createdBy = "sagar.jadhav@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for Login Transaction table", complexity = Complexity.MEDIUM)
 public abstract class LoginService {
 
@@ -58,6 +59,56 @@ public abstract class LoginService {
     }
 
     public HttpEntity<ResponseBean> FindUnMappedUser() throws SpartanPersistenceException, Exception {
+=======
+@SourceCodeAuthorClass(createdBy = "sagarjdhv2014@gmail.com", updatedBy = "", versionNumber = "1", comments = "Service for Login Transaction table", complexity = Complexity.MEDIUM)
+public abstract class LoginService {
+
+    public HttpEntity<ResponseBean> findAll() throws Exception, SpartanPersistenceException {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> save(Login entity) throws Exception, SpartanTransactionException, SpartanPersistenceException {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> save(List<Login> entity, boolean isArray) throws Exception, SpartanTransactionException, SpartanPersistenceException {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> delete(String id) throws SpartanTransactionException, SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> update(Login entity) throws SpartanTransactionException, SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> update(List<Login> entity, boolean isArray) throws SpartanTransactionException, SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> search(Map<String, Object> fieldData) throws Exception, SpartanPersistenceException {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> findByUserId(FindByBean findByBean) throws SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> findByContactId(FindByBean findByBean) throws SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> findById(FindByBean findByBean) throws SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> FindUnMappedUser() throws SpartanPersistenceException, Exception {
+        return null;
+    }
+
+    public HttpEntity<ResponseBean> FindMappedUser() throws SpartanPersistenceException, Exception {
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
         return null;
     }
 }

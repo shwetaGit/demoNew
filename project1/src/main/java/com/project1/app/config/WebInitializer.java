@@ -88,7 +88,11 @@ public class WebInitializer implements WebApplicationInitializer {
     }
 
     public String getSolrHome() {
+<<<<<<< HEAD
         return "/home/applifire/workspace/9JJAA9690CLRL52HCIDHKG/project1Solr-4.9.0";
+=======
+        return "/home/applifire/workspace/MUT1RY81BCEHLFD5AOVWXW/project1Solr-4.9.0";
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
     }
 
     public String getPackage() {
