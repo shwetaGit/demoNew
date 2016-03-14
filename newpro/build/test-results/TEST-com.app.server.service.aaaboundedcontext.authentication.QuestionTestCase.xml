@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.aaaboundedcontext.authentication.QuestionTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-14T07:42:16" hostname="3651effa586b" time="0.239">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.aaaboundedcontext.authentication.QuestionTestCase" time="0.082"/>
+  <testcase name="test2Update" classname="com.app.server.service.aaaboundedcontext.authentication.QuestionTestCase" time="0.065"/>
+  <testcase name="test3FindById" classname="com.app.server.service.aaaboundedcontext.authentication.QuestionTestCase" time="0.022"/>
+  <testcase name="test4Delete" classname="com.app.server.service.aaaboundedcontext.authentication.QuestionTestCase" time="0.069"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 07:42:16.833--ClientSession(1059342631)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Question_M (questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4679A612-8B46-4666-9113-1C0E7BEAC2EE, 3, l6mv23O7lqcMb7oQaZdRpQFrmiI9UR4HP4H3KK8PQzcPRAjhH5, 0, e9I4DEguuzOLf4gvISWpUbP39dx0MXjsKfGkgYdS3h1beTGgPQ, 1, AAAAA, 2016-03-14 07:42:16.818, null, 2016-03-14 07:42:16.818, 1, 51000]
+[EL Fine]: sql: 2016-03-14 07:42:16.904--ClientSession(1792815647)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE ((activeStatus = ?) AND (questionId = ?))
+	bind => [1, 4679A612-8B46-4666-9113-1C0E7BEAC2EE]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 07:42:16.913--ClientSession(532774870)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE (questionId = ?)
+	bind => [4679A612-8B46-4666-9113-1C0E7BEAC2EE]
+[EL Fine]: sql: 2016-03-14 07:42:16.915--ClientSession(532774870)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--UPDATE ast_Question_M SET levelid = ?, question = ?, questionIcon = ?, updatedBy = ?, versionId = ? WHERE ((questionId = ?) AND (versionId = ?))
+	bind => [9, 3CWlKcd62twkkYKwoN6VzxNPTsC3eRREWVUa0fkANRBrxyWJam, aVScl9THh3l7ZEGAz6RA5voFdotF2reUJMFbfJoM7PFwrrqrnZ, AAAAA, 2, 4679A612-8B46-4666-9113-1C0E7BEAC2EE, 1]
+[EL Fine]: sql: 2016-03-14 07:42:16.97--ClientSession(1830370815)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE ((activeStatus = ?) AND (questionId = ?))
+	bind => [1, 4679A612-8B46-4666-9113-1C0E7BEAC2EE]
+[EL Fine]: sql: 2016-03-14 07:42:16.993--ClientSession(1718948081)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT questionId, levelid, question, questionDetails, questionIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Question_M WHERE (questionId = ?)
+	bind => [4679A612-8B46-4666-9113-1C0E7BEAC2EE]
+[EL Fine]: sql: 2016-03-14 07:42:16.996--ClientSession(1718948081)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Question_M WHERE ((questionId = ?) AND (versionId = ?))
+	bind => [4679A612-8B46-4666-9113-1C0E7BEAC2EE, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

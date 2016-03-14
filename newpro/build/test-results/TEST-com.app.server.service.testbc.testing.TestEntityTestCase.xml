@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.testbc.testing.TestEntityTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-03-14T07:42:27" hostname="3651effa586b" time="0.282">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.testbc.testing.TestEntityTestCase" time="0.141"/>
+  <testcase name="test2Update" classname="com.app.server.service.testbc.testing.TestEntityTestCase" time="0.059"/>
+  <testcase name="test3FindById" classname="com.app.server.service.testbc.testing.TestEntityTestCase" time="0.02"/>
+  <testcase name="test4Delete" classname="com.app.server.service.testbc.testing.TestEntityTestCase" time="0.062"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-14 07:42:27.276--ClientSession(1996436564)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_TestEntity_M (testId, cardNo, eTime, eType, tDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [12A8AF8A-4C35-4923-A43D-0DE4F135E701, AShjSr8dj5QX4mnNWienHrFQyF81VVurEFOqhtIAXvK3xV9Aba, m1BmDfYvWdDnuMQoCvz5Pp2QvtoNUeU9tKfU05ZbPEXzjfZoTP, qkqhsN1xQ7bBI4O0seAKEtYUTUWcp0yLd5dRUgc1cyfJjaJadA, Gyoyw5IEWZUT49cXvwH15wP8ubz6hUTIa3Ad8NWC4aGLtBWXwM, 1, AAAAA, 2016-03-14 07:42:27.233, null, 2016-03-14 07:42:27.233, 1, 51000]
+[EL Fine]: sql: 2016-03-14 07:42:27.381--ClientSession(920014976)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT testId, cardNo, eTime, eType, tDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_TestEntity_M WHERE ((activeStatus = ?) AND (testId = ?))
+	bind => [1, 12A8AF8A-4C35-4923-A43D-0DE4F135E701]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-14 07:42:27.388--ClientSession(2023973827)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT testId, cardNo, eTime, eType, tDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_TestEntity_M WHERE (testId = ?)
+	bind => [12A8AF8A-4C35-4923-A43D-0DE4F135E701]
+[EL Fine]: sql: 2016-03-14 07:42:27.39--ClientSession(2023973827)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--UPDATE ast_TestEntity_M SET cardNo = ?, eTime = ?, eType = ?, tDate = ?, updatedBy = ?, versionId = ? WHERE ((testId = ?) AND (versionId = ?))
+	bind => [IJFoMchWSHBKu0e1lHxL9rZOfkIMSSo3rQPdAu8RmdmHcjajCO, 48UujV8vtjAKYxZh3hmFH0AmMnNBnqkFf9gmWDPSTArfCVZaLz, EKp2dWpNmqXo6DUFDZV0Dn69r3vcFCymmorEfqysKKwigS20tA, l7iMcBGKcTlLq3dfD4alN3Fv52cFBytedoi7Cq2y4IW9P9LnqG, AAAAA, 2, 12A8AF8A-4C35-4923-A43D-0DE4F135E701, 1]
+[EL Fine]: sql: 2016-03-14 07:42:27.437--ClientSession(2126180753)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT testId, cardNo, eTime, eType, tDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_TestEntity_M WHERE ((activeStatus = ?) AND (testId = ?))
+	bind => [1, 12A8AF8A-4C35-4923-A43D-0DE4F135E701]
+[EL Fine]: sql: 2016-03-14 07:42:27.455--ClientSession(674513801)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--SELECT testId, cardNo, eTime, eType, tDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_TestEntity_M WHERE (testId = ?)
+	bind => [12A8AF8A-4C35-4923-A43D-0DE4F135E701]
+[EL Fine]: sql: 2016-03-14 07:42:27.457--ClientSession(674513801)--Connection(1963750640)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_TestEntity_M WHERE ((testId = ?) AND (versionId = ?))
+	bind => [12A8AF8A-4C35-4923-A43D-0DE4F135E701, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

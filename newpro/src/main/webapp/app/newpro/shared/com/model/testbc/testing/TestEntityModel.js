@@ -1,0 +1,39 @@
+Ext.define('Newpro.newpro.shared.com.model.testbc.testing.TestEntityModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "testId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "tDate",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "eType",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "cardNo",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "eTime",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
