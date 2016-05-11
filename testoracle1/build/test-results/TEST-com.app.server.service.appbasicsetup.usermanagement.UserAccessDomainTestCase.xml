@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-05-11T11:22:26" hostname="14d36885bda5" time="0.642">
+<testsuite name="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-05-11T13:37:28" hostname="f1c80c9f5bcc" time="0.344">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.135"/>
-  <testcase name="test2Update" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.053"/>
-  <testcase name="test3FindById" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.015"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.263"/>
-  <testcase name="test6Delete" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.174"/>
-  <system-out><![CDATA[Wed May 11 11:22:26 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed May 11 11:22:26 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testoracle1/src/main/webapp/WEB-INF/conf]
-Wed May 11 11:22:26 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testoracle1/src/main/webapp/WEB-INF/conf]
-Wed May 11 11:22:26 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed May 11 11:22:26 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed May 11 11:22:26 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed May 11 11:22:26 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP= A.Map=[453]  E.Map EC/RC=[151/40] )
-Wed May 11 11:22:26 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed May 11 11:22:26 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed May 11 11:22:26 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[453]  E.Map EC/RC=[151/40] )
-Wed May 11 11:22:26 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed May 11 11:22:26 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed May 11 11:22:26 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[453]  E.Map EC/RC=[151/40] )
-Wed May 11 11:22:26 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed May 11 11:22:26 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed May 11 11:22:26 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed May 11 11:22:26 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed May 11 11:22:26 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed May 11 11:22:26 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed May 11 11:22:26 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed May 11 11:22:26 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed May 11 11:22:26 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed May 11 11:22:26 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed May 11 11:22:26 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@41beeb4e] ....
-Wed May 11 11:22:26 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed May 11 11:22:26 UTC 2016|Scheduler|Adding [LMID=[f60ee060-b5cf-402b-9dd1-45c340de682e]] Delay=5 Time Unit=MINUTES
-Wed May 11 11:22:26 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed May 11 11:22:26 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed May 11 11:22:26 UTC 2016|Scheduler|Startup Completed..
-Wed May 11 11:22:26 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed May 11 11:22:26 UTC 2016|Log Manager Factory|Log Manager READY! ID = f60ee060-b5cf-402b-9dd1-45c340de682e
+  <testcase name="test1Save" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.133"/>
+  <testcase name="test2Update" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.061"/>
+  <testcase name="test3FindById" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.008"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.113"/>
+  <testcase name="test6Delete" classname="com.app.server.service.appbasicsetup.usermanagement.UserAccessDomainTestCase" time="0.026"/>
+  <system-out><![CDATA[Wed May 11 13:37:28 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed May 11 13:37:28 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/testoracle1/src/main/webapp/WEB-INF/conf]
+Wed May 11 13:37:28 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/testoracle1/src/main/webapp/WEB-INF/conf]
+Wed May 11 13:37:28 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed May 11 13:37:28 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed May 11 13:37:28 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed May 11 13:37:28 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP= A.Map=[453]  E.Map EC/RC=[151/40] )
+Wed May 11 13:37:28 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed May 11 13:37:28 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed May 11 13:37:28 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[453]  E.Map EC/RC=[151/40] )
+Wed May 11 13:37:28 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed May 11 13:37:28 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed May 11 13:37:28 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=4/374 SYS=4/9 [374/0]  TPL=0/0 [0/0]  APP=0/0 [0/0]  A.Map=[453]  E.Map EC/RC=[151/40] )
+Wed May 11 13:37:28 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed May 11 13:37:28 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed May 11 13:37:28 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed May 11 13:37:28 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed May 11 13:37:28 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed May 11 13:37:28 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed May 11 13:37:28 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed May 11 13:37:28 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed May 11 13:37:28 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed May 11 13:37:28 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed May 11 13:37:28 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@365485d1] ....
+Wed May 11 13:37:28 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed May 11 13:37:28 UTC 2016|Scheduler|Adding [LMID=[52712971-2b73-4255-b787-2d9cb37c4fa6]] Delay=5 Time Unit=MINUTES
+Wed May 11 13:37:28 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed May 11 13:37:28 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed May 11 13:37:28 UTC 2016|Scheduler|Startup Completed..
+Wed May 11 13:37:28 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed May 11 13:37:28 UTC 2016|Log Manager Factory|Log Manager READY! ID = 52712971-2b73-4255-b787-2d9cb37c4fa6
 Setting logged in user info for ADD
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Fine]: sql: 2016-05-11 11:22:26.639--ClientSession(51188523)--Connection(1314942091)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 81533, 1, xyz, 2016-05-11 11:22:26.633, AAAAA, 2016-05-11 11:22:26.633, 1, 51000]
-[EL Config]: connection: 2016-05-11 11:22:26.74--ServerSession(159141144)--Connection(1314942091)--Thread(Thread[Test worker,5,main])--disconnect
-[EL Fine]: sql: 2016-05-11 11:22:26.748--ClientSession(290112767)--Connection(1525810754)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Fine]: sql: 2016-05-11 13:37:28.625--ClientSession(787953443)--Connection(72093997)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 11847, 1, xyz, 2016-05-11 13:37:28.619, AAAAA, 2016-05-11 13:37:28.619, 1, 51000]
+[EL Config]: connection: 2016-05-11 13:37:28.721--ServerSession(525232874)--Connection(72093997)--Thread(Thread[Test worker,5,main])--disconnect
+[EL Fine]: sql: 2016-05-11 13:37:28.733--ClientSession(862736728)--Connection(406870209)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
 	bind => [1, xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN]
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Config]: connection: 2016-05-11 11:22:26.753--ServerSession(159141144)--Connection(1525810754)--Thread(Thread[Test worker,5,main])--disconnect
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Config]: connection: 2016-05-11 13:37:28.737--ServerSession(525232874)--Connection(406870209)--Thread(Thread[Test worker,5,main])--disconnect
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-05-11 11:22:26.761--ClientSession(7021037)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+[EL Fine]: sql: 2016-05-11 13:37:28.745--ClientSession(157347457)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
 	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN]
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Fine]: sql: 2016-05-11 11:22:26.766--ClientSession(7021037)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Fine]: sql: 2016-05-11 13:37:28.748--ClientSession(157347457)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
 	bind => [WyZuA932FApVV0DCi4hEj5Zw26hdtg6Y4SaNRwLwqVTZ3wlE8M, FwASQwEdQBicNRFarmZEYVSqxfmTRDwgh9LeGiuFPly5TjrKGR, l0qMsLHRusQAiMa3ctrCZrCpl6sZn2o3IA1lZ4jtnBaXqbo0R7, aTW2e4AdRfyTm53SQiey7P9DNiDTE9vRzuZwp6RqlKQeg1jt61, 90340, 2, xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, 1]
-[EL Fine]: sql: 2016-05-11 11:22:26.807--ClientSession(252819187)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+[EL Fine]: sql: 2016-05-11 13:37:28.79--ClientSession(690025415)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
 	bind => [1, xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN]
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Fine]: sql: 2016-05-11 11:22:26.816--ClientSession(953047379)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Fine]: sql: 2016-05-11 13:37:28.8--ClientSession(372164140)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
 	bind => [1, xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN]
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-Wed May 11 11:22:26 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Fine]: sql: 2016-05-11 11:22:26.88--ClientSession(1006990605)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 11:22:26.875, AAAAA, 2016-05-11 11:22:26.875, 1, 51000]
-[EL Fine]: sql: 2016-05-11 11:22:26.885--ClientSession(1006990605)--Thread(Thread[Test worker,5,main])--SELECT 1 FROM DUAL
-[EL Warning]: 2016-05-11 11:22:27.057--UnitOfWork(2110361235)--Thread(Thread[Test worker,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Fine]: sql: 2016-05-11 13:37:28.868--ClientSession(1192440712)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 13:37:28.861, AAAAA, 2016-05-11 13:37:28.861, 1, 51000]
+[EL Fine]: sql: 2016-05-11 13:37:28.875--ClientSession(1192440712)--Thread(Thread[Test worker,5,main])--SELECT 1 FROM DUAL
+[EL Warning]: 2016-05-11 13:37:28.896--UnitOfWork(1747936175)--Thread(Thread[Test worker,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5): org.eclipse.persistence.exceptions.DatabaseException
 Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (PROO.SYS_C0010511) violated
 
 Error Code: 1
 Call: INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 11:22:26.875, AAAAA, 2016-05-11 11:22:26.875, 1, 51000]
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 13:37:28.861, AAAAA, 2016-05-11 13:37:28.861, 1, 51000]
 Query: InsertObjectQuery(90340,jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU,JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa)
-[EL Fine]: sql: 2016-05-11 11:22:27.08--ClientSession(642937566)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+[EL Fine]: sql: 2016-05-11 13:37:28.916--ClientSession(1167840678)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
 	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN]
-Wed May 11 11:22:27 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
-[EL Fine]: sql: 2016-05-11 11:22:27.083--ClientSession(642937566)--Connection(1845972934)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+Wed May 11 13:37:28 UTC 2016|Unknown Alarm = ABSUM317100100 Alarm Split = ABS-UM-3-1-7-100-100
+[EL Fine]: sql: 2016-05-11 13:37:28.919--ClientSession(1167840678)--Connection(1547766973)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
 	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, 2]
 ]]></system-out>
   <system-err><![CDATA[com.app.shared.appbasicsetup.usermanagement.UserAccessDomain.userAccessDomain may not be null
@@ -528,7 +528,7 @@ Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-00001
 
 Error Code: 1
 Call: INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 11:22:26.875, AAAAA, 2016-05-11 11:22:26.875, 1, 51000]
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 13:37:28.861, AAAAA, 2016-05-11 13:37:28.861, 1, 51000]
 Query: InsertObjectQuery(90340,jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU,JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa)
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:524)
 	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:757)
@@ -598,7 +598,7 @@ Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-00001
 
 Error Code: 1
 Call: INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 11:22:26.875, AAAAA, 2016-05-11 11:22:26.875, 1, 51000]
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 13:37:28.861, AAAAA, 2016-05-11 13:37:28.861, 1, 51000]
 Query: InsertObjectQuery(90340,jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU,JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa)
 	at org.eclipse.persistence.internal.jpa.transaction.EntityTransactionImpl.commit(EntityTransactionImpl.java:157)
 	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:515)
@@ -608,7 +608,7 @@ Internal Exception: java.sql.SQLIntegrityConstraintViolationException: ORA-00001
 
 Error Code: 1
 Call: INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 11:22:26.875, AAAAA, 2016-05-11 11:22:26.875, 1, 51000]
+	bind => [xPWocSDL0JdaEugiXtgbnz20UhpZLzAWHd3Dvzjwr50GdU23oN, JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa, TJrleM3acPV22e0QQ4VwzoueyWzljlpAufe721yXpib7WteOgq, 8z5pUZYSw1HJQ0xTiNAkkfEfjeHisxjVhkKuh7wg1TebpmGn9n, jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU, 90340, 1, null, 2016-05-11 13:37:28.861, AAAAA, 2016-05-11 13:37:28.861, 1, 51000]
 Query: InsertObjectQuery(90340,jkRhKizf29CFqPCj1rELoDwN0BaD7caBmERT3nmQWBCYxTnnDU,JZlXZlRMZ5BJbi8jcO4BOIlCsoCYto9f7pI0eCrpgC0hW8TuXa)
 	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:331)
 	at org.eclipse.persistence.internal.databaseaccess.DatabaseAccessor.executeDirectNoSelect(DatabaseAccessor.java:900)

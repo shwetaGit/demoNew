@@ -1,0 +1,14 @@
+ExitCode=0
+TotalTimeTaken=84.833
+TotalFiles=9688
+TotalFolders=4607
+TotalJavaFiles=237
+TotalJsFiles=208
+TotalJsonFiles=88
+TotalCssFiles=669
+TotalXmlFiles=283
+TotalPropertiesFiles=77
+Fri Feb 26 09:20:54 UTC 2016 : Code Factory Process Started for instructions testpro.cf
+Fri Feb 26 09:22:34 UTC 2016 : Code Factory : Total Files created : 9688 | Total Time Taken : 84.833 in seconds
+Fri Feb 26 09:22:33 UTC 2016 : Code Factory : Process Completed Blue Print instructions
+Fri Feb 26 09:22:34 UTC 2016 : Code Factory : Exited with the code 0

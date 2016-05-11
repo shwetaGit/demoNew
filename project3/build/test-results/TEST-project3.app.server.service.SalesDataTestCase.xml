@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="project3.app.server.service.SalesDataTestCase" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-01-18T09:41:36" hostname="999a71990197" time="2.398">
+  <properties/>
+  <testcase name="test1Save" classname="project3.app.server.service.SalesDataTestCase" time="1.655"/>
+  <testcase name="test2Update" classname="project3.app.server.service.SalesDataTestCase" time="0.058"/>
+  <testcase name="test3FindById" classname="project3.app.server.service.SalesDataTestCase" time="0.008"/>
+  <testcase name="test3findBybrandcode" classname="project3.app.server.service.SalesDataTestCase" time="0.005"/>
+  <testcase name="test3findBycategory" classname="project3.app.server.service.SalesDataTestCase" time="0.005"/>
+  <testcase name="test3findBychannelId" classname="project3.app.server.service.SalesDataTestCase" time="0.005"/>
+  <testcase name="test3findBymaterialcode" classname="project3.app.server.service.SalesDataTestCase" time="0.007"/>
+  <testcase name="test3findByreatilercode" classname="project3.app.server.service.SalesDataTestCase" time="0.006"/>
+  <testcase name="test4Delete" classname="project3.app.server.service.SalesDataTestCase" time="0.647"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-18 09:41:36.681--ClientSession(5099137)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [DAF7D4FD-53DF-45FE-AD44-D6BF81C30801, dd9IB0glBmISWEfZiY9hTY3pA2DpvNfRuO3HjXbsEOEAea5aDM, 1, AAAAA, 2016-01-18 09:41:36.679, null, 2016-01-18 09:41:36.679, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:36.786--ClientSession(518010580)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A9064EA0-6BD8-40AA-BD93-E4091BFEC849, Q2b00Uu98b14UOexZpUVckuX4u9KfI4Ym0SWsD2I0CEBBVc4On, DAF7D4FD-53DF-45FE-AD44-D6BF81C30801, 1, AAAAA, 2016-01-18 09:41:36.679, null, 2016-01-18 09:41:36.679, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:37.779--ClientSession(385127265)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Channel_M (channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [DBB6C349-344F-468A-BB3B-F00CA49F6F26, 0zOlNaeRCUEr5S93UEQfusbJIi63hyjWP8qVPLPEHJrQfIQqhW, 1, AAAAA, 2016-01-18 09:41:37.774, null, 2016-01-18 09:41:37.774, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:37.943--ClientSession(1941721393)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Material_M (materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [FE6610D7-B90E-4A7A-9FE1-825555173341, A9064EA0-6BD8-40AA-BD93-E4091BFEC849, NgsmHLoqJngXoaOVpmN31qQO1prxvuRIL3TXfz9vw9fPMK137B, 1, AAAAA, 2016-01-18 09:41:37.938, null, 2016-01-18 09:41:37.938, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:38.026--ClientSession(262001284)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [0C91B69E-3F6A-4E9F-8136-B2748A3B9B06, qSWTZ6lhg2gr3hZUdYu2vkNiUqR9UmiRjSjzhNiAIaAgCiLzHU, 1, AAAAA, 2016-01-18 09:41:38.024, null, 2016-01-18 09:41:38.024, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:38.127--ClientSession(1544063668)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Distributor_M (distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3F9B32F6-2207-40B8-BC54-A3D5CE096F17, am7YTAPITQyDV2YNT0HZcGTSx1jtAo94InhAK80V5pY6zCJIGF, 12.34, 12.34, 0C91B69E-3F6A-4E9F-8136-B2748A3B9B06, 1, AAAAA, 2016-01-18 09:41:38.024, null, 2016-01-18 09:41:38.024, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:38.199--ClientSession(118747264)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Retailer_M (retailercode, distributorcode, retailername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [15CAD400-6B27-4EF7-B6DF-9C4549F18A91, 3F9B32F6-2207-40B8-BC54-A3D5CE096F17, lw0npV06SK9WFwNz5PB5oTMwWM1q9w6u6L1q5kGXZodyurI4Tv, 1, AAAAA, 2016-01-18 09:41:38.024, null, 2016-01-18 09:41:38.024, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 09:41:38.272--ClientSession(1023998742)--Connection(781524917)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesData_T (brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [A9064EA0-6BD8-40AA-BD93-E4091BFEC849, KLH3Hf7KJTvaUv11O10gzhgVwyfDAA4LdtY1GH9jghYbzUkTZY, DAF7D4FD-53DF-45FE-AD44-D6BF81C30801, DBB6C349-344F-468A-BB3B-F00CA49F6F26, 12.34, FE6610D7-B90E-4A7A-9FE1-825555173341, o91wTT8mMWtEgmqzCQlAXYVgcgOIU9bKudH06l8eJOjxLrNFj8, 12.34, 15CAD400-6B27-4EF7-B6DF-9C4549F18A91, nC16e0ZFiUvf0tlfjFrMJWE9hUoWhOAWk14JMhwWBFBkK2XrB6, 1970-01-02, qjmvmEwGJlzA04y3KY4ObCfSXDyBzC2ShvgzSoD4lPqpAKzs9F, 2147483647, 12.34, 2147483647, 1, AAAAA, 2016-01-18 09:41:38.247, null, 2016-01-18 09:41:38.247, 1, null]
+[EL Fine]: sql: 2016-01-18 09:41:38.273--ClientSession(1023998742)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2016-01-18 09:41:38.329--ClientSession(77575112)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (autoid = ?))
+	bind => [1, 896]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 09:41:38.332--ClientSession(700685620)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE (autoid = ?)
+	bind => [896]
+[EL Fine]: sql: 2016-01-18 09:41:38.333--ClientSession(700685620)--Connection(781524917)--Thread(Thread[Test worker,5,main])--UPDATE ast_SalesData_T SET branddesc = ?, materialdesc = ?, retailername = ?, salesdate = ?, salesinvoicenbr = ?, updatedBy = ?, versionId = ? WHERE ((autoid = ?) AND (versionId = ?))
+	bind => [2vHhgDjdajbQoTmpS5a1dvxuM3ltWFBhfpMxS1bAi1QxOy7TKo, QcJZ2MTpZB4yzamlFHo2ydwbuTWA3BEjV2gyA6nwKCGtxOxSRZ, QyK8udgQNcJxgkaSfUT8ODhgxZNGEhdRhVDzigu61WJWpo3TRt, 1970-01-02, 748RfVLcg6NpeRkbrCmGubP6NtSO1fpZJrC06lT25wLTWIEr53, AAAAA, 2, 896, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.386--ClientSession(2076395496)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (autoid = ?))
+	bind => [1, 896]
+[EL Fine]: sql: 2016-01-18 09:41:38.392--ClientSession(1024608808)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind => [1, A9064EA0-6BD8-40AA-BD93-E4091BFEC849]
+[EL Fine]: sql: 2016-01-18 09:41:38.397--ClientSession(2098902087)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (category = ?))
+	bind => [1, DAF7D4FD-53DF-45FE-AD44-D6BF81C30801]
+[EL Fine]: sql: 2016-01-18 09:41:38.402--ClientSession(1903641995)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (channelId = ?))
+	bind => [1, DBB6C349-344F-468A-BB3B-F00CA49F6F26]
+[EL Fine]: sql: 2016-01-18 09:41:38.41--ClientSession(1182590131)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind => [1, FE6610D7-B90E-4A7A-9FE1-825555173341]
+[EL Fine]: sql: 2016-01-18 09:41:38.416--ClientSession(1963482645)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE ((activeStatus = ?) AND (reatilercode = ?))
+	bind => [1, 15CAD400-6B27-4EF7-B6DF-9C4549F18A91]
+[EL Fine]: sql: 2016-01-18 09:41:38.421--ClientSession(1477571695)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT autoid, brandcode, branddesc, category, channelId, grosssalesamt, materialcode, materialdesc, netsalesamt, reatilercode, retailername, salesdate, salesinvoicenbr, salesmonth, salesqty, salesyear, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesData_T WHERE (autoid = ?)
+	bind => [896]
+[EL Fine]: sql: 2016-01-18 09:41:38.422--ClientSession(1477571695)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesData_T WHERE ((autoid = ?) AND (versionId = ?))
+	bind => [896, 2]
+[EL Fine]: sql: 2016-01-18 09:41:38.484--ClientSession(2021876462)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT retailercode, distributorcode, retailername, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Retailer_M WHERE (retailercode = ?)
+	bind => [15CAD400-6B27-4EF7-B6DF-9C4549F18A91]
+[EL Fine]: sql: 2016-01-18 09:41:38.487--ClientSession(2021876462)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Retailer_M WHERE ((retailercode = ?) AND (versionId = ?))
+	bind => [15CAD400-6B27-4EF7-B6DF-9C4549F18A91, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.543--ClientSession(1420843038)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT distributorcode, distributorname, lattitude, longitude, regioncode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Distributor_M WHERE (distributorcode = ?)
+	bind => [3F9B32F6-2207-40B8-BC54-A3D5CE096F17]
+[EL Fine]: sql: 2016-01-18 09:41:38.545--ClientSession(1420843038)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Distributor_M WHERE ((distributorcode = ?) AND (versionId = ?))
+	bind => [3F9B32F6-2207-40B8-BC54-A3D5CE096F17, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.601--ClientSession(163146278)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind => [0C91B69E-3F6A-4E9F-8136-B2748A3B9B06]
+[EL Fine]: sql: 2016-01-18 09:41:38.602--ClientSession(163146278)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind => [0C91B69E-3F6A-4E9F-8136-B2748A3B9B06, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.659--ClientSession(1793470861)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind => [FE6610D7-B90E-4A7A-9FE1-825555173341]
+[EL Fine]: sql: 2016-01-18 09:41:38.661--ClientSession(1793470861)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Material_M WHERE ((materialcode = ?) AND (versionId = ?))
+	bind => [FE6610D7-B90E-4A7A-9FE1-825555173341, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.717--ClientSession(64877249)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT channelId, channel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Channel_M WHERE (channelId = ?)
+	bind => [DBB6C349-344F-468A-BB3B-F00CA49F6F26]
+[EL Fine]: sql: 2016-01-18 09:41:38.72--ClientSession(64877249)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Channel_M WHERE ((channelId = ?) AND (versionId = ?))
+	bind => [DBB6C349-344F-468A-BB3B-F00CA49F6F26, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.81--ClientSession(1736736142)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind => [A9064EA0-6BD8-40AA-BD93-E4091BFEC849]
+[EL Fine]: sql: 2016-01-18 09:41:38.812--ClientSession(1736736142)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind => [A9064EA0-6BD8-40AA-BD93-E4091BFEC849, 1]
+[EL Fine]: sql: 2016-01-18 09:41:38.985--ClientSession(251118088)--Connection(781524917)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind => [DAF7D4FD-53DF-45FE-AD44-D6BF81C30801]
+[EL Fine]: sql: 2016-01-18 09:41:38.987--ClientSession(251118088)--Connection(781524917)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind => [DAF7D4FD-53DF-45FE-AD44-D6BF81C30801, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.PathVariable;
 import java.util.Map;
 import com.athena.server.pluggable.utils.bean.FindByBean;
+import com.app.server.businessservice.appinsight.health.TestCountryDs;
 
 @RestController
 @SourceCodeAuthorClass(createdBy = "shweta.zagade@algorhythm.co.in", updatedBy = "", versionNumber = "1", comments = "Service for Country Master table Entity", complexity = Complexity.LOW)
@@ -45,18 +46,6 @@ public class CountryServiceImpl extends CountryService {
         responseBean.add("message", String.format(appAlarm.getMessage(), "Country"));
         responseBean.add("data", lstcountry);
         Log.out.println(appAlarm.getAlarmID(), runtimeLogInfoHelper.getRequestHeaderBean(), "CountryServiceImpl", "findAll", "Country");
-        return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, HttpStatus.valueOf(appAlarm.getAlarmStatus()));
-    }
-
-    @RequestMapping(consumes = "application/json", method = RequestMethod.POST)
-    @Override
-    public HttpEntity<ResponseBean> save(@RequestBody Country entity) throws Exception {
-        countryrepo.save(entity);
-        AppAlarm appAlarm = Log.getAlarm("ORGLM122990200");
-        ResponseBean responseBean = new ResponseBean(appAlarm);
-        responseBean.add("message", String.format(appAlarm.getMessage(), "Country"));
-        responseBean.add("data", entity);
-        Log.out.println(appAlarm.getAlarmID(), runtimeLogInfoHelper.getRequestHeaderBean(), "CountryServiceImpl", "save", "Country");
         return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, HttpStatus.valueOf(appAlarm.getAlarmStatus()));
     }
 
@@ -135,5 +124,19 @@ public class CountryServiceImpl extends CountryService {
         responseBean.add("data", lstcountry);
         Log.out.println("ORGLM124990200", runtimeLogInfoHelper.getRequestHeaderBean(), "CountryServiceImpl", "save", "Country");
         return new org.springframework.http.ResponseEntity<ResponseBean>(responseBean, HttpStatus.valueOf(appAlarm.getAlarmStatus()));
+    }
+
+    @Autowired
+    private TestCountryDs testcountryds;
+
+    @RequestMapping(consumes = "application/json", method = RequestMethod.POST)
+    @Override
+    public HttpEntity<ResponseBean> save(@RequestBody Country entity) throws Exception {
+        com.athena.server.pluggable.utils.bean.ResponseBean responseBean = new com.athena.server.pluggable.utils.bean.ResponseBean();
+        org.springframework.http.HttpStatus httpStatus = org.springframework.http.HttpStatus.CREATED;
+        testcountryds.proTestCountryDs(entity);
+        responseBean.add("success", true);
+        responseBean.add("message", "Successfully executed ");
+        return new org.springframework.http.ResponseEntity<com.athena.server.pluggable.utils.bean.ResponseBean>(responseBean, httpStatus);
     }
 }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testprj.app.server.service.MaterialTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testprj.app.server.service.MaterialTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testprj.app.server.service.html">testprj.app.server.service</a> &gt; MaterialTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.708s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.217s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBybrandcode</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.417s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-18 07:13:52.384--ClientSession(205271203)--Connection(322858583)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5013AAFC-5FD7-4AE6-B08C-C0A109E93625, RWmMxtG2l157h06rtaNnZwqf3yZlYTE0priAIqhxUbRiEQypPz, 1, AAAAA, 2016-01-18 07:13:52.382, null, 2016-01-18 07:13:52.382, 1, null]
+[EL Fine]: sql: 2016-01-18 07:13:52.46--ClientSession(901207839)--Connection(322858583)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [03CDDEBB-DE0E-468B-8F53-A73C8664C700, 6oJE07CR7DTn7edMxi294Td0YJeoibhUwy3onWAdnXFfmF1jVs, 5013AAFC-5FD7-4AE6-B08C-C0A109E93625, 1, AAAAA, 2016-01-18 07:13:52.382, null, 2016-01-18 07:13:52.382, 1, null]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 07:13:52.54--ClientSession(1055127996)--Connection(322858583)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Material_M (materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [2265F943-714B-4FD3-9007-D65ACD4C60AA, 03CDDEBB-DE0E-468B-8F53-A73C8664C700, bSPBMJq67WjeVBMzRaZ85q40qd1Js7Pra7DLlH7OAvfkFxZ55Q, 1, AAAAA, 2016-01-18 07:13:52.503, null, 2016-01-18 07:13:52.503, 1, null]
+[EL Fine]: sql: 2016-01-18 07:13:52.594--ClientSession(1696088647)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind =&gt; [1, 2265F943-714B-4FD3-9007-D65ACD4C60AA]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 07:13:52.598--ClientSession(1663125619)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind =&gt; [2265F943-714B-4FD3-9007-D65ACD4C60AA]
+[EL Fine]: sql: 2016-01-18 07:13:52.599--ClientSession(1663125619)--Connection(322858583)--Thread(Thread[Test worker,5,main])--UPDATE ast_Material_M SET materialdesc = ?, updatedBy = ?, versionId = ? WHERE ((materialcode = ?) AND (versionId = ?))
+	bind =&gt; [3bsHnj6bght3IjdFQt9MlEJvBneIMphlueDWTmYi6LHiGpoTha, AAAAA, 2, 2265F943-714B-4FD3-9007-D65ACD4C60AA, 1]
+[EL Fine]: sql: 2016-01-18 07:13:52.652--ClientSession(1065199983)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind =&gt; [1, 2265F943-714B-4FD3-9007-D65ACD4C60AA]
+[EL Fine]: sql: 2016-01-18 07:13:52.66--ClientSession(2058344824)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind =&gt; [1, 03CDDEBB-DE0E-468B-8F53-A73C8664C700]
+[EL Fine]: sql: 2016-01-18 07:13:52.665--ClientSession(201339715)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind =&gt; [2265F943-714B-4FD3-9007-D65ACD4C60AA]
+[EL Fine]: sql: 2016-01-18 07:13:52.666--ClientSession(201339715)--Connection(322858583)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Material_M WHERE ((materialcode = ?) AND (versionId = ?))
+	bind =&gt; [2265F943-714B-4FD3-9007-D65ACD4C60AA, 2]
+[EL Fine]: sql: 2016-01-18 07:13:52.722--ClientSession(2064032505)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind =&gt; [03CDDEBB-DE0E-468B-8F53-A73C8664C700]
+[EL Fine]: sql: 2016-01-18 07:13:52.724--ClientSession(2064032505)--Connection(322858583)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind =&gt; [03CDDEBB-DE0E-468B-8F53-A73C8664C700, 1]
+[EL Fine]: sql: 2016-01-18 07:13:52.999--ClientSession(1942394312)--Connection(322858583)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind =&gt; [5013AAFC-5FD7-4AE6-B08C-C0A109E93625]
+[EL Fine]: sql: 2016-01-18 07:13:53.001--ClientSession(1942394312)--Connection(322858583)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind =&gt; [5013AAFC-5FD7-4AE6-B08C-C0A109E93625, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 18, 2016 7:14:12 AM</p>
+</div>
+</div>
+</body>
+</html>

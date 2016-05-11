@@ -1,0 +1,172 @@
+
+
+
+
+ development mode --enabled true 
+
+
+
+buzzproperties codeStatus --PropertyFileName status --key TestAAAA --value 1
+
+// Entity Creation 
+
+buzzorclass add --className ~.app.shared.defaultdomain.TestAAAA --implements java.io.Serializable,com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface --implementsGenericType java.util.Comparator#com.app.shared.defaultdomain.TestAAAA --annotation javax.persistence.Table,javax.persistence.Entity,org.eclipse.persistence.annotations.Cache,com.athena.annotation.SourceCodeAuthorClass --key type.org.eclipse.persistence.annotations.Cache,size.org.eclipse.persistence.annotations.Cache,expiry.org.eclipse.persistence.annotations.Cache,alwaysRefresh.org.eclipse.persistence.annotations.Cache,disableHits.org.eclipse.persistence.annotations.Cache,name.javax.persistence.Table,createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value org.eclipse.persistence.annotations.CacheType$CACHE#org.eclipse.persistence.annotations.CacheType,64000.org.eclipse.persistence.annotations.Cache,0.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,FALSE.org.eclipse.persistence.annotations.Cache,ast_TestAAAA_M.javax.persistence.Table,shweta.zagade@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass,.com.athena.annotation.SourceCodeAuthorClass,1.com.athena.annotation.SourceCodeAuthorClass,TestAAAA.com.athena.annotation.SourceCodeAuthorClass,com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity --value_type javaType,Integer,Integer,Boolean,Boolean,String,String,String,String,String,javaType
+
+Persistent add entity --entityName com.app.shared.defaultdomain.TestAAAA
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name sds --dataType java.lang.String --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value sds.javax.persistence.Column,sds.com.fasterxml.jackson.annotation.JsonProperty
+
+fieldAnnotation create --type ~.app.shared.defaultdomain.TestAAAA --field_name sds --valueType string --annotation javax.validation.constraints.NotNull --key value --value 1
+
+fieldAnnotation create --type ~.app.shared.defaultdomain.TestAAAA --field_name sds --valueType integer,integer --annotation javax.validation.constraints.Size --key min.javax.validation.constraints.Size,max.javax.validation.constraints.Size --value 0#cfg#256
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name primaryKey --dataType java.lang.String --Modifier private --annotation javax.persistence.Transient
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name sad --dataType java.lang.String --Modifier private --valueType String,String,String --annotation javax.persistence.Id,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty,javax.persistence.GeneratedValue --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty,generator.javax.persistence.GeneratedValue --value sad.javax.persistence.Column,sad.com.fasterxml.jackson.annotation.JsonProperty,UUIDGenerator.javax.persistence.GeneratedValue
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --annotation javax.persistence.Transient,com.fasterxml.jackson.annotation.JsonIgnore
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name versionId --dataType Integer --Modifier private --annotation javax.persistence.Version,javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value versionId.javax.persistence.Column,versionId.com.fasterxml.jackson.annotation.JsonProperty --valueType String,String
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name entityAudit --dataType com.app.shared.EntityAudit --Modifier private --annotation javax.persistence.Embedded,com.fasterxml.jackson.annotation.JsonIgnore --initializer "new EntityAudit()"
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name systemInfo --dataType com.app.shared.SystemInfo --Modifier private --annotation javax.persistence.Embedded --initializer "new SystemInfo()"
+
+buzzorfield create --type ~.app.shared.defaultdomain.TestAAAA --field_name primaryDisplay --dataType String --Modifier private --annotation javax.persistence.Transient
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName sds --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName primaryKey --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName sad --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName versionId --getterMethod true --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName primaryDisplay --getterMethod false --setterMethod true
+
+methodoperation type getSetMethod --class ~.app.shared.defaultdomain.TestAAAA --variableName systemInfo --getterMethod true --setterMethod true
+
+methodoperation type hardDelete --entityName ~.app.shared.defaultdomain.TestAAAA
+
+methodoperation type setValidator --class ~.app.shared.defaultdomain.TestAAAA
+
+methodoperation type setLoggedUserInfo --class ~.app.shared.defaultdomain.TestAAAA --updateFieldName updatedBy --createFieldName createdBy --activeFieldName activeStatus --isAggregate false
+
+methodoperation type comparatorDefaultBody --class ~.app.shared.defaultdomain.TestAAAA
+
+methodoperation type getPrimayDisplay --class ~.app.shared.defaultdomain.TestAAAA --variableName sds
+
+methodoperation type toString --class ~.app.shared.defaultdomain.TestAAAA
+
+methodoperation type hashCode --class ~.app.shared.defaultdomain.TestAAAA --primaryClass true
+
+methodoperation type equals --class ~.app.shared.defaultdomain.TestAAAA --primaryClass true
+
+buzzormethod add --toClass ~.app.shared.defaultdomain.TestAAAA --method_name isEntityValidated --modifier public --return_type boolean --method_body "return this.systemInfo.isEntityValidated();" --annotation com.fasterxml.jackson.annotation.JsonIgnore --key "" --value ""
+
+class --abstract true --class ~.app.server.service.TestAAAAService
+
+buzzorclass add --className ~.app.server.service.TestAAAAServiceImpl  --extends com.app.server.service.TestAAAAService --value_type string --annotation org.springframework.web.bind.annotation.RestController
+
+Class createAnnotation --toClass ~.app.server.service.TestAAAAServiceImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.service.TestAAAAService --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "shweta.zagade@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#.com.athena.annotation.SourceCodeAuthorClass#cfg#1.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for TestAAAA Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.service.TestAAAAServiceImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "shweta.zagade@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#.com.athena.annotation.SourceCodeAuthorClass#cfg#1.com.athena.annotation.SourceCodeAuthorClass#cfg#Service for TestAAAA Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+interfacebuzzor add --InterfaceName ~.app.server.repository.TestAAAARepository --genericType T --extends com.athena.server.repository.SearchInterface
+
+buzzorclass add --className ~.app.server.repository.TestAAAARepositoryImpl --implements --extends com.athena.server.repository.SearchInterfaceImpl --value_type string --implementsGenericType com.app.server.repository.TestAAAARepository#com.app.shared.defaultdomain.TestAAAA --annotation org.springframework.stereotype.Repository
+
+Class createAnnotation --toClass ~.app.server.repository.TestAAAARepositoryImpl --annotation org.springframework.context.annotation.Scope --key value.org.springframework.context.annotation.Scope,proxyMode.org.springframework.context.annotation.Scope --value request.org.springframework.context.annotation.Scope#cfg#org.springframework.context.annotation.ScopedProxyMode$TARGET_CLASS#org.springframework.context.annotation.Scope --value_type string,javatype
+
+Class createAnnotation --toClass ~.app.server.repository.TestAAAARepository --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "shweta.zagade@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#.com.athena.annotation.SourceCodeAuthorClass#cfg#1.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for TestAAAA Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+Class createAnnotation --toClass ~.app.server.repository.TestAAAARepositoryImpl --annotation com.athena.annotation.SourceCodeAuthorClass --key createdBy.com.athena.annotation.SourceCodeAuthorClass,updatedBy.com.athena.annotation.SourceCodeAuthorClass,versionNumber.com.athena.annotation.SourceCodeAuthorClass,comments.com.athena.annotation.SourceCodeAuthorClass,complexity.com.athena.annotation.SourceCodeAuthorClass --value "shweta.zagade@algorhythm.co.in.com.athena.annotation.SourceCodeAuthorClass#cfg#.com.athena.annotation.SourceCodeAuthorClass#cfg#1.com.athena.annotation.SourceCodeAuthorClass#cfg#Repository for TestAAAA Master table Entity.com.athena.annotation.SourceCodeAuthorClass#cfg#com.athena.annotation.Complexity$LOW#com.athena.annotation.Complexity " --value_type String,String,String,String,javaType
+
+buzzorfield create --type ~.app.server.repository.TestAAAARepositoryImpl --field_name emfResource --dataType com.athena.config.server.helper.ResourceFactoryManagerHelper --Modifier private --annotation org.springframework.beans.factory.annotation.Autowired
+
+methodoperation type ENTITY --entityName ~.app.shared.defaultdomain.TestAAAA --readOnly false --controllerClass ~.app.server.service.TestAAAAService  --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --methodType findAll --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.TestAAAABusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.defaultdomain.TestAAAA --readOnly false --controllerClass ~.app.server.service.TestAAAAService  --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --methodType show --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.TestAAAABusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.defaultdomain.TestAAAA --readOnly false --controllerClass ~.app.server.service.TestAAAAService  --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --methodType save --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.TestAAAABusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+methodoperation type ENTITY --entityName ~.app.shared.defaultdomain.TestAAAA --readOnly false --controllerClass ~.app.server.service.TestAAAAService  --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --methodType delete --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.TestAAAABusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+
+
+methodoperation type ENTITY --entityName ~.app.shared.defaultdomain.TestAAAA --readOnly false --controllerClass ~.app.server.service.TestAAAAService  --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --methodType update --isMultitenant false --transactionType none --businessServiceClass ~.app.server.businessservice.TestAAAABusinessService --isUserAccess false --isAggregateRoot true --isBiz false --isInheritance false --isConcreteClass false
+
+// Named Query  
+
+namedQuery insert --toClass ~.app.shared.defaultdomain.TestAAAA --queryName TestAAAA.findById --queryValue "select e from TestAAAA e where e.systemInfo.activeStatus=1 and  e.sad =:sad"
+
+methodoperation type namedQueryMethod --queryName TestAAAA.findById --qvalue "select e from TestAAAA e where e.systemInfo.activeStatus=1 and  e.sad =:sad" --qarameteres sad --typeOfParameteres java.lang.String --entityName ~.app.shared.defaultdomain.TestAAAA --controllerClass ~.app.server.service.TestAAAAService --controllerImplClass ~.app.server.service.TestAAAAServiceImpl --repositoryClass ~.app.server.repository.TestAAAARepository --repositoryImplClass ~.app.server.repository.TestAAAARepositoryImpl --businessServiceClass ~.app.server.businessservice.TestAAAAbzService --returnType com.app.shared.defaultdomain.TestAAAA --isFindByID true --isUserAccess false --isMultitenant false --refEntity com.app.shared.defaultdomain.TestAAAA
+
+buzzproperties codeStatus --PropertyFileName status --key TestAAAA --value 0
+
+
+
+buzzorclass add --className TestAAAATestCase  --srcPath test
+Class createAnnotation --toClass TestAAAATestCase --annotation org.junit.runner.RunWith --key value.org.junit.runner.RunWith --value org.springframework.test.context.junit4.SpringJUnit4ClassRunner --value_type javaClass
+Class createAnnotation --toClass TestAAAATestCase --annotation org.springframework.test.context.web.WebAppConfiguration --key null.org.springframework.test.context.web.WebAppConfiguration --value null --value_type null
+Class createAnnotation --toClass TestAAAATestCase --annotation org.springframework.test.context.ContextConfiguration --key classes.org.springframework.test.context.ContextConfiguration --value com.app.config.WebConfigExtended --value_type javaClass
+Class createAnnotation --toClass TestAAAATestCase --annotation org.junit.FixMethodOrder --key value.org.junit.FixMethodOrder.org.junit.FixMethodOrder --value org.junit.runners.MethodSorters$NAME_ASCENDING#org.junit.FixMethodOrder --value_type javatype
+ArrayAnnotation create --type TestAAAATestCase --key value --varaiable_name "" --value org.springframework.test.context.support.DependencyInjectionTestExecutionListener,org.springframework.test.context.support.DirtiesContextTestExecutionListener,org.springframework.test.context.transaction.TransactionalTestExecutionListener --valueType javatype,javatype,javatype --annotation org.springframework.test.context.TestExecutionListeners --addTo class
+
+buzzorfield create --type TestAAAATestCase --field_name testaaaaRepository --dataType com.app.server.repository.TestAAAARepository<com.app.shared.defaultdomain.TestAAAA> --Modifier private --valueType 
+
+fieldAnnotation create --type TestAAAATestCase --field_name testaaaaRepository --valueType com.app.server.repository.TestAAAARepository --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type TestAAAATestCase --field_name runtimeLogInfoHelper --dataType com.athena.framework.server.helper.RuntimeLogInfoHelper --Modifier private --valueType 
+
+fieldAnnotation create --type TestAAAATestCase --field_name runtimeLogInfoHelper --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type TestAAAATestCase --field_name entityValidator --dataType com.athena.framework.server.helper.EntityValidatorHelper<Object> --Modifier private --valueType 
+
+fieldAnnotation create --type TestAAAATestCase --field_name entityValidator --valueType com.athena.framework.server.helper.RuntimeLogInfoHelper<Object> --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type TestAAAATestCase --field_name valueGenerator --dataType com.athena.framework.server.test.RandomValueGenerator --Modifier private --initializer "new com.athena.framework.server.test.RandomValueGenerator()"
+
+buzzorfield create --type TestAAAATestCase --field_name map --dataType java.util.HashMap<String,Object> --Modifier private --initializer "new HashMap<String,Object>()" --isStatic true
+
+buzzorfield create --type TestAAAATestCase --field_name methodCallStack --dataType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --Modifier private --valueType 
+
+fieldAnnotation create --type TestAAAATestCase --field_name methodCallStack --valueType com.spartan.healthmeter.entity.scheduler.ArtMethodCallStack --annotation org.springframework.beans.factory.annotation.Autowired --key "" --value ""
+
+buzzorfield create --type TestAAAATestCase --field_name session --dataType org.springframework.mock.web.MockHttpSession --Modifier protected --valueType javaType
+
+buzzorfield create --type TestAAAATestCase --field_name request --dataType org.springframework.mock.web.MockHttpServletRequest --Modifier protected --valueType javaType
+
+buzzorfield create --type TestAAAATestCase --field_name response --dataType org.springframework.mock.web.MockHttpServletResponse --Modifier protected --valueType javaType
+
+buzzormethod add --toClass TestAAAATestCase --method_name startSession --modifier protected --return_type void --method_body "session = new MockHttpSession();"
+
+buzzormethod add --toClass TestAAAATestCase --method_name endSession --modifier protected --return_type void --method_body "session.clearAttributes(); session.invalidate(); session = null;"
+
+buzzormethod add --toClass TestAAAATestCase --method_name startRequest --modifier protected --return_type void --method_body "request = new MockHttpServletRequest(); request.setSession(session); org.springframework.web.context.request.RequestContextHolder.setRequestAttributes(new org.springframework.web.context.request.ServletRequestAttributes(request));"
+
+buzzormethod add --toClass TestAAAATestCase --method_name endRequest --modifier protected --return_type void --method_body "((org.springframework.web.context.request.ServletRequestAttributes) org.springframework.web.context.request.RequestContextHolder.getRequestAttributes()).requestCompleted(); org.springframework.web.context.request.RequestContextHolder.resetRequestAttributes(); request = null;"
+
+buzzormethod add --toClass TestAAAATestCase --method_name before --modifier public --return_type void --method_body "startSession(); startRequest(); setBeans();" --annotation org.junit.Before --key "" --value ""
+
+buzzormethod add --toClass TestAAAATestCase --method_name after --modifier public --return_type void --method_body "endSession(); endRequest();" --annotation org.junit.After --key "" --value ""
+
+buzzormethod add --toClass TestAAAATestCase --method_name setBeans --modifier private --return_type void --method_body "runtimeLogInfoHelper.createRuntimeLogUserInfo(1, "AAAAA", request.getRemoteHost());   org.junit.Assert.assertNotNull(runtimeLogInfoHelper);methodCallStack.setRequestId(java.util.UUID.randomUUID().toString().toUpperCase()); "
+ Import add --toClass TestAAAATestCase --importType com.app.shared.defaultdomain.TestAAAA
+ Import add --toClass TestAAAATestCase --importType com.athena.framework.shared.entity.web.entityInterface.CommonEntityInterface.RECORD_TYPE
+
+buzzormethod add --toClass TestAAAATestCase --method_name test1Save --modifier public --return_type void --method_body " try { TestAAAA testaaaa=new TestAAAA();testaaaa.setSds("SaXhIm4nbbihXxd5wu4OvRopssEroZlJieqS04NBE7SfUxBioI"); testaaaa.setEntityAudit(1, "xyz", RECORD_TYPE.ADD);testaaaa.setEntityValidator(entityValidator);testaaaa.isValid();testaaaaRepository.save(testaaaa); map.put("TestAAAAPrimaryKey", testaaaa._getPrimarykey());} catch (com.athena.framework.server.exception.biz.SpartanConstraintViolationException e) {org.junit.Assert.fail(e.getMessage()); }  catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass TestAAAATestCase --method_name test2Update --modifier public --return_type void --method_body " try { org.junit.Assert.assertNotNull(map.get("TestAAAAPrimaryKey"));TestAAAA testaaaa=testaaaaRepository.findById((java.lang.String)map.get("TestAAAAPrimaryKey"));testaaaa.setSds("kAPDHsNRQSi5tiTymFXusx9t4bTQl6KOmcQtCMNm3xprUvHZTK");testaaaa.setVersionId(1);testaaaa.setEntityAudit(1, "xyz", RECORD_TYPE.UPDATE);testaaaaRepository.update(testaaaa);} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch (java.lang.Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass TestAAAATestCase --method_name test3FindById --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("TestAAAAPrimaryKey"));testaaaaRepository.findById((java.lang.String)map.get("TestAAAAPrimaryKey"));} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+buzzormethod add --toClass TestAAAATestCase --method_name test4Delete --modifier public --return_type void --method_body " try {org.junit.Assert.assertNotNull(map.get("TestAAAAPrimaryKey"));testaaaaRepository.delete((java.lang.String)map.get("TestAAAAPrimaryKey"));/* Deleting refrenced data */} catch (com.athena.framework.server.exception.repository.SpartanPersistenceException e) {org.junit.Assert.fail(e.getMessage());  } catch(Exception e) {org.junit.Assert.fail(e.getMessage());   } "  --annotation org.junit.Test --key "" --value ""
+
+
+
+
+
+quit

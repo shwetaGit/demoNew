@@ -1,0 +1,14 @@
+ExitCode=0
+TotalTimeTaken=2.134
+TotalFiles=9977
+TotalFolders=4829
+TotalJavaFiles=350
+TotalJsFiles=384
+TotalJsonFiles=88
+TotalCssFiles=669
+TotalXmlFiles=283
+TotalPropertiesFiles=77
+Fri Feb 26 14:11:33 UTC 2016 : Code Factory Process Started for instructions testl.cf
+Fri Feb 26 14:12:03 UTC 2016 : Code Factory : Total Files created : 9977 | Total Time Taken : 2.134 in seconds
+Fri Feb 26 14:12:01 UTC 2016 : Code Factory : Process Completed Blue Print instructions
+Fri Feb 26 14:12:03 UTC 2016 : Code Factory : Exited with the code 0

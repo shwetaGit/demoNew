@@ -1,0 +1,35 @@
+Ext.define('Testl.testl.shared.com.model.humanresourcecontext.employee.VisaModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "visaCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "visaDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "visaHelp",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "visaIcon",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

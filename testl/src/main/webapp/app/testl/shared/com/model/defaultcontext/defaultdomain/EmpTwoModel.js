@@ -1,0 +1,30 @@
+Ext.define('Testl.testl.shared.com.model.defaultcontext.defaultdomain.EmpTwoModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "empname",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "emptwoId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "EmpOne",
+          "reference": "EmpOneModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

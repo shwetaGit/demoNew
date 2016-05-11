@@ -1,0 +1,35 @@
+Ext.define('Testl.testl.shared.com.model.humanresourcecontext.employee.EmpIdProofModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empIdpk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "empid",
+          "reference": "EmpInformation",
+          "defaultValue": ""
+     }, {
+          "name": "idcode",
+          "reference": "IdProofInformation",
+          "defaultValue": ""
+     }, {
+          "name": "idData",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

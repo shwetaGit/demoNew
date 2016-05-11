@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testone.app.server.service.GenderTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-18T06:26:36" hostname="a3ffefafd425" time="0.203">
+  <properties/>
+  <testcase name="test1Save" classname="testone.app.server.service.GenderTestCase" time="0.082"/>
+  <testcase name="test2Update" classname="testone.app.server.service.GenderTestCase" time="0.042"/>
+  <testcase name="test3FindById" classname="testone.app.server.service.GenderTestCase" time="0.009"/>
+  <testcase name="test4Delete" classname="testone.app.server.service.GenderTestCase" time="0.068"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-18 06:26:36.101--ClientSession(1137379350)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [F668C779-0A36-4261-BDE6-89D6E1FCD700, yJYmmcGYOHwwyU8ftYxiPV8XYzdrous3IKwjQPGHqj69FFuGXI, 1, AAAAA, 2016-01-18 06:26:36.061, null, 2016-01-18 06:26:36.061, 1, null]
+[EL Fine]: sql: 2016-01-18 06:26:36.137--ClientSession(62306724)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
+	bind => [1, F668C779-0A36-4261-BDE6-89D6E1FCD700]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-18 06:26:36.141--ClientSession(728658295)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [F668C779-0A36-4261-BDE6-89D6E1FCD700]
+[EL Fine]: sql: 2016-01-18 06:26:36.144--ClientSession(728658295)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--UPDATE ast_Gender_M SET gender = ?, updatedBy = ?, versionId = ? WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [RKaS837sj5N9UDREdubJi4mXeDCXRjOmo4SrHzTNw9bPKqhbXG, AAAAA, 2, F668C779-0A36-4261-BDE6-89D6E1FCD700, 1]
+[EL Fine]: sql: 2016-01-18 06:26:36.179--ClientSession(763166682)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE ((activeStatus = ?) AND (genderId = ?))
+	bind => [1, F668C779-0A36-4261-BDE6-89D6E1FCD700]
+[EL Fine]: sql: 2016-01-18 06:26:36.188--ClientSession(1355545848)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [F668C779-0A36-4261-BDE6-89D6E1FCD700]
+[EL Fine]: sql: 2016-01-18 06:26:36.191--ClientSession(1355545848)--Connection(1700625697)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [F668C779-0A36-4261-BDE6-89D6E1FCD700, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

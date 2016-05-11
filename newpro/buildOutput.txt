@@ -1,0 +1,24 @@
+AppliFire Platform : CC (Gradle) Docker Container v1.0 - Starting the container.....
+WS Volume to be mounted   ... /home/applifire/workspace/newpro 
+GRADLE Command .............. build -Dlint:deprecation 
+:compileJavaNote: /home/applifire/workspace/newpro/src/main/java/com/app/config/WebConfig.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+:processResources
+:classes
+:war
+:assemble
+:compileTestJava
+:copyTestResources
+:processTestResources UP-TO-DATE
+:testClasses
+:test
+:check
+:build
+
+BUILD SUCCESSFUL
+
+Total time: 52.635 secs
+Mon Mar 14 07:42:29 UTC 2016 : Code Compiler : Docker Container shutdown complete..... Docker Exit = 0 

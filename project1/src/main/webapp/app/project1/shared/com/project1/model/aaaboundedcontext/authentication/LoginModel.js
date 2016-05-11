@@ -1,0 +1,53 @@
+Ext.define('Project1.project1.shared.com.project1.model.aaaboundedcontext.authentication.LoginModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "loginPk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "loginId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "serverAuthImage",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "serverAuthText",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "failedLoginAttempts",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+<<<<<<< HEAD
+          "name": "User",
+          "reference": "UserModel"
+     }, {
+          "name": "CoreContacts",
+          "reference": "CoreContactsModel"
+=======
+          "name": "CoreContacts",
+          "reference": "CoreContactsModel"
+     }, {
+          "name": "User",
+          "reference": "UserModel"
+>>>>>>> branch 'master' of https://github.com/applifireAlgo/DefaultRepo.git
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

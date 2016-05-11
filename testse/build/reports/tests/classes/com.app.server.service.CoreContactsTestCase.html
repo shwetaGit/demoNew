@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.CoreContactsTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.CoreContactsTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; CoreContactsTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.108s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>1.687s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.369s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBygenderId</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBynativeLanguageCode</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBytitleId</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>2.011s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-02-29 10:07:08.428--ClientSession(1521731150)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [557D2B9A-D65D-42DC-BD87-BB1F44D6087B, fA4WB9f9VcLwLKCjEaUV7YZcqEzBt9aZapEn7CLoGNRQkO2gpn, 1, AAAAA, 2016-02-29 10:07:08.424, null, 2016-02-29 10:07:08.424, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:08.52--ClientSession(2078105442)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5D0BA296-22E2-43A3-9E66-047D6F8143A7, 4L, dME, kAto, 4, ktUhuy3JZ2vZEkixq3vMf0FKvrqzj14yJKO0BfZtaRpVrxTAtA, jKfJQ4UdoKJInuIOKBlDVPXNafIGFCC7Apk1VkDN1vuKsy8Sxw, AsBxm0wSEUsZBuA4uTU2ijJzCRtfn0rKdLUytDR27G1P0rFLmG, aMJpfprET01WRKjsl4PL6kZ12gN4JPQD, 1, AAAAA, 2016-02-29 10:07:08.509, null, 2016-02-29 10:07:08.509, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:08.701--ClientSession(984220047)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [7DCFFC59-2E97-485F-A091-CD4E256C7534, 6sq297CPxoVFPKrudafjFulrgYZSo5xXBAOv7OuitDZISnMLKN, 1, AAAAA, 2016-02-29 10:07:08.693, null, 2016-02-29 10:07:08.693, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:08.815--ClientSession(731270703)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD, NbAhhXr01AUOdcJW3ZcMvz66YhVsKHHi8Yn3FguNvwRMDa85za, l7sbw3YNk2kg51tfg9Sl73Wr16NjSAE4opwQcX5HfENqxewAv9, OvmYEV5lojmq4BBDBJ3XHZv8gQBF9IXK991vcTUu8bIBjLM90T, Ejtag4EzucNfhnuN3YyvxpFtkhweEYyB335uV65yQSsnMaFwSl, 9, 1, AAAAA, 2016-02-29 10:07:08.693, null, 2016-02-29 10:07:08.693, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.03--ClientSession(1761425912)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationGroup_M (commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [6485D1AA-B585-4920-8EA6-13C113D3D236, MhahAwC9JnXZn8iOHi8yCfff4uAAxlbpxiOJSvKAre399GZ3x9, slM8G3yqBdcPDEEPZmwL10j4sDJGazycdqCMmz0pMDQARIjVOQ, 1, AAAAA, 2016-02-29 10:07:09.02, null, 2016-02-29 10:07:09.02, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.165--ClientSession(569757421)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationType_M (commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E87B7C8C-7E1C-4CBB-B2B1-1F4EAB7AA850, 6485D1AA-B585-4920-8EA6-13C113D3D236, j2xDGSKctGRMzqFtwDfP4WBCiEgeniPDF6CeCx2RNUTbgqYz0F, hCivg2JZfiJ1s6o50TMw8E7k570NCqqgbTPtLWdx1wqWjQ9feW, 1, AAAAA, 2016-02-29 10:07:09.154, null, 2016-02-29 10:07:09.154, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.344--ClientSession(1143864430)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [7174F784-6889-4E9B-817A-1807672A11C2, yzoIPwRv2NynDT00xIL7pGoYHuj7c9QAm5EH6EdAM3myPHb9pm, 9aihkE9QoQ5OlhRq7fgijWSGYtBPBvb5ORKelTsESTcbnSm9bx, Bumqq6fYOCzgSqscIUH8QUOelJtLlyAMo31nMJxTYPuBmGbVHN, 1, AAAAA, 2016-02-29 10:07:09.337, null, 2016-02-29 10:07:09.337, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.405--ClientSession(1925135871)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E3E79F3C-7EBA-4769-B435-EF8292402A4B, Xsezx2mpHFZSslJxRExSl7ueSm1HWNrQ, 3, 3, NfV, 25r, Z32dq1EW1xlR60n0qoHpfWLDzJFA355uBbrSdoqFtQxzLpL7SD, cr8orwN7RLDOlagVCCoJhh16REHCaSQ9sWUO8Qt6De5fDSqyNx, 21d, oCzhjJt1CmJJ87I8ZrdO3rseXlryrqSX7PoanUKnXQRBRIwAXp, Ce8gwDqzZiLRlGmfGOXu7lGgW5AX3ur5, 10, 1, AAAAA, 2016-02-29 10:07:09.394, null, 2016-02-29 10:07:09.394, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.471--ClientSession(1477539610)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [827BE97B-1DD4-4D6F-99E7-A9C7D99FB393, E3E79F3C-7EBA-4769-B435-EF8292402A4B, bLPn2dP3nN7EDvqZzBYQ0H0FR25Pksw4HFAqN4If8JKLSECRTO, 6, 2, 2, wn3hoP8qjxGgXglfDEzdW75lKlVYjCyz, vTfYREDOsQzIcN1IBwu5KT3tKLcm6Wnw, zPLVCJ2nN3jCJ5HhiB3M1zznCepQm978ThgvQdAuqmP2FIOYRS, v9rId0rXNVo64dbK0DCWfT42KUaY0NggeHPoo2mbv2bJuLEctn, B9DcciLmz80wkZ8J3j0LzIKxe547wtywSwQ7Y1ywzY4KFCMp9b, 1, AAAAA, 2016-02-29 10:07:09.461, null, 2016-02-29 10:07:09.461, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.538--ClientSession(398978097)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [18293107-FB09-406E-9057-AB7CED7E76A2, 2, sCXYtIx42HJ6Llx3M1ZnJvBa15jHRMwA, 49g2IHyH7uFjAlEyVYrsk08VvGzIKBm5nov1VkDuM9MdjBuG4Q, nlpZ5QLZPgDx0fAsU2zf5K3AYZh0NXwwGHNFk1utFwiJ2Qt594, 11, 11, utCFkSOGiA2DYn37cOGnQWIIJkh2bkoKuVQ6Xrb3GPSOAWnysA, E3E79F3C-7EBA-4769-B435-EF8292402A4B, 827BE97B-1DD4-4D6F-99E7-A9C7D99FB393, 1, AAAAA, 2016-02-29 10:07:09.394, null, 2016-02-29 10:07:09.394, 1, 51000]
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-02-29 10:07:09.83--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:09.832--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CoreContacts_T (contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3, 25, 2016-02-29 09:56:48.56, 2016-02-29 09:56:48.56, zns4nAd7qwaTKp7RckDNPJCAroAMbwmAMGz21Bet7eXlz1YrJf, v3XXa9ntyybQvrNLbTWivvfIunYcEe2kF5egVwkzZBhqSd7AHh, 557D2B9A-D65D-42DC-BD87-BB1F44D6087B, zZsZ8NI0eQujbZLDVmK8p8j1M1rp4wIfxvLzDp2kh6aXZt17pK, 7XALyDWcrURttHo4pKxmgyaqduCTKPJwWtGXJQmQHZifIaNRLi, fqACpxgBrzwjdJ03ZcneiXSJ6mgV0CbHZTp3n1dyYwZsMeEUQW, 5D0BA296-22E2-43A3-9E66-047D6F8143A7, yqDG6LhlUvHTlGiUSK4QFtAW1ONvrUGmcIQMXKpLSYJcRmraaL, 6otXSYkWyDVQyuTDvCdgCcTW73krfN9nkXqWmCVaUPsBnNLHEu, QjFP1KMsU8bwRaihPjBv0uMljNQdQyNh72w8JUUXAx132a6MtL, CiVtO69YYdPtJzTgYmfq, 7DCFFC59-2E97-485F-A091-CD4E256C7534, 1, AAAAA, 2016-02-29 10:07:08.809, null, 2016-02-29 10:07:08.809, 1, 51000, 3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:09.834--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationData_TP (commDataId, commData, commGroupId, commType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1F1301B4-30C4-4D53-8B22-10F6A39F8567, h, 6485D1AA-B585-4920-8EA6-13C113D3D236, E87B7C8C-7E1C-4CBB-B2B1-1F4EAB7AA850, 1, AAAAA, 2016-02-29 10:07:09.02, null, 2016-02-29 10:07:09.02, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.836--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E3EC0288-6B6A-487A-BB3D-22AC62363AE0, 5wGrndVCXw53zekrlo3lfOYeXRmfkWZSKtmRZRQ9sWULdZ1SO5, fRa011WHD7UFRtwMiwjg6HrBj6wpYDIxoovjPu0TYT6Wmgy8si, XA40MrNmLujGgdhKG4JJA9DCD1cUNsiYWoMhuy1Ga1vQK9zoGc, RvF902Sr1Ov, 7174F784-6889-4E9B-817A-1807672A11C2, 18293107-FB09-406E-9057-AB7CED7E76A2, E3E79F3C-7EBA-4769-B435-EF8292402A4B, 1WWDenAnxBYg5BKR8vUUV2Co2swYro2I8rBRNlivf3MJ1IWLLM, OzONKapDaYNvmL9oeg9fnVWiknHRtuWswpO7YI0V5vbu1CzP1G, 827BE97B-1DD4-4D6F-99E7-A9C7D99FB393, 1, EuAkOM, AAAAA, 2016-02-29 10:07:09.337, null, 2016-02-29 10:07:09.337, 1, 51000]
+[EL Fine]: sql: 2016-02-29 10:07:09.837--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressMap_B (addressId, contactId) VALUES (?, ?)
+	bind =&gt; [E3EC0288-6B6A-487A-BB3D-22AC62363AE0, 1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:09.838--ClientSession(2118256532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationMap_B (commDataId, contactId) VALUES (?, ?)
+	bind =&gt; [1F1301B4-30C4-4D53-8B22-10F6A39F8567, 1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.108--ClientSession(2055980074)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE ((activeStatus = ?) AND (contactId = ?))
+	bind =&gt; [1, 1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.111--ClientSession(2055980074)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-29 10:07:10.118--ServerSession(1846288317)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-29 10:07:10.121--ServerSession(1846288317)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-02-29 10:07:10.135--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.137--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.138--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.14--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.143--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--UPDATE ast_CoreContacts_T SET age = ?, approximateDOB = ?, dateofbirth = ?, emailId = ?, firstName = ?, lastName = ?, middleName = ?, nativeFirstName = ?, nativeLastName = ?, nativeMiddleName = ?, nativeTitle = ?, phoneNumber = ?, updatedBy = ?, versionId = ? WHERE ((contactId = ?) AND (versionId = ?))
+	bind =&gt; [47, 2016-02-29 09:56:49.166, 2016-02-29 09:56:49.195, IWlVxDh8apy4xtr23b8h6JF7kcCvVe4LSwYSb5WkEcVDItAaS3, cZiKBct8m7ThDfcxyMl3IaThq5yiQFYn3OaTfci72SPtPrsUdt, Qe7XSoRyuKx8796mpMhqwIxj6Ui36p6vAifjdM8l7Z4T1JspBS, kOpI67UQZpa9gaSKWIfeJ5rRfmiFNV15nUKqniMCAwGNAuLUip, ONhja3O0O4pUFZ4B1mHHiYZ6Io8Xma14D6dKfhW0CULxuKTdnt, YtdSEPJokreYXPApugObF8bUSdn0qYiaCoEGlo1CqswnncaZ8p, IcozHvHeacopMDXPcioXTpMy7rSMPrh8Zl28zpI94WYUTP39mH, xGbsY8MhB1Dk5EeYVGpBrIzYu1CyWcAhyGWC122wPFe9yU3QPB, jeCiz8mrHoRjcGVRAYfq, AAAAA, 2, 1324EE18-2D05-4479-B12D-A770FE5E2EA3, 1]
+[EL Fine]: sql: 2016-02-29 10:07:10.145--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--UPDATE ast_CommunicationData_TP SET updatedBy = ?, versionId = ? WHERE ((commDataId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, 1F1301B4-30C4-4D53-8B22-10F6A39F8567, 1]
+[EL Fine]: sql: 2016-02-29 10:07:10.36--ClientSession(1332914463)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET updatedBy = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, E3EC0288-6B6A-487A-BB3D-22AC62363AE0, 1]
+[EL Fine]: sql: 2016-02-29 10:07:10.472--ClientSession(66855459)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE ((activeStatus = ?) AND (contactId = ?))
+	bind =&gt; [1, 1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.474--ClientSession(66855459)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.48--ClientSession(81769672)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE ((activeStatus = ?) AND (genderId = ?))
+	bind =&gt; [1, 557D2B9A-D65D-42DC-BD87-BB1F44D6087B]
+[EL Fine]: sql: 2016-02-29 10:07:10.483--ClientSession(81769672)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.494--ClientSession(1969715892)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE ((activeStatus = ?) AND (nativeLanguageCode = ?))
+	bind =&gt; [1, 5D0BA296-22E2-43A3-9E66-047D6F8143A7]
+[EL Fine]: sql: 2016-02-29 10:07:10.497--ClientSession(1969715892)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.507--ClientSession(426204541)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE ((activeStatus = ?) AND (titleId = ?))
+	bind =&gt; [1, 7DCFFC59-2E97-485F-A091-CD4E256C7534]
+[EL Fine]: sql: 2016-02-29 10:07:10.509--ClientSession(426204541)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.516--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId FROM ast_CoreContacts_T WHERE (contactId = ?)
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.518--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:10.519--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.addressId, t1.address1, t1.address2, t1.address3, t1.addressLabel, t1.addressTypeId, t1.cityId, t1.countryId, t1.latitude, t1.longitude, t1.stateId, t1.versionId, t1.zipcode, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_AddressMap_B t0, ast_Address_T t1 WHERE ((t0.contactId = ?) AND (t1.addressId = t0.addressId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.521--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT t1.commDataId, t1.commData, t1.commGroupId, t1.commType, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_CommunicationMap_B t0, ast_CommunicationData_TP t1 WHERE ((t0.contactId = ?) AND (t1.commDataId = t0.commDataId))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.523--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressMap_B WHERE (contactId = ?)
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.524--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationMap_B WHERE (contactId = ?)
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3]
+[EL Fine]: sql: 2016-02-29 10:07:10.526--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind =&gt; [E3EC0288-6B6A-487A-BB3D-22AC62363AE0, 2]
+[EL Fine]: sql: 2016-02-29 10:07:10.901--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationData_TP WHERE ((commDataId = ?) AND (versionId = ?))
+	bind =&gt; [1F1301B4-30C4-4D53-8B22-10F6A39F8567, 2]
+[EL Fine]: sql: 2016-02-29 10:07:10.902--ClientSession(345769237)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CoreContacts_T WHERE ((contactId = ?) AND (versionId = ?))
+	bind =&gt; [1324EE18-2D05-4479-B12D-A770FE5E2EA3, 2]
+[EL Fine]: sql: 2016-02-29 10:07:11.238--ClientSession(1671577950)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind =&gt; [18293107-FB09-406E-9057-AB7CED7E76A2]
+[EL Fine]: sql: 2016-02-29 10:07:11.239--ClientSession(1671577950)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind =&gt; [18293107-FB09-406E-9057-AB7CED7E76A2, 1]
+[EL Fine]: sql: 2016-02-29 10:07:11.394--ClientSession(897194512)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind =&gt; [827BE97B-1DD4-4D6F-99E7-A9C7D99FB393]
+[EL Fine]: sql: 2016-02-29 10:07:11.396--ClientSession(897194512)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind =&gt; [827BE97B-1DD4-4D6F-99E7-A9C7D99FB393, 1]
+[EL Fine]: sql: 2016-02-29 10:07:11.494--ClientSession(992822334)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [E3E79F3C-7EBA-4769-B435-EF8292402A4B]
+[EL Fine]: sql: 2016-02-29 10:07:11.497--ClientSession(992822334)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [E3E79F3C-7EBA-4769-B435-EF8292402A4B, 1]
+[EL Fine]: sql: 2016-02-29 10:07:11.584--ClientSession(1791686532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind =&gt; [7174F784-6889-4E9B-817A-1807672A11C2]
+[EL Fine]: sql: 2016-02-29 10:07:11.586--ClientSession(1791686532)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind =&gt; [7174F784-6889-4E9B-817A-1807672A11C2, 1]
+[EL Fine]: sql: 2016-02-29 10:07:11.71--ClientSession(718237034)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationType_M WHERE (commType = ?)
+	bind =&gt; [E87B7C8C-7E1C-4CBB-B2B1-1F4EAB7AA850]
+[EL Fine]: sql: 2016-02-29 10:07:11.712--ClientSession(718237034)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationType_M WHERE ((commType = ?) AND (versionId = ?))
+	bind =&gt; [E87B7C8C-7E1C-4CBB-B2B1-1F4EAB7AA850, 1]
+[EL Fine]: sql: 2016-02-29 10:07:11.978--ClientSession(1177956733)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_CommunicationGroup_M WHERE (commGroupId = ?)
+	bind =&gt; [6485D1AA-B585-4920-8EA6-13C113D3D236]
+[EL Fine]: sql: 2016-02-29 10:07:11.98--ClientSession(1177956733)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_CommunicationGroup_M WHERE ((commGroupId = ?) AND (versionId = ?))
+	bind =&gt; [6485D1AA-B585-4920-8EA6-13C113D3D236, 1]
+[EL Fine]: sql: 2016-02-29 10:07:12.086--ClientSession(794232636)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Title_M WHERE (titleId = ?)
+	bind =&gt; [7DCFFC59-2E97-485F-A091-CD4E256C7534]
+[EL Fine]: sql: 2016-02-29 10:07:12.088--ClientSession(794232636)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Title_M WHERE ((titleId = ?) AND (versionId = ?))
+	bind =&gt; [7DCFFC59-2E97-485F-A091-CD4E256C7534, 1]
+[EL Fine]: sql: 2016-02-29 10:07:12.218--ClientSession(1022865906)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD]
+[EL Fine]: sql: 2016-02-29 10:07:12.22--ClientSession(1022865906)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Timezone_M WHERE ((timeZoneId = ?) AND (versionId = ?))
+	bind =&gt; [3BAA8038-3E09-4C40-A198-ACD24B2CE8DD, 1]
+[EL Fine]: sql: 2016-02-29 10:07:12.335--ClientSession(337163501)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind =&gt; [5D0BA296-22E2-43A3-9E66-047D6F8143A7]
+[EL Fine]: sql: 2016-02-29 10:07:12.339--ClientSession(337163501)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind =&gt; [5D0BA296-22E2-43A3-9E66-047D6F8143A7, 1]
+[EL Fine]: sql: 2016-02-29 10:07:12.443--ClientSession(1766085951)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind =&gt; [557D2B9A-D65D-42DC-BD87-BB1F44D6087B]
+[EL Fine]: sql: 2016-02-29 10:07:12.446--ClientSession(1766085951)--Connection(1135926036)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind =&gt; [557D2B9A-D65D-42DC-BD87-BB1F44D6087B, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Feb 29, 2016 10:07:13 AM</p>
+</div>
+</div>
+</body>
+</html>

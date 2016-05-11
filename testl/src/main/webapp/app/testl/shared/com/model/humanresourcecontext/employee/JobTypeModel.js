@@ -1,0 +1,35 @@
+Ext.define('Testl.testl.shared.com.model.humanresourcecontext.employee.JobTypeModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobHelp",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "jobIcon",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

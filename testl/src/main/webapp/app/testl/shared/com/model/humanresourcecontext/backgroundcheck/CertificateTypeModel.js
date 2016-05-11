@@ -1,0 +1,35 @@
+Ext.define('Testl.testl.shared.com.model.humanresourcecontext.backgroundcheck.CertificateTypeModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "certCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "certDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "certHelp",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "certIcon",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

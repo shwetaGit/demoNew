@@ -1,0 +1,35 @@
+Ext.define('Testl.testl.shared.com.model.humanresourcecontext.employee.DesignationTypeModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "designatnTypeCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "designatnTypeDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "designatnTypeHelp",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "designatnTypeIcon",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

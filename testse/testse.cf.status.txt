@@ -1,0 +1,14 @@
+ExitCode=0
+TotalTimeTaken=67.326
+TotalFiles=9630
+TotalFolders=4607
+TotalJavaFiles=179
+TotalJsFiles=208
+TotalJsonFiles=88
+TotalCssFiles=669
+TotalXmlFiles=283
+TotalPropertiesFiles=77
+Mon Feb 29 09:57:02 UTC 2016 : Code Factory Process Started for instructions testse.cf
+Mon Feb 29 09:58:24 UTC 2016 : Code Factory : Total Files created : 9630 | Total Time Taken : 67.326 in seconds
+Mon Feb 29 09:58:23 UTC 2016 : Code Factory : Process Completed Blue Print instructions
+Mon Feb 29 09:58:24 UTC 2016 : Code Factory : Exited with the code 0

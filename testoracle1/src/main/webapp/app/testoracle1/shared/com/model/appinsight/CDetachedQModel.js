@@ -9,11 +9,11 @@ Ext.define('Testoracle1.testoracle1.shared.com.model.appinsight.CDetachedQModel'
           "type": "string",
           "defaultValue": ""
      }, {
-          "name": "countryFlag",
+          "name": "countryCode2",
           "type": "string",
           "defaultValue": ""
      }, {
-          "name": "countryCode2",
+          "name": "countryFlag",
           "type": "string",
           "defaultValue": ""
      }]

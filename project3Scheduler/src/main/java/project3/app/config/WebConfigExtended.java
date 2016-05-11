@@ -1,0 +1,19 @@
+package project3.app.config;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+import com.athena.config.server.WebConfig;
+
+/**
+ *
+ *
+ * @author Anant
+ *
+ */
+@Configuration
+@EnableTransactionManagement
+@EnableAsync
+@ComponentScan(basePackages = { "com.athena", "com.spartan", "project3.app" })
+public class WebConfigExtended extends WebConfig {
+}

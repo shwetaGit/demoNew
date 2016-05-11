@@ -1141,7 +1141,6 @@ $include-testoracle1-testoracle1-shared-com-model-organization-locationmanagemen
 $include-testoracle1-testoracle1-shared-com-viewmodel-appbasicsetup-usermanagement-questionviewmodel: false;
 $include-testoracle1-testoracle1-shared-com-viewmodel-appinsight-health-suinewviewmodel: false;
 $include-testoracle1-testoracle1-shared-com-viewmodel-appinsight-health-testaviewmodel: false;
-$include-testoracle1-testoracle1-shared-com-viewmodel-appinsight-health-testcuiviewmodel: false;
 $include-testoracle1-testoracle1-shared-com-viewmodel-organization-contactmanagement-communicationgroupviewmodel: false;
 $include-testoracle1-testoracle1-shared-com-viewmodel-organization-contactmanagement-communicationtypeviewmodel: false;
 $include-testoracle1-testoracle1-shared-com-viewmodel-organization-contactmanagement-contacttypeviewmodel: false;
@@ -1157,7 +1156,6 @@ $include-testoracle1-testoracle1-shared-com-viewmodel-organization-locationmanag
 $include-testoracle1-testoracle1-web-com-controller-appbasicsetup-usermanagement-questionmaincontroller: false;
 $include-testoracle1-testoracle1-web-com-controller-appinsight-health-suinewcontroller: false;
 $include-testoracle1-testoracle1-web-com-controller-appinsight-health-testamaincontroller: false;
-$include-testoracle1-testoracle1-web-com-controller-appinsight-health-testcuicontroller: false;
 $include-testoracle1-testoracle1-web-com-controller-organization-contactmanagement-communicationgroupmaincontroller: false;
 $include-testoracle1-testoracle1-web-com-controller-organization-contactmanagement-communicationtypemaincontroller: false;
 $include-testoracle1-testoracle1-web-com-controller-organization-contactmanagement-contacttypemaincontroller: false;
@@ -1173,7 +1171,6 @@ $include-testoracle1-testoracle1-web-com-controller-organization-locationmanagem
 $include-testoracle1-testoracle1-web-com-view-appbasicsetup-usermanagement-questionmain: false;
 $include-testoracle1-testoracle1-web-com-view-appinsight-health-suinew: false;
 $include-testoracle1-testoracle1-web-com-view-appinsight-health-testamain: false;
-$include-testoracle1-testoracle1-web-com-view-appinsight-health-testcui: false;
 $include-testoracle1-testoracle1-web-com-view-organization-contactmanagement-communicationgroupmain: false;
 $include-testoracle1-testoracle1-web-com-view-organization-contactmanagement-communicationtypemain: false;
 $include-testoracle1-testoracle1-web-com-view-organization-contactmanagement-contacttypemain: false;
