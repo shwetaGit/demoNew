@@ -1,0 +1,31 @@
+Ext.define('Testoracle1.testoracle1.shared.com.model.appinsight.health.TestVModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "ttid",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "tmn",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "tno",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
