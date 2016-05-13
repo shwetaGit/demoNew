@@ -8,7 +8,7 @@ Ext.application({
 
     extend: 'Testlic.Application',
     
-    autoCreateViewport: 'Testlic.view.main.Main'
+/**AppPathDetails**/autoCreateViewport:"Testlic.view.desktop.design.drawer.main.MainPanel",
 	
     //-------------------------------------------------------------------------
     // Most customizations should be made to Testlic.Application. If you need to

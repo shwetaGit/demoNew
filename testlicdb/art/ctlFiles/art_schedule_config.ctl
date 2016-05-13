@@ -1,0 +1,2 @@
+load data infile '/tmp/applifire/db/I628EHBUMB2HR1F6EFSRPG/09C6A33C-9FF7-4C25-951B-0FC5CB7BFB11/art/data/art_schedule_config.csv' "str '#appfirenewline#'" into table art_schedule_config FIELDS TERMINATED BY '#appfire#' (schedule_id,schedule_name,schedule_job,scheduler_expression,schedule_strategy,created_by,created_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss',updated_by,updated_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss',version_id,active_status)
+

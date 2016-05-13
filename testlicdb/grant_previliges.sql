@@ -1,0 +1,6 @@
+
+connect sys/oracle as sysdba
+GRANT "DBA" TO "PRO4" ;
+GRANT "CONNECT" TO "PRO4" WITH ADMIN OPTION;
+ALTER USER "PRO4" DEFAULT ROLE "DBA","CONNECT";
+exit;

@@ -1,0 +1,3 @@
+load data infile '/tmp/applifire/db/I628EHBUMB2HR1F6EFSRPG/09C6A33C-9FF7-4C25-951B-0FC5CB7BFB11/art/data/art_health_scheduler_config_m.csv' "str '#appfirenewline#'" into table art_health_scheduler_config_m FIELDS TERMINATED BY '#appfire#' (schedulerId,schedulerkey,refreshTime,refreshUnit,batchSize,enabled,connectorClass,dataModel,schedulerName,threadPoolSize,version_id,created_by,
+created_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss',updated_by,updated_date TIMESTAMP 'yyyy-mm-dd hh24:mi:ss',active_status)
+
